@@ -1,0 +1,492 @@
+{
+  "Metadata": {
+    "title": "Algorithm | Laborator de Tehnică Dentară",
+    "description": "Laborator de tehnică dentară din Cluj-Napoca, cu flux digital, standarde medicale ridicate și rezultate estetice predictibile.",
+    "ogImageAlt": "Laboratorul de tehnică dentară Algorithm din Cluj-Napoca"
+  },
+  "SeoPages": {
+    "ogImageAlt": "Laboratorul de tehnică dentară Algorithm din Cluj-Napoca",
+    "home": {
+      "title": "Tehnică dentară Cluj - Algorithm",
+      "description": "Laborator tehnică dentară Cluj-Napoca cu flux digital complet, protetică fixă și pe implant."
+    },
+    "about": {
+      "title": "Despre noi - Echipa laborator tehnică dentară Cluj-Napoca",
+      "description": "Echipa Algorithm combină experiență clinică, control strict al calității și protocoale digitale."
+    },
+    "services": {
+      "title": "Servicii - Laborator tehnică dentară Cluj",
+      "description": "Servicii profesionale de protetică dentară, coroane CAD/CAM și restaurări pe implant."
+    },
+    "gallery": {
+      "title": "Galerie lucrări - Dental prosthetics lab",
+      "description": "Galerie cu exemple de lucrări și procese din laboratorul de tehnică dentară din Cluj-Napoca."
+    },
+    "cases": {
+      "title": "Cazuri clinice before/after - Tehnică dentară Cluj",
+      "description": "Cazuri demonstrative înainte/după pentru restaurări protetice realizate în laboratorul Algorithm."
+    },
+    "contact": {
+      "title": "Contact - Dental laboratory Romania",
+      "description": "Contactează laboratorul Algorithm pentru colaborări clinice, planificare și suport tehnic."
+    }
+  },
+  "Navigation": {
+    "brand": "Algorithm",
+    "ariaMain": "Navigare principală",
+    "home": "Acasă",
+    "about": "Despre noi",
+    "services": "Servicii",
+    "gallery": "Galerie",
+    "cases": "Cazuri",
+    "testimonials": "Testimoniale",
+    "contact": "Contact",
+    "switchThemeDark": "Comută în modul întunecat",
+    "switchThemeLight": "Comută în modul luminos",
+    "switchTo": {
+      "ro": "Comută limba în română",
+      "en": "Comută limba în engleză",
+      "de": "Comută limba în germană"
+    }
+  },
+  "Home": {
+    "heroEyebrow": "Laborator de Tehnică Dentară",
+    "heroTitle": "Restaurări dentare precise, cu aspect natural și flux digital complet.",
+    "heroDescription": "Algorithm colaborează cu medici și clinici stomatologice pentru lucrări protetice premium, realizate rapid, sigur și standardizat.",
+    "primaryCta": "Programează o consultație",
+    "secondaryCta": "Vezi serviciile"
+  },
+  "HomeClosing": {
+    "eyebrow": "Încheiere",
+    "title": "Pregătit pentru un partener de laborator de încredere?",
+    "description": "De la comunicare rapidă la livrare constantă, Algorithm susține clinicile și medicii stomatologi individuali cu rezultate tehnice predictibile.",
+    "pointOne": "Răspuns în maximum o zi lucrătoare",
+    "pointOneDetail": "Analizăm fiecare solicitare cu prioritate și revenim rapid cu un răspuns clar și aplicat.",
+    "pointTwo": "Flux digital cu documentație clară",
+    "pointTwoDetail": "Fiecare etapă este documentată pentru trasabilitate, comunicare eficientă și decizii tehnice corecte.",
+    "pointThree": "Colaborare pe termen lung, cu focus pe calitate",
+    "pointThreeDetail": "Construim parteneriate stabile cu medici și clinici, bazate pe consistență, precizie și încredere.",
+    "cta": "Vezi toate serviciile"
+  },
+  "AboutPage": {
+    "eyebrow": "Despre Algorithm",
+    "title": "Echipa noastră de tehnică dentară din Cluj-Napoca",
+    "description": "Construim parteneriate medicale solide prin precizie tehnică, transparență și predictibilitate în fiecare caz clinic.",
+    "storyTitle": "Povestea noastră",
+    "storyLead": "Algorithm a pornit din dorința de a ridica standardul colaborării dintre laborator și medic, prin procese clare, comunicare tehnică reală și rezultate constante.",
+    "storyP1": "În primii ani, am lucrat exclusiv pe cazuri complexe care necesitau adaptări precise și răspuns rapid. Această experiență ne-a ajutat să construim un flux intern disciplinat: analiză inițială, design digital, verificare multi-etapă și validare finală documentată.",
+    "storyP2": "Astăzi, susținem clinici și medici stomatologi individuali cu o abordare orientată spre predictibilitate. Pentru noi, fiecare lucrare înseamnă responsabilitate medicală, atenție la detalii și un parteneriat pe termen lung bazat pe încredere.",
+    "missionTitle": "Misiune clinică",
+    "missionText": "Misiunea noastră este să oferim restaurări funcționale și estetice la standarde medicale ridicate, cu termene de execuție clare.",
+    "missionTextExtra": "Lucrăm orientat spre rezultate stabile pe termen lung, prin comunicare tehnică permanentă cu medicul, planificare prealabilă și control atent al fiecărei etape de producție. Scopul nostru este reducerea ajustării la scaun și creșterea confortului pacientului de la prima probă.",
+    "standardsTitle": "Standarde de lucru",
+    "standardsText": "Folosim protocoale digitale, verificare multi-etapă și trasabilitate completă pentru fiecare lucrare protetică.",
+    "standardsTextExtra": "Fiecare caz urmează un flux documentat: analiză inițială, design CAD, validare funcțională, selecție controlată a materialelor și verificare finală înainte de livrare. Acest model de lucru asigură consistență, calitate repetabilă și transparență pentru partenerii noștri medicali.",
+    "teamTitle": "Echipă multidisciplinară",
+    "teamLead": "Specialiști dedicați care combină expertiza clinică, precizia digitală și atenția pentru fiecare detaliu protetic.",
+    "teamCta": "Discută cu echipa noastră",
+    "teamImageAlt": "Echipa laboratorului de tehnică dentară Algorithm",
+    "mediaLabel": "Placeholder foto echipă",
+    "member1Name": "Dr. Ana Ionescu",
+    "member1Role": "Coordonator Medical",
+    "member1Bio": "Coordonează integrarea dintre planul protetic și obiectivele funcționale ale tratamentului clinic.",
+    "member1Detail1": "Experiență: 12+ ani în protetică dentară interdisciplinară.",
+    "member1Detail2": "Focus: protocol clinic-laborator și predictibilitate funcțională.",
+    "member2Name": "Mihai Pop",
+    "member2Role": "Tehnician CAD/CAM",
+    "member2Bio": "Responsabil de proiectarea digitală și optimizarea adaptării marginale pentru coroane și punți.",
+    "member2Detail1": "Experiență: design digital pentru restaurări fixe complexe.",
+    "member2Detail2": "Focus: precizie CAD/CAM, ocluzie și contacte stabile.",
+    "member3Name": "Roxana Mureșan",
+    "member3Role": "Specialist Protetică pe Implant",
+    "member3Bio": "Gestionează cazurile complexe pe implant și validarea etapelor de producție.",
+    "member3Detail1": "Experiență: planificare protetică avansată pe implant.",
+    "member3Detail2": "Focus: adaptare pasivă și estetică naturală pe termen lung."
+  },
+  "Services": {
+    "title": "Servicii principale",
+    "lead": "Soluții moderne pentru protetică fixă și pe implant, optimizate pentru estetică, rezistență și confort funcțional.",
+    "serviceLabel": "Serviciu",
+    "pills": {
+      "one": "Flux digital CAD/CAM",
+      "two": "Control riguros al calității",
+      "three": "Suport tehnic pentru clinici"
+    },
+    "one": {
+      "title": "Coroane și punți CAD/CAM",
+      "description": "Proiectare digitală și frezare de înaltă precizie pentru adaptare marginală excelentă.",
+      "pointOne": "Modelare digitală conform planului clinic primit de la medic.",
+      "pointTwo": "Finisare controlată pentru contacte ocluzale stabile.",
+      "outcome": "Rezultat: restaurări fixe cu integrare funcțională rapidă."
+    },
+    "two": {
+      "title": "Protetică pe implant",
+      "description": "Structuri individualizate pentru stabilitate pe termen lung și integrare funcțională corectă.",
+      "pointOne": "Planificare protetică în funcție de angulație și spațiul protetic disponibil.",
+      "pointTwo": "Verificare multi-etapă pentru adaptare precisă pe implant.",
+      "outcome": "Rezultat: stabilitate biomecanică și confort masticator predictibil."
+    },
+    "three": {
+      "title": "Design estetic digital",
+      "description": "Analiza proporțiilor dento-faciale și simulare digitală pentru rezultate estetice predictibile.",
+      "pointOne": "Analiza formei, volumului și simetriei pentru zona frontală.",
+      "pointTwo": "Alegerea nuanței în raport cu contextul estetic al pacientului.",
+      "outcome": "Rezultat: estetică naturală cu armonie dento-facială."
+    },
+    "four": {
+      "title": "Retuș și mentenanță",
+      "description": "Ajustări rapide, control de calitate și suport tehnic continuu pentru medici colaboratori.",
+      "pointOne": "Intervenții punctuale pentru optimizarea contactelor și adaptării.",
+      "pointTwo": "Comunicare tehnică directă pentru cazuri urgente sau complexe.",
+      "outcome": "Rezultat: continuitate clinică și timpi de răspuns reduși."
+    },
+    "qualityTitle": "Standard profesional în fiecare etapă",
+    "qualityText": "Fiecare lucrare urmează un flux documentat: analiză inițială, design, producție și validare finală. Lucrăm cu protocoale clare de comunicare, verificări intermediare și control riguros al materialelor, astfel încât să reducem ajustarea la scaun și să oferim rezultate constante, funcționale și estetice pentru medic și pacient.",
+    "requestOfferCta": "Solicită ofertă",
+    "seeMoreServicesCta": "Vezi mai multe servicii"
+  },
+  "ServicesPage": {
+    "eyebrow": "Servicii",
+    "title": "Laborator tehnică dentară Cluj pentru cazuri simple și complexe",
+    "description": "Executăm lucrări protetice cu accent pe funcționalitate pe termen lung, estetică naturală și comunicare clinică eficientă.",
+    "workflowTitle": "Flux digital standardizat",
+    "workflowText": "Fiecare caz este documentat, validat și optimizat înainte de livrare pentru a reduce ajustarea la scaun.",
+    "workflowImageAlt": "Flux de lucru în laboratorul de tehnică dentară",
+    "workflowLabel": "Placeholder flux digital",
+    "step1Title": "1. Scanare și analiză",
+    "step1Text": "Primim scanări intraorale sau modele clasice și stabilim parametrii clinici.",
+    "step2Title": "2. Design digital",
+    "step2Text": "Modelăm restaurarea în software CAD cu verificarea punctelor de contact.",
+    "step3Title": "3. Producție",
+    "step3Text": "Frezare, sinterizare și finisare conform protocolului materialului.",
+    "step4Title": "4. Control final",
+    "step4Text": "Verificăm adaptarea, estetica și documentația înainte de livrare.",
+    "step5Title": "5. Feedback tehnic",
+    "step5Text": "Comunicăm observațiile relevante către medic pentru ajustări proactive și integrare clinică eficientă.",
+    "step6Title": "6. Livrare și suport post-caz",
+    "step6Text": "Asigurăm predare documentată și suport tehnic după livrare pentru menținerea unui rezultat stabil.",
+    "secondaryTitle": "Servicii complementare",
+    "secondaryLead": "Opțiuni suplimentare pentru suport tehnic, mentenanță și predictibilitate pe termen lung în colaborarea laborator-medic.",
+    "secondary1Title": "Consultanță tehnică pe caz",
+    "secondary1Text": "Analiza indicațiilor clinice, recomandări de materiale și suport pentru alegerea soluției protetice potrivite.",
+    "secondary1Point1": "Revizuire interdisciplinară a planului clinic înainte de producție.",
+    "secondary1Point2": "Alegere ghidată între variante protetice în funcție de obiectivul funcțional.",
+    "secondary1Outcome": "Rezultat: decizie tehnică mai rapidă și risc redus de ajustări ulterioare.",
+    "secondary2Title": "Ajustări și optimizări rapide",
+    "secondary2Text": "Intervenții punctuale pentru adaptare fină, ocluzie și integrare funcțională, cu timp de răspuns scurt.",
+    "secondary2Point1": "Corecții controlate pentru contacte proximale și ocluzale.",
+    "secondary2Point2": "Prioritizare pentru cazuri urgente sau termene clinice strânse.",
+    "secondary2Outcome": "Rezultat: continuitate clinică și livrare în termene predictibile.",
+    "secondary3Title": "Suport pentru comunicare digitală",
+    "secondary3Text": "Asistență pentru fluxuri CAD/CAM, transfer de fișiere și standardizare a etapelor dintre clinică și laborator.",
+    "secondary3Point1": "Validare fișiere, formate și parametri tehnici înainte de procesare.",
+    "secondary3Point2": "Protocol comun de comunicare pentru feedback clar pe fiecare etapă.",
+    "secondary3Outcome": "Rezultat: colaborare digitală mai fluidă și reducerea erorilor de transfer.",
+    "finalCta": "Solicită ofertă personalizată"
+  },
+  "Testimonials": {
+    "title": "Feedback de la parteneri medicali",
+    "lead": "Clinici stomatologice și medici dentiști individuali care lucrează cu Algorithm pentru rezultate consecvente.",
+    "one": {
+      "type": "Laborator",
+      "quote": "Lucrările au o adaptare excelentă, iar timpii de livrare sunt constanți chiar și în cazuri complexe.",
+      "author": "Dr. Andrei M., Medic Stomatolog"
+    },
+    "two": {
+      "type": "Medic",
+      "quote": "Comunicarea este clară, iar fiecare caz primește documentație completă și recomandări tehnice utile.",
+      "author": "Dr. Bianca R., Implantologie"
+    },
+    "three": {
+      "type": "Medic",
+      "quote": "Pacienții apreciază foarte mult naturalețea estetică și confortul imediat după inserția lucrării.",
+      "author": "Dr. Radu C., Protetică"
+    },
+    "four": {
+      "type": "Clinică",
+      "quote": "Comunicarea cu echipa de laborator este rapidă și precisă, iar planificarea cazurilor complexe devine mult mai simplă.",
+      "author": "Smile Care Cluj, Clinică parteneră"
+    },
+    "five": {
+      "type": "Medic",
+      "quote": "Documentația de caz este clară, iar recomandările tehnice ne ajută să luăm decizii mai bune în timp scurt.",
+      "author": "Dr. Elena T., Protetică dentară"
+    },
+    "six": {
+      "type": "Clinică",
+      "quote": "Colaborarea cu Algorithm ne-a redus semnificativ ajustările la scaun și a crescut satisfacția pacienților.",
+      "author": "Nova Dental, Manager medical"
+    },
+    "seven": {
+      "type": "Medic",
+      "quote": "Lucrările pe implant au stabilitate excelentă, iar integrarea funcțională este foarte predictibilă.",
+      "author": "Dr. Mihai P., Chirurgie și implantologie"
+    },
+    "eight": {
+      "type": "Medic",
+      "quote": "Apreciez atenția la detalii estetice și consistența rezultatelor, inclusiv în cazurile cu termen scurt.",
+      "author": "Dr. Ioana S., Reabilitare orală"
+    },
+    "nine": {
+      "type": "Clinică",
+      "quote": "Fluxul digital standardizat ne oferă încredere în fiecare livrare și un parteneriat tehnic pe termen lung.",
+      "author": "Dental Point, Coordonator clinică"
+    },
+    "showMore": "Vezi mai multe recenzii"
+  },
+  "Gallery": {
+    "title": "Galerie laborator",
+    "lead": "Exemple de lucrări și procese interne. Imaginile pot fi înlocuite rapid din aceeași structură.",
+    "placeholder": "Media Placeholder",
+    "itemAlt": "Imagine galerie {index}",
+    "viewMore": "Vezi mai multe imagini"
+  },
+  "GalleryPage": {
+    "eyebrow": "Galerie",
+    "title": "Portofoliu vizual pentru laborator tehnică dentară Cluj-Napoca",
+    "description": "Galeria include cadre demonstrative pentru lucrări protetice, etape de producție și material educațional pentru medici.",
+    "gridTitle": "Galerie foto laborator",
+    "gridLead": "Imagini de prezentare pentru spațiile de lucru, fluxurile digitale și controlul de calitate.",
+    "openImage": "Deschide imaginea",
+    "closeLightbox": "Închide",
+    "previousImage": "Anterior",
+    "nextImage": "Următor",
+    "videoTitle": "Video prezentare",
+    "videoLead": "Aici poți vedea scurte demonstrații video din laborator: etape de producție, lucru pe aparatură de precizie și procese tehnice folosite în cazurile reale.",
+    "mediaPolicyTitle": "Politică media",
+    "mediaPolicyText": "Toate materialele sunt pregătite pentru actualizare rapidă cu imagini reale și clipuri educaționale.",
+    "replacementTitle": "Înlocuire conținut",
+    "replacementText": "Structura paginii permite integrarea ulterioară a fișierelor foto-video fără modificări majore de layout.",
+    "videoCta": "Solicită colaborare",
+    "showMore": "Arată mai multe imagini"
+  },
+  "CasesPage": {
+    "eyebrow": "Cazuri clinice",
+    "title": "Cazuri clinice înainte/după pentru reabilitări protetice",
+    "description": "Studii de caz orientate pe funcționalitate, estetică și predictibilitate, realizate în laboratorul Algorithm pentru colaboratori medicali și discuții tehnice documentate.",
+    "beforeLabel": "Înainte",
+    "afterLabel": "După",
+    "case1Title": "Zonă frontală",
+    "case1Summary": "Reabilitare estetică pe incisivi cu corecție de formă și culoare.",
+    "case1Work": "Am realizat analiză estetică digitală, ajustare de volum și verificare de nuanță pentru integrare naturală în zona frontală.",
+    "case1Point1": "Planificare digitală pentru proporții armonioase în zona frontală.",
+    "case1Point2": "Validare finală a detaliilor de textură și transluciditate.",
+    "case1BeforeAlt": "Caz 1 înainte de tratament protetic",
+    "case1AfterAlt": "Caz 1 după tratament protetic",
+    "case2Title": "Coroane posterioare",
+    "case2Summary": "Refacere funcțională ocluzală pentru stabilitate masticatorie.",
+    "case2Work": "Am optimizat contactele ocluzale și proximitatea coronară pentru distribuție corectă a forțelor și confort funcțional.",
+    "case2Point1": "Calibrare ocluzală pentru stabilitate și uzură controlată.",
+    "case2Point2": "Adaptare marginală precisă pentru integrare predictibilă.",
+    "case2BeforeAlt": "Caz 2 înainte de restaurare",
+    "case2AfterAlt": "Caz 2 după restaurare",
+    "case3Title": "Suport pe implant",
+    "case3Summary": "Lucrare personalizată pe implant cu adaptare precisă.",
+    "case3Work": "Am proiectat structura protetică pe implant cu validare multi-etapă pentru pasivitate, stabilitate și integrare predictibilă.",
+    "case3Point1": "Verificarea pasivității la nivelul conexiunii implant-proteză.",
+    "case3Point2": "Control estetic al profilului de emergență și al conturului cervical.",
+    "case3BeforeAlt": "Caz 3 înainte de protetică pe implant",
+    "case3AfterAlt": "Caz 3 după protetică pe implant",
+    "case4Title": "Reabilitare extinsă",
+    "case4Summary": "Plan protetic complex cu etape multiple și rezultat stabil.",
+    "case4Work": "Cazul a inclus planificare interdisciplinară, secvențiere de producție și control final riguros pentru un rezultat coerent pe termen lung.",
+    "case4Point1": "Protocol tehnic etapizat pentru coerență pe întregul arcadă.",
+    "case4Point2": "Validare finală funcțională și estetică înainte de livrare.",
+    "case4BeforeAlt": "Caz 4 înainte de reabilitare",
+    "case4AfterAlt": "Caz 4 după reabilitare",
+    "contextTitle": "Cum interpretăm aceste cazuri",
+    "contextLead": "Fiecare comparație before/after evidențiază contribuția laboratorului în design, adaptare și validare finală a restaurării.",
+    "contextPointOne": "Analiza include obiectivul funcțional, stabilitatea ocluzală și integrarea estetică în contextul clinic.",
+    "contextPointTwo": "Rezultatele prezentate sunt demonstrative și susțin discuții tehnice între medic și laborator.",
+    "contextPointThree": "Pentru fiecare caz urmăm un flux standardizat: planificare, producție controlată și verificare finală.",
+    "finalCta": "Solicită evaluare pentru cazul tău"
+  },
+  "Contact": {
+    "title": "Contact și programări",
+    "lead": "Trimite un mesaj pentru colaborare, ofertă personalizată sau detalii despre un caz clinic.",
+    "addressLabel": "Adresă",
+    "addressValue": "Str. Memorandumului 10, Cluj-Napoca, România",
+    "phoneLabel": "Telefon",
+    "phoneValue": "+40 264 000 000",
+    "emailLabel": "Email",
+    "emailValue": "contact@algorithm-clinic.ro",
+    "hoursLabel": "Program",
+    "hoursValue": "Luni - Vineri: 8:00 - 18:00",
+    "formTitle": "Solicită un apel",
+    "name": "Nume",
+    "namePlaceholder": "Numele complet",
+    "phone": "Telefon",
+    "phonePlaceholder": "+40 7xx xxx xxx",
+    "email": "Email",
+    "emailPlaceholder": "adresa@email.ro",
+    "message": "Mesaj",
+    "messagePlaceholder": "Spune-ne pe scurt ce tip de colaborare dorești.",
+    "careMessage": "Pentru noi, fiecare solicitare este importantă. Îți mulțumim pentru interesul acordat laboratorului nostru de tehnică dentară. Echipa Algorithm analizează fiecare mesaj cu atenție și revine în cel mai scurt timp posibil, cu răspuns clar și suport profesionist pentru nevoile tale.",
+    "gdprText": "Sunt de acord cu prelucrarea datelor personale în scopul contactării mele referitor la această solicitare.",
+    "submit": "Trimite solicitarea",
+    "submitting": "Se trimite...",
+    "successMessage": "Solicitarea a fost trimisă cu succes. Te vom contacta în scurt timp.",
+    "errorMessage": "Mesajul nu a putut fi trimis acum. Încearcă din nou în câteva minute.",
+    "mapTitle": "Harta Google pentru laboratorul Algorithm din Cluj-Napoca",
+    "errors": {
+      "nameMin": "Numele trebuie să aibă cel puțin 2 caractere.",
+      "nameMax": "Numele este prea lung.",
+      "phoneMin": "Numărul de telefon este prea scurt.",
+      "phoneMax": "Numărul de telefon este prea lung.",
+      "phoneInvalid": "Format invalid pentru numărul de telefon.",
+      "emailInvalid": "Introdu o adresă de email validă.",
+      "emailMax": "Adresa de email este prea lungă.",
+      "messageMin": "Mesajul trebuie să aibă cel puțin 10 caractere.",
+      "messageMax": "Mesajul este prea lung.",
+      "gdprRequired": "Trebuie să accepți consimțământul GDPR pentru a trimite formularul."
+    },
+    "hours": {
+      "monday": {
+        "day": "Luni",
+        "time": "8:00 - 18:00"
+      },
+      "tuesday": {
+        "day": "Marți",
+        "time": "8:00 - 18:00"
+      },
+      "wednesday": {
+        "day": "Miercuri",
+        "time": "8:00 - 18:00"
+      },
+      "thursday": {
+        "day": "Joi",
+        "time": "8:00 - 18:00"
+      },
+      "friday": {
+        "day": "Vineri",
+        "time": "8:00 - 18:00"
+      },
+      "saturday": {
+        "day": "Sâmbătă",
+        "time": "Închis"
+      },
+      "sunday": {
+        "day": "Duminică",
+        "time": "Închis"
+      }
+    }
+  },
+  "ContactPage": {
+    "eyebrow": "Contact",
+    "title": "Contact direct cu echipa laboratorului Algorithm",
+    "description": "Ne poți contacta pentru discuția unui caz clinic, estimare de timp sau suport tehnic pentru planificare.",
+    "visitTitle": "Program de vizită",
+    "visitText": "Pentru ședințe de consultare tehnică, recomandăm programare prealabilă prin telefon sau email.",
+    "emergencyTitle": "Cazuri urgente",
+    "emergencyText": "Pentru situații urgente, menționează în mesaj tipul cazului și termenul medical necesar.",
+    "mapAlt": "Hartă locație laborator tehnică dentară Cluj",
+    "mapLabel": "Placeholder hartă/video locație"
+  },
+  "NotFound": {
+    "title": "Pagina nu a fost găsită",
+    "description": "Pagina căutată nu există sau a fost mutată.",
+    "cta": "Înapoi la homepage"
+  },
+  "LegalPages": {
+    "terms": {
+      "eyebrow": "Legal",
+      "title": "Termeni și Condiții",
+      "description": "Acești termeni stabilesc modul de utilizare a site-ului și trimiterea solicitărilor către laboratorul Algorithm.",
+      "updatedLabel": "Ultima actualizare",
+      "updatedValue": "Februarie 2026",
+      "section1Title": "1. Scopul site-ului",
+      "section1Text": "Acest site prezintă serviciile, fluxul de lucru și canalele de contact ale laboratorului de tehnică dentară Algorithm din Cluj-Napoca.",
+      "section2Title": "2. Conținut informativ",
+      "section2Text": "Materialele au scop informativ profesional și nu înlocuiesc evaluarea clinică directă sau un acord scris între laborator și medicul colaborator.",
+      "section3Title": "3. Proprietate intelectuală",
+      "section3Text": "Textele, materialele vizuale și exemplele de caz sunt protejate și nu pot fi reutilizate fără acordul scris al Algorithm.",
+      "section4Title": "4. Solicitări de contact",
+      "section4Text": "Mesajele trimise prin formular sunt analizate cu bună-credință. Ne rezervăm dreptul de a refuza solicitări incomplete, abuzive sau în afara ariei noastre de servicii."
+    },
+    "cookies": {
+      "eyebrow": "Legal",
+      "title": "Politică Cookie",
+      "description": "Această politică explică modul în care folosim cookie-uri și tehnologii similare pentru funcționarea site-ului și îmbunătățirea experienței.",
+      "updatedLabel": "Ultima actualizare",
+      "updatedValue": "Februarie 2026",
+      "section1Title": "1. Ce sunt cookie-urile",
+      "section1Text": "Cookie-urile sunt fișiere text mici stocate în browser pentru memorarea preferințelor și a informațiilor de sesiune.",
+      "section2Title": "2. Cum le folosim",
+      "section2Text": "Algorithm utilizează cookie-uri esențiale pentru securitate, rutare pe limbi și navigare. Putem folosi și cookie-uri de analiză pentru optimizarea performanței.",
+      "section3Title": "3. Opțiunile tale",
+      "section3Text": "Poți bloca sau șterge cookie-urile din setările browserului. Dezactivarea cookie-urilor esențiale poate afecta funcționarea corectă a site-ului.",
+      "section4Title": "4. Servicii terțe",
+      "section4Text": "Serviciile integrate, precum hărțile sau platformele sociale, pot seta cookie-uri conform propriilor politici."
+    },
+    "privacy": {
+      "eyebrow": "Legal",
+      "title": "Politică de Confidențialitate",
+      "description": "Prelucrăm datele personale responsabil și exclusiv pentru comunicare și colaborare în contextul serviciilor de tehnică dentară.",
+      "updatedLabel": "Ultima actualizare",
+      "updatedValue": "Februarie 2026",
+      "section1Title": "1. Date colectate",
+      "section1Text": "Prin formularul de contact putem colecta numele, telefonul, adresa de email și detalii din mesaj.",
+      "section2Title": "2. Scopul prelucrării",
+      "section2Text": "Datele sunt folosite pentru a răspunde solicitărilor, a oferi suport tehnic și a gestiona discuțiile de colaborare.",
+      "section3Title": "3. Stocare și securitate",
+      "section3Text": "Păstrăm datele strict cât este necesar pentru comunicare și obligații legale, aplicând măsuri tehnice și organizaționale adecvate.",
+      "section4Title": "4. Drepturile tale",
+      "section4Text": "Poți solicita acces, rectificare, ștergere sau restricționarea prelucrării datelor prin email-ul afișat în footer."
+    }
+  },
+  "Footer": {
+    "brand": "Algorithm",
+    "tagline": "Laborator de tehnică dentară modern în Cluj-Napoca, orientat spre precizie, siguranță și rezultate predictibile.",
+    "addressLabel": "Adresă",
+    "addressValue": "Strada Someșului 18-22, Cluj-Napoca",
+    "phoneLabel": "Telefon",
+    "phoneValue": "+40753 081 961",
+    "emailLabel": "Email",
+    "emailValue": "contact@algorithm-clinic.ro",
+    "hoursLabel": "Program",
+    "hoursSummary": "Luni - Vineri: 8:00 - 18:00",
+    "hours": {
+      "monday": {
+        "day": "Luni",
+        "time": "8:00 - 18:00"
+      },
+      "tuesday": {
+        "day": "Marți",
+        "time": "8:00 - 18:00"
+      },
+      "wednesday": {
+        "day": "Miercuri",
+        "time": "8:00 - 18:00"
+      },
+      "thursday": {
+        "day": "Joi",
+        "time": "8:00 - 18:00"
+      },
+      "friday": {
+        "day": "Vineri",
+        "time": "8:00 - 18:00"
+      },
+      "saturday": {
+        "day": "Sâmbătă",
+        "time": "Închis"
+      },
+      "sunday": {
+        "day": "Duminică",
+        "time": "Închis"
+      }
+    },
+    "followUsLabel": "Urmărește-ne",
+    "followUsDescription": "Fii conectat cu activitatea noastră pentru noutăți, exemple de lucrări și contact rapid.",
+    "quickLinksLabel": "Link-uri rapide",
+    "contactInfoLabel": "Date de contact",
+    "legalLinksLabel": "Pagini legale",
+    "termsLink": "Termeni și Condiții",
+    "cookiesLink": "Politică Cookie",
+    "privacyLink": "Politică de Confidențialitate",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp",
+    "mapTitle": "Harta locației Algorithm",
+    "copyright": "(c) 2026 Algorithm. Toate drepturile rezervate."
+  }
+}

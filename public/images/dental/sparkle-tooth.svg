@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title desc">
+  <title id="title">Sparkle Tooth</title>
+  <desc id="desc">Animated sparkling tooth for dental quality visuals.</desc>
+  <rect width="400" height="300" rx="28" fill="#ecfeff"/>
+  <g transform="translate(145 58)">
+    <path d="M58 10c22 0 43 18 43 43 0 15-8 30-13 45-5 15-8 49-30 49S33 113 28 98c-5-15-13-30-13-45 0-25 21-43 43-43Z" fill="#ffffff" stroke="#0891b2" stroke-width="5"/>
+    <circle cx="45" cy="59" r="5.5" fill="#0f172a"/>
+    <circle cx="73" cy="59" r="5.5" fill="#0f172a"/>
+    <path d="M45 80c8 8 20 8 28 0" fill="none" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g fill="#14b8a6">
+    <path d="M90 90l6 11 11 6-11 6-6 11-6-11-11-6 11-6z">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M314 174l5 9 9 5-9 5-5 9-5-9-9-5 9-5z">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

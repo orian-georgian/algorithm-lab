@@ -1,0 +1,40 @@
+{
+  "name": "algorithm-clinic",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:clean": "powershell -NoProfile -Command \"if (Test-Path .next) { Remove-Item -Recurse -Force .next }; if (Test-Path node_modules\\.cache) { Remove-Item -Recurse -Force node_modules\\.cache }; if (Test-Path public\\sw.js) { Remove-Item -Force public\\sw.js }; if (Test-Path public\\workbox-*.js) { Remove-Item -Force public\\workbox-*.js }\"",
+    "dev:fresh": "npm run dev:clean && npm run dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "framer-motion": "^11.18.2",
+    "next": "^14.2.28",
+    "next-intl": "^3.26.5",
+    "next-pwa": "^5.6.0",
+    "next-seo": "^6.6.0",
+    "nodemailer": "^6.10.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.71.1",
+    "resend": "^4.8.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.24",
+    "@types/nodemailer": "^7.0.9",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.28",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.2"
+  }
+}

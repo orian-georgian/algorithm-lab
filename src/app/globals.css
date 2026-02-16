@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --clinic-white: 255 255 255;
+  --clinic-blue-50: 240 249 255;
+  --clinic-blue-100: 224 242 254;
+  --clinic-teal-100: 224 242 254;
+  --clinic-teal-200: 186 230 253;
+  --clinic-teal-600: 14 165 233;
+  --clinic-teal-700: 2 132 199;
+  --clinic-teal-800: 3 105 161;
+  --clinic-slate-50: 248 250 252;
+  --clinic-slate-600: 71 85 105;
+  --clinic-slate-700: 51 65 85;
+  --clinic-slate-800: 30 41 59;
+  --clinic-slate-900: 15 23 42;
+  --clinic-border: 203 226 243;
+  --clinic-page: 245 251 255;
+  color-scheme: light;
+}
+
+.dark {
+  --clinic-white: 15 23 42;
+  --clinic-blue-50: 12 28 48;
+  --clinic-blue-100: 7 45 78;
+  --clinic-teal-100: 7 89 133;
+  --clinic-teal-200: 2 132 199;
+  --clinic-teal-600: 56 189 248;
+  --clinic-teal-700: 125 211 252;
+  --clinic-teal-800: 186 230 253;
+  --clinic-slate-50: 226 232 240;
+  --clinic-slate-600: 203 213 225;
+  --clinic-slate-700: 226 232 240;
+  --clinic-slate-800: 241 245 249;
+  --clinic-slate-900: 248 250 252;
+  --clinic-border: 56 74 96;
+  --clinic-page: 3 10 24;
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sora), "Segoe UI", sans-serif;
+  @apply bg-clinic-page text-clinic-slate-900 antialiased transition-colors duration-300;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  border-radius: 9999px;
+  background: #0f766e;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 0.875rem;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-10;
+}
+
+@layer components {
+  .section-space {
+    @apply mt-12 sm:mt-20 lg:mt-24;
+  }
+
+  .text-display-sm {
+    @apply text-3xl font-semibold leading-tight text-clinic-slate-900 sm:text-4xl;
+  }
+
+  .section-lead {
+    @apply text-base leading-relaxed text-clinic-slate-700 sm:text-lg;
+  }
+
+  .skeleton {
+    @apply animate-pulse rounded-xl bg-clinic-blue-100;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

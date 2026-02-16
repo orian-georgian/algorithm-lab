@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title desc">
+  <title id="title">Cute Implant Smile</title>
+  <desc id="desc">Animated dental implant icon with smiling face.</desc>
+  <rect width="400" height="300" rx="28" fill="#ebf8ff"/>
+  <rect x="168" y="98" width="64" height="26" rx="10" fill="#ffffff" stroke="#0f766e" stroke-width="4"/>
+  <rect x="182" y="124" width="36" height="76" rx="12" fill="#99f6e4" stroke="#0f766e" stroke-width="4">
+    <animate attributeName="y" values="124;120;124" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <g transform="translate(120 168)">
+    <rect x="0" y="0" width="160" height="68" rx="30" fill="#ffffff" stroke="#0891b2" stroke-width="4"/>
+    <circle cx="54" cy="26" r="5" fill="#0f172a"/>
+    <circle cx="104" cy="26" r="5" fill="#0f172a"/>
+    <path d="M54 42c10 10 40 10 50 0" fill="none" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <circle cx="74" cy="66" r="16" fill="#a7f3d0" opacity="0.75"/>
+  <circle cx="332" cy="58" r="20" fill="#bae6fd" opacity="0.75"/>
+</svg>

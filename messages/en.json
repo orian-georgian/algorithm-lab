@@ -1,0 +1,492 @@
+{
+  "Metadata": {
+    "title": "Algorithm | Dental Technical Laboratory",
+    "description": "Dental technical laboratory in Cluj-Napoca with a complete digital workflow, medical-grade standards, and predictable esthetic outcomes.",
+    "ogImageAlt": "Algorithm dental technical laboratory in Cluj-Napoca"
+  },
+  "SeoPages": {
+    "ogImageAlt": "Algorithm dental technical laboratory in Cluj-Napoca",
+    "home": {
+      "title": "Dental laboratory Romania - Algorithm Cluj-Napoca",
+      "description": "Dental prosthetics lab in Cluj-Napoca with full digital workflow and implant-supported restorations."
+    },
+    "about": {
+      "title": "About us and team - Dental prosthetics lab",
+      "description": "Meet the Algorithm team delivering precise dental technical solutions for partner clinics."
+    },
+    "services": {
+      "title": "Services - Dental laboratory Romania",
+      "description": "Professional CAD/CAM crowns, implant prosthetics, and esthetic design services."
+    },
+    "gallery": {
+      "title": "Gallery - Dental technical work",
+      "description": "Visual portfolio with placeholders for clinical photos and laboratory workflow videos."
+    },
+    "cases": {
+      "title": "Before/After cases - Dental prosthetics lab",
+      "description": "Structured before/after case examples focused on functional stability and esthetics."
+    },
+    "contact": {
+      "title": "Contact - Laboratory tehnica dentara Cluj-Napoca",
+      "description": "Contact Algorithm for collaborations, treatment planning support, and technical communication."
+    }
+  },
+  "Navigation": {
+    "brand": "Algorithm",
+    "ariaMain": "Main navigation",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery",
+    "cases": "Cases",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "switchThemeDark": "Switch to dark mode",
+    "switchThemeLight": "Switch to light mode",
+    "switchTo": {
+      "ro": "Switch language to Romanian",
+      "en": "Switch language to English",
+      "de": "Switch language to German"
+    }
+  },
+  "Home": {
+    "heroEyebrow": "Private Dental Technical Laboratory",
+    "heroTitle": "Precise dental restorations with natural esthetics and full digital workflow.",
+    "heroDescription": "Algorithm partners with dentists and clinics to deliver premium prosthetic work with speed, safety, and consistency.",
+    "primaryCta": "Book a consultation",
+    "secondaryCta": "Explore services"
+  },
+  "HomeClosing": {
+    "eyebrow": "Final check",
+    "title": "Ready for a reliable laboratory partner?",
+    "description": "From fast communication to consistent delivery, Algorithm is built to support clinics and individual dentists with predictable technical outcomes.",
+    "pointOne": "Response in maximum one business day",
+    "pointOneDetail": "Each request is prioritized and reviewed quickly, with a clear and practical follow-up.",
+    "pointTwo": "Digital workflow with clear documentation",
+    "pointTwoDetail": "Every stage is documented for traceability, efficient communication, and precise technical decisions.",
+    "pointThree": "Long-term collaboration focused on quality",
+    "pointThreeDetail": "We build stable partnerships with clinics and dentists through consistency, precision, and trust.",
+    "cta": "View all services"
+  },
+  "AboutPage": {
+    "eyebrow": "About Algorithm",
+    "title": "Our dental technical team in Cluj-Napoca",
+    "description": "We build long-term medical partnerships through technical precision, transparency, and predictable outcomes.",
+    "storyTitle": "Our Story",
+    "storyLead": "Algorithm started with one clear goal: improve the collaboration standard between laboratory and clinician through structured workflows, technical clarity, and consistent outcomes.",
+    "storyP1": "In our early years, we focused on complex restorative cases that demanded precise fit and fast turnaround. That experience shaped our internal protocol: initial analysis, digital design, multi-step verification, and final documented validation.",
+    "storyP2": "Today, we support both clinics and individual dentists with a predictability-first approach. For us, each case means medical responsibility, attention to detail, and a long-term partnership built on trust.",
+    "missionTitle": "Clinical mission",
+    "missionText": "Our mission is to deliver durable and esthetic restorations with clear turnaround and strict quality controls.",
+    "missionTextExtra": "We focus on long-term functional stability through continuous technical communication with the clinician, proactive planning, and careful control of every production stage. Our objective is to reduce chairside adjustment time and improve patient comfort from the first try-in.",
+    "standardsTitle": "Quality standards",
+    "standardsText": "We use digital protocols, multi-step validation, and full case traceability.",
+    "standardsTextExtra": "Each case follows a documented workflow: initial analysis, CAD design, functional validation, controlled material selection, and final quality check before delivery. This model ensures consistency, repeatable quality, and transparency for our medical partners.",
+    "teamTitle": "Multidisciplinary team",
+    "teamLead": "Dedicated specialists combining clinical expertise, digital precision, and close attention to every prosthetic detail.",
+    "teamCta": "Talk to our team",
+    "teamImageAlt": "Algorithm dental laboratory team",
+    "mediaLabel": "Team photo placeholder",
+    "member1Name": "Dr. Ana Ionescu",
+    "member1Role": "Medical Coordinator",
+    "member1Bio": "Coordinates treatment goals between clinicians and the dental technical team.",
+    "member1Detail1": "Experience: 12+ years in interdisciplinary dental prosthetics.",
+    "member1Detail2": "Focus: clinic-laboratory protocols and functional predictability.",
+    "member2Name": "Mihai Pop",
+    "member2Role": "CAD/CAM Technician",
+    "member2Bio": "Leads digital design and marginal adaptation optimization for fixed restorations.",
+    "member2Detail1": "Experience: digital design for complex fixed restorations.",
+    "member2Detail2": "Focus: CAD/CAM precision, occlusion, and stable contacts.",
+    "member3Name": "Roxana Muresan",
+    "member3Role": "Implant Prosthetics Specialist",
+    "member3Bio": "Manages complex implant cases and validates each production stage.",
+    "member3Detail1": "Experience: advanced implant prosthetic planning.",
+    "member3Detail2": "Focus: passive fit and long-term natural esthetics."
+  },
+  "Services": {
+    "title": "Core services",
+    "lead": "Modern solutions for fixed and implant prosthetics, optimized for esthetics, durability, and functional comfort.",
+    "serviceLabel": "Service",
+    "pills": {
+      "one": "CAD/CAM digital workflow",
+      "two": "Strict quality control",
+      "three": "Technical support for clinics"
+    },
+    "one": {
+      "title": "CAD/CAM crowns and bridges",
+      "description": "Digital design and high-precision milling for excellent marginal adaptation.",
+      "pointOne": "Digital modeling aligned with the clinician's treatment plan.",
+      "pointTwo": "Controlled finishing for stable occlusal contacts.",
+      "outcome": "Outcome: fixed restorations with reliable functional integration."
+    },
+    "two": {
+      "title": "Implant prosthetics",
+      "description": "Customized frameworks for long-term stability and proper functional integration.",
+      "pointOne": "Prosthetic planning based on implant angulation and available space.",
+      "pointTwo": "Multi-step verification for precise implant adaptation.",
+      "outcome": "Outcome: biomechanical stability and predictable chewing comfort."
+    },
+    "three": {
+      "title": "Digital esthetic design",
+      "description": "Dento-facial proportion analysis and digital simulation for predictable esthetic results.",
+      "pointOne": "Shape, volume, and symmetry analysis for the anterior area.",
+      "pointTwo": "Shade selection aligned with the patient's esthetic context.",
+      "outcome": "Outcome: natural esthetics with balanced dento-facial harmony."
+    },
+    "four": {
+      "title": "Retouch and maintenance",
+      "description": "Fast adjustments, quality control, and ongoing technical support for partner dentists.",
+      "pointOne": "Targeted interventions to refine contacts and final adaptation.",
+      "pointTwo": "Direct technical communication for urgent or complex cases.",
+      "outcome": "Outcome: strong clinical continuity with faster response times."
+    },
+    "qualityTitle": "Professional standard at every stage",
+    "qualityText": "Each case follows a documented workflow: initial analysis, design, production, and final validation. We work with clear communication protocols, intermediate quality checks, and strict material control to reduce chairside adjustment time and deliver consistent functional and esthetic outcomes for both clinicians and patients.",
+    "requestOfferCta": "Request offer",
+    "seeMoreServicesCta": "See more services"
+  },
+  "ServicesPage": {
+    "eyebrow": "Services",
+    "title": "Dental laboratory services for simple and complex cases",
+    "description": "We provide restorative workflows focused on long-term function, natural esthetics, and clinical efficiency.",
+    "workflowTitle": "Standardized digital workflow",
+    "workflowText": "Each case is documented and validated before delivery to reduce chairside adjustment time.",
+    "workflowImageAlt": "Dental laboratory digital workflow",
+    "workflowLabel": "Workflow placeholder",
+    "step1Title": "1. Scan and analysis",
+    "step1Text": "We receive intraoral scans or conventional models and define the technical protocol.",
+    "step2Title": "2. Digital design",
+    "step2Text": "Restoration design is completed in CAD with occlusal and contact checks.",
+    "step3Title": "3. Production",
+    "step3Text": "Milling, sintering, and finishing follow material-specific medical protocols.",
+    "step4Title": "4. Final control",
+    "step4Text": "Final validation includes fit, esthetics, and case documentation.",
+    "step5Title": "5. Technical feedback",
+    "step5Text": "We communicate relevant observations to the clinician for proactive adjustments and efficient clinical integration.",
+    "step6Title": "6. Delivery and post-case support",
+    "step6Text": "We provide documented handoff and technical support after delivery to maintain a stable long-term outcome.",
+    "secondaryTitle": "Secondary services",
+    "secondaryLead": "Additional options for technical support, maintenance, and long-term predictability in clinic-laboratory collaboration.",
+    "secondary1Title": "Case-based technical consulting",
+    "secondary1Text": "Review of clinical indications, material recommendations, and guidance for selecting the right prosthetic solution.",
+    "secondary1Point1": "Interdisciplinary review of the clinical plan before production.",
+    "secondary1Point2": "Guided choice between prosthetic options based on functional objectives.",
+    "secondary1Outcome": "Outcome: faster technical decisions with lower risk of later adjustments.",
+    "secondary2Title": "Fast adjustments and optimization",
+    "secondary2Text": "Targeted refinements for fit, occlusion, and functional integration with short turnaround.",
+    "secondary2Point1": "Controlled corrections for proximal and occlusal contacts.",
+    "secondary2Point2": "Priority handling for urgent cases and tight clinical deadlines.",
+    "secondary2Outcome": "Outcome: stronger clinical continuity and predictable turnaround.",
+    "secondary3Title": "Digital workflow support",
+    "secondary3Text": "Assistance for CAD/CAM workflows, file transfer, and standardized handoff between clinic and laboratory.",
+    "secondary3Point1": "Validation of files, formats, and technical parameters before processing.",
+    "secondary3Point2": "Shared communication protocol for clear feedback at every stage.",
+    "secondary3Outcome": "Outcome: smoother digital collaboration and fewer transfer-related errors.",
+    "finalCta": "Request a personalized offer"
+  },
+  "Testimonials": {
+    "title": "Feedback from medical partners",
+    "lead": "Dental clinics and individual dentists working with Algorithm for consistent outcomes.",
+    "one": {
+      "type": "Laboratory",
+      "quote": "The fit is consistently excellent, and turnaround times stay reliable even for complex cases.",
+      "author": "Dr. Andrew M., Dentist"
+    },
+    "two": {
+      "type": "Doctor",
+      "quote": "Communication is clear and each case includes complete documentation and practical technical guidance.",
+      "author": "Dr. Bianca R., Implantology"
+    },
+    "three": {
+      "type": "Doctor",
+      "quote": "Patients appreciate the natural esthetics and immediate comfort after insertion.",
+      "author": "Dr. Radu C., Prosthodontics"
+    },
+    "four": {
+      "type": "Clinic",
+      "quote": "Communication with the laboratory team is fast and accurate, making complex case planning much easier.",
+      "author": "Smile Care Cluj, Partner clinic"
+    },
+    "five": {
+      "type": "Doctor",
+      "quote": "Case documentation is clear, and the technical guidance helps us make better decisions quickly.",
+      "author": "Dr. Elena T., Prosthodontics"
+    },
+    "six": {
+      "type": "Clinic",
+      "quote": "Working with Algorithm significantly reduced chairside adjustments and improved patient satisfaction.",
+      "author": "Nova Dental, Medical manager"
+    },
+    "seven": {
+      "type": "Doctor",
+      "quote": "Implant restorations show excellent stability, and functional integration is very predictable.",
+      "author": "Dr. Mihai P., Surgery and implantology"
+    },
+    "eight": {
+      "type": "Doctor",
+      "quote": "I value the attention to esthetic details and the consistency of outcomes, even on short timelines.",
+      "author": "Dr. Ioana S., Oral rehabilitation"
+    },
+    "nine": {
+      "type": "Clinic",
+      "quote": "The standardized digital workflow gives us confidence in every delivery and a strong long-term technical partnership.",
+      "author": "Dental Point, Clinic coordinator"
+    },
+    "showMore": "See more reviews"
+  },
+  "Gallery": {
+    "title": "Laboratory gallery",
+    "lead": "Examples of completed work and internal workflow. Media can be replaced later with the same layout.",
+    "placeholder": "Media Placeholder",
+    "itemAlt": "Gallery image {index}",
+    "viewMore": "See more images"
+  },
+  "GalleryPage": {
+    "eyebrow": "Gallery",
+    "title": "Visual portfolio of dental prosthetics laboratory work",
+    "description": "Structured visual blocks for photos and videos documenting dental technical processes.",
+    "gridTitle": "Laboratory image gallery",
+    "gridLead": "Presentation images for workstations, digital workflows, and quality control.",
+    "openImage": "Open image",
+    "closeLightbox": "Close",
+    "previousImage": "Previous",
+    "nextImage": "Next",
+    "videoTitle": "Video section",
+    "videoLead": "Here you can watch short laboratory demonstrations: production stages, precision equipment work, and technical workflows used in real cases.",
+    "mediaPolicyTitle": "Media policy",
+    "mediaPolicyText": "All media blocks are prepared for fast replacement with real laboratory content.",
+    "replacementTitle": "Content replacement",
+    "replacementText": "You can update media assets without changing the responsive layout structure.",
+    "videoCta": "Request collaboration",
+    "showMore": "Show more images"
+  },
+  "CasesPage": {
+    "eyebrow": "Clinical cases",
+    "title": "Clinical before-and-after cases for prosthetic rehabilitation",
+    "description": "Case studies focused on function, esthetics, and predictability, produced by the Algorithm laboratory for medical partners with clear technical context.",
+    "beforeLabel": "Before",
+    "afterLabel": "After",
+    "case1Title": "Anterior esthetics",
+    "case1Summary": "Shape and color correction for a front-zone esthetic restoration.",
+    "case1Work": "We performed digital esthetic analysis, contour refinement, and shade validation for natural integration in the anterior area.",
+    "case1Point1": "Digital planning for balanced proportions in the anterior segment.",
+    "case1Point2": "Final validation of texture and translucency details.",
+    "case1BeforeAlt": "Case 1 before prosthetic treatment",
+    "case1AfterAlt": "Case 1 after prosthetic treatment",
+    "case2Title": "Posterior crowns",
+    "case2Summary": "Functional occlusal reconstruction for better long-term chewing stability.",
+    "case2Work": "We optimized occlusal and proximal contacts to improve force distribution and deliver stable functional comfort.",
+    "case2Point1": "Occlusal calibration for stability and controlled wear behavior.",
+    "case2Point2": "Precise marginal fit for predictable long-term integration.",
+    "case2BeforeAlt": "Case 2 before restoration",
+    "case2AfterAlt": "Case 2 after restoration",
+    "case3Title": "Implant support",
+    "case3Summary": "Custom implant-supported restoration with high precision adaptation.",
+    "case3Work": "The prosthetic framework was digitally designed and validated in multiple stages for passive fit, stability, and predictable integration.",
+    "case3Point1": "Passive-fit verification at the implant-prosthetic connection.",
+    "case3Point2": "Esthetic control of emergence profile and cervical contour.",
+    "case3BeforeAlt": "Case 3 before implant prosthetics",
+    "case3AfterAlt": "Case 3 after implant prosthetics",
+    "case4Title": "Extended rehabilitation",
+    "case4Summary": "Multi-step prosthetic rehabilitation with stable final integration.",
+    "case4Work": "This case included interdisciplinary planning, sequenced production, and strict final quality control for consistent long-term results.",
+    "case4Point1": "Step-based technical protocol for full-arch consistency.",
+    "case4Point2": "Final functional and esthetic validation before delivery.",
+    "case4BeforeAlt": "Case 4 before rehabilitation",
+    "case4AfterAlt": "Case 4 after rehabilitation",
+    "contextTitle": "How to read these cases",
+    "contextLead": "Each before/after comparison highlights the laboratory contribution in design, fit, and final validation of the restoration.",
+    "contextPointOne": "The analysis covers functional objectives, occlusal stability, and esthetic integration in the clinical context.",
+    "contextPointTwo": "These outcomes are demonstrative and intended to support technical discussions between dentist and laboratory.",
+    "contextPointThree": "Every case follows a standardized workflow: planning, controlled production, and final quality verification.",
+    "finalCta": "Request an evaluation for your case"
+  },
+  "Contact": {
+    "title": "Contact and appointments",
+    "lead": "Send a message for collaboration, personalized offers, or details about a clinical case.",
+    "addressLabel": "Address",
+    "addressValue": "10 Memorandumului Street, Cluj-Napoca, Romania",
+    "phoneLabel": "Phone",
+    "phoneValue": "+40 264 000 000",
+    "emailLabel": "Email",
+    "emailValue": "contact@algorithm-clinic.ro",
+    "hoursLabel": "Hours",
+    "hoursValue": "Monday - Friday: 8:00 AM - 6:00 PM",
+    "formTitle": "Request a callback",
+    "name": "Name",
+    "namePlaceholder": "Full name",
+    "phone": "Phone",
+    "phonePlaceholder": "+40 7xx xxx xxx",
+    "email": "Email",
+    "emailPlaceholder": "address@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Tell us briefly what type of collaboration you need.",
+    "careMessage": "Every request matters to us. Thank you for your interest in our dental technical laboratory. The Algorithm team reviews each message carefully and gets back to you as quickly as possible with a clear response and professional support.",
+    "gdprText": "I agree to the processing of my personal data for the purpose of being contacted regarding this request.",
+    "submit": "Send request",
+    "submitting": "Sending...",
+    "successMessage": "Your request was sent successfully. We will contact you shortly.",
+    "errorMessage": "We could not send your message right now. Please try again in a few minutes.",
+    "mapTitle": "Google map for Algorithm laboratory in Cluj-Napoca",
+    "errors": {
+      "nameMin": "Name must have at least 2 characters.",
+      "nameMax": "Name is too long.",
+      "phoneMin": "Phone number is too short.",
+      "phoneMax": "Phone number is too long.",
+      "phoneInvalid": "Phone number format is invalid.",
+      "emailInvalid": "Please enter a valid email address.",
+      "emailMax": "Email is too long.",
+      "messageMin": "Message must have at least 10 characters.",
+      "messageMax": "Message is too long.",
+      "gdprRequired": "You must accept GDPR consent before submitting."
+    },
+    "hours": {
+      "monday": {
+        "day": "Monday",
+        "time": "8:00 AM - 6:00 PM"
+      },
+      "tuesday": {
+        "day": "Tuesday",
+        "time": "8:00 AM - 6:00 PM"
+      },
+      "wednesday": {
+        "day": "Wednesday",
+        "time": "8:00 AM - 6:00 PM"
+      },
+      "thursday": {
+        "day": "Thursday",
+        "time": "8:00 AM - 6:00 PM"
+      },
+      "friday": {
+        "day": "Friday",
+        "time": "8:00 AM - 6:00 PM"
+      },
+      "saturday": {
+        "day": "Saturday",
+        "time": "Closed"
+      },
+      "sunday": {
+        "day": "Sunday",
+        "time": "Closed"
+      }
+    }
+  },
+  "ContactPage": {
+    "eyebrow": "Contact",
+    "title": "Contact the Algorithm dental laboratory team",
+    "description": "Reach out for case planning, timeline estimates, and direct technical communication.",
+    "visitTitle": "Visit planning",
+    "visitText": "For technical review meetings, please schedule in advance by phone or email.",
+    "emergencyTitle": "Urgent cases",
+    "emergencyText": "For urgent requests, include the case type and required clinical deadline.",
+    "mapAlt": "Map placeholder for dental laboratory in Cluj",
+    "mapLabel": "Map/video location placeholder"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The requested page does not exist or may have been moved.",
+    "cta": "Back to homepage"
+  },
+  "LegalPages": {
+    "terms": {
+      "eyebrow": "Legal",
+      "title": "Terms and Conditions",
+      "description": "These terms define how dental professionals and partners may use this website and submit requests through Algorithm.",
+      "updatedLabel": "Last update",
+      "updatedValue": "February 2026",
+      "section1Title": "1. Website purpose",
+      "section1Text": "This website presents the services, workflow, and contact channels of the Algorithm dental technical laboratory in Cluj-Napoca.",
+      "section2Title": "2. Informational content",
+      "section2Text": "All materials are for professional information only and do not replace direct clinical evaluation or a written agreement between the laboratory and the partner dentist.",
+      "section3Title": "3. Intellectual property",
+      "section3Text": "Text, visual assets, and case samples are protected and cannot be reused or distributed without written permission from Algorithm.",
+      "section4Title": "4. Contact requests",
+      "section4Text": "Messages sent through the contact form are reviewed in good faith. We reserve the right to decline requests that are incomplete, abusive, or outside our service scope."
+    },
+    "cookies": {
+      "eyebrow": "Legal",
+      "title": "Cookie Policy",
+      "description": "This policy explains how we use cookies and similar technologies to ensure functionality and improve user experience.",
+      "updatedLabel": "Last update",
+      "updatedValue": "February 2026",
+      "section1Title": "1. What are cookies",
+      "section1Text": "Cookies are small text files stored in your browser to remember preferences and basic session details.",
+      "section2Title": "2. How we use them",
+      "section2Text": "Algorithm uses essential cookies for security, language routing, and core navigation. We may also use analytics cookies to improve performance.",
+      "section3Title": "3. Your control options",
+      "section3Text": "You can block or delete cookies from browser settings. Disabling essential cookies may affect website functionality.",
+      "section4Title": "4. Third-party services",
+      "section4Text": "Embedded services such as maps or social media links may set cookies under their own policies."
+    },
+    "privacy": {
+      "eyebrow": "Legal",
+      "title": "Privacy Policy",
+      "description": "We process personal data responsibly and only for communication and collaboration purposes related to dental laboratory services.",
+      "updatedLabel": "Last update",
+      "updatedValue": "February 2026",
+      "section1Title": "1. Data we collect",
+      "section1Text": "Through the contact form we may collect name, phone number, email address, and your message details.",
+      "section2Title": "2. Why we process data",
+      "section2Text": "Data is processed to respond to inquiries, provide technical support, and manage collaboration discussions.",
+      "section3Title": "3. Data retention and security",
+      "section3Text": "We store data only as needed for communication and legal compliance, with reasonable technical and organizational safeguards.",
+      "section4Title": "4. Your rights",
+      "section4Text": "You may request access, correction, deletion, or restriction of your data processing by contacting us at the email address listed in the footer."
+    }
+  },
+  "Footer": {
+    "brand": "Algorithm",
+    "tagline": "Modern dental technical laboratory in Cluj-Napoca focused on precision, safety, and predictable medical outcomes.",
+    "addressLabel": "Address",
+    "addressValue": "Strada Someșului 18-22, Cluj-Napoca",
+    "phoneLabel": "Phone",
+    "phoneValue": "+40753 081 961",
+    "emailLabel": "Email",
+    "emailValue": "contact@algorithm-clinic.ro",
+    "hoursLabel": "Working hours",
+    "hoursSummary": "Monday - Friday: 8:00 AM - 6:00 PM",
+    "hours": {
+      "monday": {
+        "day": "Monday",
+        "time": "8:00 AM - 6:00 PM"
+      },
+      "tuesday": {
+        "day": "Tuesday",
+        "time": "8:00 AM - 6:00 PM"
+      },
+      "wednesday": {
+        "day": "Wednesday",
+        "time": "8:00 AM - 6:00 PM"
+      },
+      "thursday": {
+        "day": "Thursday",
+        "time": "8:00 AM - 6:00 PM"
+      },
+      "friday": {
+        "day": "Friday",
+        "time": "8:00 AM - 6:00 PM"
+      },
+      "saturday": {
+        "day": "Saturday",
+        "time": "Closed"
+      },
+      "sunday": {
+        "day": "Sunday",
+        "time": "Closed"
+      }
+    },
+    "followUsLabel": "Follow us",
+    "followUsDescription": "Connect with us for updates, project highlights, and direct messaging.",
+    "quickLinksLabel": "Quick links",
+    "contactInfoLabel": "Contact details",
+    "legalLinksLabel": "Legal pages",
+    "termsLink": "Terms and Conditions",
+    "cookiesLink": "Cookie Policy",
+    "privacyLink": "Privacy Policy",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp",
+    "mapTitle": "Map location for Algorithm",
+    "copyright": "(c) 2026 Algorithm. All rights reserved."
+  }
+}
