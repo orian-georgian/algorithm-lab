@@ -1,8 +1,10 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useLocale } from "next-intl";
 
 const WHATSAPP_PHONE = "40753081961";
+const COOKIE_CONSENT_STORAGE_KEY = "algorithm_cookie_consent";
 
 const prefilledMessages: Record<string, string> = {
   ro: "Buna, as dori sa discutam!",
@@ -18,9 +20,47 @@ const labels: Record<string, string> = {
 
 export function WhatsAppWidget() {
   const locale = useLocale();
+  const [cookieBannerVisible, setCookieBannerVisible] = useState(false);
+  const [cookieLiftBottomPx, setCookieLiftBottomPx] = useState(180);
   const message = prefilledMessages[locale] ?? prefilledMessages.en;
   const ariaLabel = labels[locale] ?? labels.en;
   const href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+
+  useEffect(() => {
+    const updateLiftFromBanner = () => {
+      const banner = document.getElementById("cookie-consent-banner");
+      if (!banner) return;
+
+      const computed = window.getComputedStyle(banner);
+      const bannerBottom = Number.parseFloat(computed.bottom) || 0;
+      const gap = 14;
+      setCookieLiftBottomPx(Math.ceil(bannerBottom + banner.offsetHeight + gap));
+    };
+
+    const syncCookieBannerState = () => {
+      try {
+        const saved = localStorage.getItem(COOKIE_CONSENT_STORAGE_KEY);
+        const isVisible = !(saved === "accepted" || saved === "rejected");
+        setCookieBannerVisible(isVisible);
+        if (isVisible) {
+          window.requestAnimationFrame(updateLiftFromBanner);
+        }
+      } catch {
+        setCookieBannerVisible(true);
+        window.requestAnimationFrame(updateLiftFromBanner);
+      }
+    };
+
+    syncCookieBannerState();
+    window.addEventListener("cookie-consent-changed", syncCookieBannerState);
+    window.addEventListener("storage", syncCookieBannerState);
+    window.addEventListener("resize", updateLiftFromBanner);
+    return () => {
+      window.removeEventListener("cookie-consent-changed", syncCookieBannerState);
+      window.removeEventListener("storage", syncCookieBannerState);
+      window.removeEventListener("resize", updateLiftFromBanner);
+    };
+  }, []);
 
   return (
     <a
@@ -28,7 +68,13 @@ export function WhatsAppWidget() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={ariaLabel}
-      className="fixed bottom-[max(1.25rem,env(safe-area-inset-bottom))] left-[max(1.25rem,env(safe-area-inset-left))] z-[50] inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#25D366] to-[#1FA855] text-white shadow-[0_10px_26px_rgba(15,23,42,0.28)] transition-transform duration-200 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 focus-visible:ring-offset-2 focus-visible:ring-offset-clinic-white print:hidden sm:bottom-[max(1.5rem,env(safe-area-inset-bottom))] sm:left-[max(1.5rem,env(safe-area-inset-left))] sm:z-[70] sm:h-15 sm:w-15"
+      style={cookieBannerVisible ? { bottom: `${cookieLiftBottomPx}px` } : undefined}
+      className={[
+        "fixed left-[max(1.25rem,env(safe-area-inset-left))] inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#25D366] to-[#1FA855] text-white shadow-[0_10px_26px_rgba(15,23,42,0.28)] transition-transform duration-200 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 focus-visible:ring-offset-2 focus-visible:ring-offset-clinic-white print:hidden sm:left-[max(1.5rem,env(safe-area-inset-left))] sm:h-15 sm:w-15",
+        cookieBannerVisible
+          ? "z-[75]"
+          : "bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-[50] sm:bottom-[max(1.5rem,env(safe-area-inset-bottom))] sm:z-[70]",
+      ].join(" ")}
     >
       <svg viewBox="0 0 32 32" className="h-7 w-7" aria-hidden="true">
         <path

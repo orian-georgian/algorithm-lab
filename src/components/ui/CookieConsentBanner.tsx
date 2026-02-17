@@ -63,6 +63,7 @@ export function CookieConsentBanner() {
       localStorage.setItem(STORAGE_KEY, value);
       const maxAge = 60 * 60 * 24 * 180;
       document.cookie = `cookie_consent=${value}; Max-Age=${maxAge}; Path=/; SameSite=Lax`;
+      window.dispatchEvent(new Event("cookie-consent-changed"));
     } catch {
       // Ignore storage errors; still hide to avoid blocking UX.
     }
@@ -73,10 +74,11 @@ export function CookieConsentBanner() {
 
   return (
     <section
+      id="cookie-consent-banner"
       role="dialog"
       aria-live="polite"
       aria-label={copy.title}
-      className="fixed bottom-[max(0.75rem,env(safe-area-inset-bottom))] left-[max(1rem,env(safe-area-inset-left))] right-[max(1rem,env(safe-area-inset-right))] z-[65] print:hidden sm:left-[max(1.5rem,env(safe-area-inset-left))] sm:right-auto sm:w-[min(calc(100vw-3rem),340px)] lg:left-[max(2.5rem,env(safe-area-inset-left))] lg:w-[min(calc(100vw-5rem),340px)]"
+      className="fixed bottom-[max(1.25rem,env(safe-area-inset-bottom))] left-[max(1.25rem,env(safe-area-inset-left))] right-[max(1.25rem,env(safe-area-inset-right))] z-[65] print:hidden sm:bottom-[max(1.5rem,env(safe-area-inset-bottom))] sm:left-[max(1.5rem,env(safe-area-inset-left))] sm:right-auto sm:w-[min(calc(100vw-3rem),340px)]"
     >
       <div className="w-full rounded-xl border border-clinic-border bg-clinic-white p-3 shadow-[0_12px_30px_rgba(15,23,42,0.14)] dark:border-slate-700 dark:bg-slate-950">
         <div className="flex flex-col gap-2.5">
