@@ -67,7 +67,13 @@ function FemaleDoctorIcon() {
   );
 }
 
-export function TestimonialsSection() {
+type TestimonialsSectionProps = {
+  showStepLabel?: boolean;
+};
+
+export function TestimonialsSection({
+  showStepLabel = true,
+}: TestimonialsSectionProps) {
   const t = useTranslations("Testimonials");
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
 
@@ -84,7 +90,12 @@ export function TestimonialsSection() {
     <section id="testimonials" className="relative isolate">
       <div className="py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-display-sm">{t("title")}</h2>
+          {showStepLabel ? (
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-clinic-teal-700 sm:text-xs">
+              {t("timelineLabel")}
+            </p>
+          ) : null}
+          <h2 className="mt-3 text-display-sm">{t("title")}</h2>
           <p className="section-lead mt-4">{t("lead")}</p>
         </div>
 
@@ -123,6 +134,7 @@ export function TestimonialsSection() {
             </button>
           </div>
         ) : null}
+
       </div>
     </section>
   );

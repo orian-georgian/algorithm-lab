@@ -41,6 +41,15 @@
     "cases": "Faelle",
     "testimonials": "Referenzen",
     "contact": "Kontakt",
+    "contactUs": "Kontakt aufnehmen",
+    "callUs": "Rufen Sie uns an",
+    "headerCta": "Zusammenarbeit anfragen",
+    "topBarNote": "Dentaltechnisches Labor in Cluj-Napoca | Montag-Freitag: 8:00 - 18:00",
+    "topBarCta": "Kontakt",
+    "emailUs": "E-Mail senden",
+    "whatsapp": "WhatsApp",
+    "openMenu": "Menue oeffnen",
+    "closeMenu": "Menue schliessen",
     "switchThemeDark": "In den Dunkelmodus wechseln",
     "switchThemeLight": "In den Hellmodus wechseln",
     "switchTo": {
@@ -50,11 +59,34 @@
     }
   },
   "Home": {
-    "heroEyebrow": "Dentaltechnisches Labor",
-    "heroTitle": "Praezise Zahnrestaurationen mit natuerlicher Aesthetik und vollem digitalem Workflow.",
-    "heroDescription": "Algorithm arbeitet mit Zahnaerzten und Kliniken zusammen, um hochwertige prothetische Arbeiten schnell, sicher und konsistent zu liefern.",
+    "heroEyebrow": "Willkommen bei Algorithm",
+    "heroTitle": "Praezise Dentaltechnik mit echter Sorgfalt in jedem Detail.",
+    "heroDescription": "Wir sind ein interdisziplinaeres Team aus Cluj-Napoca und setzen klinische Plaene in vorhersagbare, aesthetische und funktionelle Restaurationen um - mit digitalem Workflow und klaren professionellen Standards.",
     "primaryCta": "Beratung buchen",
     "secondaryCta": "Leistungen ansehen"
+  },
+  "HomeStats": {
+    "timelineLabel": "Schritt 3 - Ergebnisse",
+    "title": "Nachgewiesene Erfahrung aus ueber 5 Jahren",
+    "lead": "Die Kennzahlen bestaetigen unsere Wirkung: stabile Partnerschaften, viele Faelle und konstant verlaessliche Lieferungen.",
+    "dentists": {
+      "value": "150+",
+      "label": "Zahnaerzte"
+    },
+    "clinics": {
+      "value": "100+",
+      "label": "Kliniken"
+    },
+    "cases": {
+      "value": "1000+",
+      "label": "Faelle"
+    },
+    "years": {
+      "value": "5+",
+      "label": "Jahre"
+    },
+    "bridgeToFeedback": "Diese Ergebnisse werden unten durch das Feedback unserer medizinischen Partner aus realen Kooperationen bestaetigt.",
+    "cta": "Zusammenarbeit anfragen"
   },
   "HomeClosing": {
     "eyebrow": "Abschluss",
@@ -82,8 +114,9 @@
     "standardsTitle": "Qualitaetsstandards",
     "standardsText": "Wir arbeiten mit digitalen Protokollen, Mehrstufenkontrolle und vollstaendiger Rueckverfolgbarkeit.",
     "standardsTextExtra": "Jeder Fall folgt einem dokumentierten Ablauf: Erstanalyse, CAD-Planung, funktionelle Validierung, kontrollierte Materialauswahl und finale Qualitaetspruefung vor Auslieferung. Dieses Modell sichert Konsistenz, reproduzierbare Qualitaet und Transparenz fuer unsere medizinischen Partner.",
-    "teamTitle": "Interdisziplinaeres Team",
-    "teamLead": "Engagierte Spezialisten, die klinische Expertise, digitale Praezision und hohe Detailgenauigkeit verbinden.",
+    "teamTimelineLabel": "Schritt 2 - Team",
+    "teamTitle": "Das interdisziplinaere Team hinter jeder Arbeit",
+    "teamLead": "Engagierte Techniker und Spezialisten mit einer gemeinsamen Mission: konstante Qualitaet, klare Kommunikation und Ergebnisse, die Vertrauen schaffen.",
     "teamCta": "Unser Team kontaktieren",
     "teamImageAlt": "Team des Algorithm Dentallabors",
     "mediaLabel": "Teamfoto Platzhalter",
@@ -104,8 +137,9 @@
     "member3Detail2": "Fokus: passive Passung und natuerliche Langzeitaesthetik."
   },
   "Services": {
-    "title": "Kernleistungen",
-    "lead": "Moderne Loesungen fuer festsitzende und implantatgetragene Prothetik, optimiert fuer Aesthetik, Haltbarkeit und Komfort.",
+    "timelineLabel": "Schritt 1 - Leistungen",
+    "title": "So arbeiten wir taeglich fuer planbare Ergebnisse",
+    "lead": "Unsere Leistungen verbinden technische Praezision, Liebe zum Detail und medizinische Verantwortung fuer Restaurationen, auf die Sie sich verlassen koennen.",
     "serviceLabel": "Leistung",
     "pills": {
       "one": "Digitaler CAD/CAM Workflow",
@@ -149,6 +183,8 @@
     "eyebrow": "Leistungen",
     "title": "Dentallabor Leistungen fuer einfache und komplexe Faelle",
     "description": "Unsere Arbeitsablaeufe fokussieren langfristige Funktion, natuerliche Aesthetik und klinische Effizienz.",
+    "sectionTitle": "Unsere Kernleistungen im taeglichen Laboralltag",
+    "sectionLead": "Das sind die wichtigsten Leistungen, auf die sich Kliniken und Zahnaerzte fuer planbare Ergebnisse verlassen.",
     "workflowTitle": "Standardisierter digitaler Workflow",
     "workflowText": "Jeder Fall wird vor Auslieferung dokumentiert und validiert, um Stuhlanpassungen zu minimieren.",
     "workflowImageAlt": "Digitaler Workflow im Dentallabor",
@@ -185,8 +221,9 @@
     "finalCta": "Personalisierte Anfrage senden"
   },
   "Testimonials": {
-    "title": "Feedback medizinischer Partner",
-    "lead": "Zahnarztpraxen, Kliniken und einzelne Zahnaerzte, die mit Algorithm fuer konsistente Ergebnisse arbeiten.",
+    "timelineLabel": "Schritt 4 - Bestaetigtes Vertrauen",
+    "title": "Unsere Partner bestaetigen den Wert der Zusammenarbeit",
+    "lead": "Auf Ergebnisse folgt echte Bestaetigung: direktes Feedback von Kliniken und einzelnen Zahnaerzten, die regelmaessig mit Algorithm arbeiten.",
     "one": {
       "type": "Labor",
       "quote": "Die Passung ist konstant hervorragend, und die Lieferzeiten bleiben auch bei komplexen Faellen verlaesslich.",
@@ -235,8 +272,9 @@
     "showMore": "Mehr Bewertungen anzeigen"
   },
   "Gallery": {
-    "title": "Laborgalerie",
-    "lead": "Beispiele abgeschlossener Arbeiten und interner Prozesse. Medien koennen spaeter in derselben Struktur ersetzt werden.",
+    "timelineLabel": "Schritt 5 - Galerie",
+    "title": "Einblick ins Labor: echte Arbeit, echte Sorgfalt",
+    "lead": "Hier sehen Sie unsere taegliche Arbeit in der Praxis: technische Schritte, Arbeitsablaeufe und qualitaetsorientierte Ausfuehrung.",
     "placeholder": "Medien Platzhalter",
     "itemAlt": "Galeriebild {index}",
     "viewMore": "Mehr Bilder ansehen"
@@ -302,8 +340,9 @@
     "finalCta": "Bewertung fuer Ihren Fall anfragen"
   },
   "Contact": {
-    "title": "Kontakt und Termine",
-    "lead": "Senden Sie eine Nachricht fuer Zusammenarbeit, ein individuelles Angebot oder Details zu einem klinischen Fall.",
+    "timelineLabel": "Schritt 6 - Kontakt",
+    "title": "Letzter Schritt: lassen Sie uns Ihren naechsten Fall gemeinsam aufbauen",
+    "lead": "Wenn Sie einen verlaesslichen technischen Partner suchen, schreiben Sie uns. Wir antworten schnell, klar und loesungsorientiert.",
     "addressLabel": "Adresse",
     "addressValue": "Memorandumului Strasse 10, Cluj-Napoca, Rumaenien",
     "phoneLabel": "Telefon",
@@ -375,6 +414,8 @@
     "eyebrow": "Kontakt",
     "title": "Direkter Kontakt mit dem Algorithm Labor-Team",
     "description": "Kontaktieren Sie uns fuer Fallplanung, Zeitrahmen und technischen Austausch.",
+    "sectionTitle": "Erzaehlen Sie uns kurz von Ihrem Fall",
+    "sectionLead": "Senden Sie uns die Details, und wir antworten mit einer klaren technischen Richtung und den naechsten Schritten.",
     "visitTitle": "Besuchsplanung",
     "visitText": "Fuer technische Besprechungen empfehlen wir eine Terminvereinbarung per Telefon oder E-Mail.",
     "emergencyTitle": "Dringende Faelle",
@@ -490,3 +531,5 @@
     "copyright": "(c) 2026 Algorithm. Alle Rechte vorbehalten."
   }
 }
+
+

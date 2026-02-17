@@ -21,10 +21,11 @@ export default function LocaleError({ error, reset }: Props) {
       <button
         type="button"
         onClick={reset}
-        className="mt-6 rounded-full bg-clinic-teal-700 px-5 py-2.5 text-sm font-semibold text-white"
+        className="mt-6 rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-5 py-2.5 text-sm font-semibold text-white dark:text-slate-950"
       >
         Try again
       </button>
     </section>
   );
 }
+

@@ -39,9 +39,7 @@ export function ThemeToggle() {
       aria-label={isDark ? t("switchThemeLight") : t("switchThemeDark")}
       className={[
         "inline-flex h-9 w-9 items-center justify-center rounded-xl border text-clinic-slate-700 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600",
-        isDark
-          ? "border-clinic-teal-700 bg-clinic-teal-700 text-white shadow-soft hover:bg-clinic-teal-800"
-          : "border-clinic-border bg-clinic-white shadow-soft hover:bg-clinic-blue-50",
+        "border-clinic-border bg-clinic-blue-50 text-clinic-teal-700 shadow-soft hover:bg-clinic-blue-100 dark:border-slate-600 dark:bg-slate-800 dark:text-clinic-teal-300 dark:hover:bg-slate-700",
       ].join(" ")}
     >
       {isDark ? (
@@ -78,3 +76,4 @@ export function ThemeToggle() {
     </button>
   );
 }
+

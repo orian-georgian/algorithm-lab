@@ -9,7 +9,17 @@ import {
   type ContactFormInput,
 } from "@/lib/validation/contact";
 
-export function ContactSection() {
+type ContactSectionProps = {
+  showStepLabel?: boolean;
+  title?: string;
+  lead?: string;
+};
+
+export function ContactSection({
+  showStepLabel = true,
+  title,
+  lead,
+}: ContactSectionProps) {
   const t = useTranslations("Contact");
   const weekDays = [
     "monday",
@@ -65,8 +75,13 @@ export function ContactSection() {
     <section id="contact" className="relative isolate">
       <div className="py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-display-sm">{t("title")}</h2>
-          <p className="section-lead mt-4">{t("lead")}</p>
+          {showStepLabel ? (
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-clinic-teal-700 sm:text-xs">
+              {t("timelineLabel")}
+            </p>
+          ) : null}
+          <h2 className="mt-3 text-display-sm">{title ?? t("title")}</h2>
+          <p className="section-lead mt-4">{lead ?? t("lead")}</p>
         </div>
 
         <div className="mx-auto mt-10 overflow-hidden rounded-3xl border border-clinic-border bg-clinic-white dark:border-slate-700 dark:bg-slate-900">
@@ -214,7 +229,7 @@ export function ContactSection() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full rounded-full bg-clinic-teal-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-clinic-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto sm:min-w-44"
+                  className="w-full rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-5 py-3 text-sm font-semibold text-white dark:text-slate-950 transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 disabled:cursor-not-allowed disabled:opacity-70 sm:ml-auto sm:w-auto sm:min-w-44"
                 >
                   {isSubmitting ? t("submitting") : t("submit")}
                 </button>
@@ -238,3 +253,4 @@ export function ContactSection() {
     </section>
   );
 }
+

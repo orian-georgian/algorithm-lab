@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { PageIntro } from "@/components/ui/PageIntro";
@@ -27,7 +27,7 @@ export default async function ServicesPage({ params }: Props) {
         aria-hidden="true"
         className="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 bg-gradient-to-b from-clinic-white via-clinic-blue-100/70 to-clinic-white"
       />
-      <div className="space-y-8 px-4 py-8 sm:space-y-12 sm:px-6 sm:py-10 lg:px-10">
+      <div className="space-y-8 px-4 py-10 sm:space-y-12 sm:px-6 sm:py-10 lg:px-10">
         <PageIntro
           eyebrow={t("eyebrow")}
           title={t("title")}
@@ -36,6 +36,9 @@ export default async function ServicesPage({ params }: Props) {
         <ServicesSection
           className="py-6 sm:py-8 lg:py-10"
           withSectionPadding={false}
+          showStepLabel={false}
+          title={t("sectionTitle")}
+          lead={t("sectionLead")}
         />
 
         <section>
@@ -129,7 +132,7 @@ export default async function ServicesPage({ params }: Props) {
         <div className="flex justify-center">
           <Link
             href="/contact"
-            className="rounded-full bg-clinic-teal-700 px-7 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-clinic-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+            className="rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-7 py-3 text-sm font-semibold text-white dark:text-slate-950 shadow-soft transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
           >
             {t("finalCta")}
           </Link>

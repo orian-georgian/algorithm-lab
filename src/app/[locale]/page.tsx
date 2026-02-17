@@ -15,6 +15,9 @@ const ServicesSection = dynamicImport(() =>
 const TeamSection = dynamicImport(() =>
   import("@/components/ui/TeamSection").then((m) => m.TeamSection),
 );
+const StatsSection = dynamicImport(() =>
+  import("@/components/ui/StatsSection").then((m) => m.StatsSection),
+);
 const TestimonialsSection = dynamicImport(() =>
   import("@/components/ui/TestimonialsSection").then(
     (m) => m.TestimonialsSection,
@@ -60,14 +63,13 @@ export default async function HomePage({ params }: Props) {
         }}
       />
       <ClinicJsonLd locale={locale} />
-      <MotionReveal>
-        <HeroSection />
-      </MotionReveal>
-      <MotionReveal>
-        <ServicesSection showQualityBlock={false} showAllServicesCta />
-      </MotionReveal>
+      <HeroSection />
+      <ServicesSection showQualityBlock={false} showAllServicesCta />
       <MotionReveal delay={0.06}>
         <TeamSection />
+      </MotionReveal>
+      <MotionReveal delay={0.07}>
+        <StatsSection />
       </MotionReveal>
       <MotionReveal delay={0.08}>
         <TestimonialsSection />

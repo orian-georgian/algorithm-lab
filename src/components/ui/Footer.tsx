@@ -23,15 +23,9 @@ export function Footer() {
 
   return (
     <footer className="border-t border-clinic-border bg-clinic-white dark:bg-slate-950">
-      <div className="container-page grid gap-10 py-14 lg:grid-cols-[1.2fr_0.85fr_0.95fr_1.1fr] lg:items-start">
+      <div className="container-page grid gap-10 py-4 lg:py-12 md:grid-cols-3 md:items-start lg:grid-cols-[1.2fr_0.85fr_0.95fr_1.1fr]">
         <div className="space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-clinic-slate-600 dark:text-slate-400">
-            {t("followUsLabel")}
-          </p>
           <div className="space-y-3">
-            <p className="max-w-lg text-sm leading-relaxed text-clinic-slate-700 dark:text-slate-300">
-              {t("tagline")}
-            </p>
             <Link
               href="/"
               className="inline-flex focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
@@ -54,6 +48,12 @@ export function Footer() {
                 priority={false}
               />
             </Link>
+            <p className="max-w-lg text-sm leading-relaxed text-clinic-slate-700 dark:text-slate-300">
+              {t("tagline")}
+            </p>
+            <p className="pt-3 text-xs font-semibold uppercase tracking-[0.12em] text-clinic-slate-600 dark:text-slate-400">
+              {t("followUsLabel")}
+            </p>
             <p className="text-sm leading-relaxed text-clinic-slate-700 dark:text-slate-300">
               {t("followUsDescription")}
             </p>
@@ -108,12 +108,12 @@ export function Footer() {
           <h3 className="text-xs font-semibold uppercase tracking-[0.12em] text-clinic-slate-600 dark:text-slate-400">
             {t("quickLinksLabel")}
           </h3>
-          <ul className="mt-4 space-y-2.5">
+          <ul className="mt-6 space-y-2.5">
             {quickLinks.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-sm text-clinic-slate-700 transition hover:text-clinic-teal-700 dark:text-slate-300 dark:hover:text-clinic-teal-300"
+                  className="text-xs text-clinic-slate-700 transition hover:text-clinic-teal-700 dark:text-slate-300 dark:hover:text-clinic-teal-300"
                 >
                   {item.label}
                 </Link>
@@ -126,7 +126,7 @@ export function Footer() {
           <h3 className="text-xs font-semibold uppercase tracking-[0.12em] text-clinic-slate-600 dark:text-slate-400">
             {t("contactInfoLabel")}
           </h3>
-          <div className="mt-4 space-y-4">
+          <div className="mt-6 space-y-4">
             <div className="space-y-1.5">
               <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-clinic-teal-700 dark:text-clinic-teal-300">
                 {t("addressLabel")}
@@ -173,7 +173,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="h-full min-h-[280px] overflow-hidden rounded-3xl border border-clinic-border bg-white dark:border-slate-700 dark:bg-slate-900">
+        <div className="h-full min-h-[280px] overflow-hidden rounded-3xl border border-clinic-border bg-white md:col-span-3 dark:border-slate-700 dark:bg-slate-900 lg:col-span-1">
           <iframe
             title={t("mapTitle")}
             src="https://www.openstreetmap.org/export/embed.html?bbox=23.5900%2C46.7760%2C23.5990%2C46.7800&layer=mapnik&marker=46.7780047%2C23.5945090"
@@ -184,9 +184,8 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-clinic-border/70 dark:border-slate-800">
-        <div className="container-page flex flex-col gap-2 py-5 text-xs text-clinic-slate-600 sm:flex-row sm:items-center sm:justify-between dark:text-slate-400">
-          <span>{t("copyright")}</span>
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+        <div className="container-page flex flex-col items-center gap-3 py-4 text-center text-xs text-clinic-slate-600 sm:flex-row sm:items-center sm:justify-between sm:gap-2 sm:text-left dark:text-slate-400">
+          <div className="order-1 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:order-2 sm:justify-end">
             {legalLinks.map((item) => (
               <Link
                 key={item.href}
@@ -197,6 +196,7 @@ export function Footer() {
               </Link>
             ))}
           </div>
+          <span className="order-2 sm:order-1">{t("copyright")}</span>
         </div>
       </div>
     </footer>

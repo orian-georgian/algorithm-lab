@@ -10,6 +10,8 @@ import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
 import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
+import { BackToTopButton } from "@/components/ui/BackToTopButton";
+import { CookieConsentBanner } from "@/components/ui/CookieConsentBanner";
 import {
   getOpenGraphLocale,
   siteUrl,
@@ -86,6 +88,8 @@ export default async function LocaleLayout({ children, params }: Props) {
       </main>
       <Footer />
       <WhatsAppWidget />
+      <BackToTopButton />
+      <CookieConsentBanner />
     </NextIntlClientProvider>
   );
 }

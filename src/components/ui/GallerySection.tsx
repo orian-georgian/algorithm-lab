@@ -6,7 +6,11 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { galleryMedia } from "@/lib/media-assets";
 
-export function GallerySection() {
+type GallerySectionProps = {
+  showStepLabel?: boolean;
+};
+
+export function GallerySection({ showStepLabel = true }: GallerySectionProps) {
   const t = useTranslations("Gallery");
   const [loaded, setLoaded] = useState<Record<string, boolean>>({});
 
@@ -14,7 +18,12 @@ export function GallerySection() {
     <section id="gallery" className="relative isolate">
       <div className="py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-display-sm">{t("title")}</h2>
+          {showStepLabel ? (
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-clinic-teal-700 sm:text-xs">
+              {t("timelineLabel")}
+            </p>
+          ) : null}
+          <h2 className="mt-3 text-display-sm">{t("title")}</h2>
           <p className="section-lead mt-4">{t("lead")}</p>
         </div>
 
@@ -68,6 +77,7 @@ export function GallerySection() {
             {t("viewMore")}
           </Link>
         </div>
+
       </div>
     </section>
   );

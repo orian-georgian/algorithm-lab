@@ -26,13 +26,17 @@ export default async function ContactPage({ params }: Props) {
         aria-hidden="true"
         className="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 bg-gradient-to-b from-clinic-white via-clinic-blue-100/70 to-clinic-white"
       />
-      <div className="space-y-8 px-4 py-8 sm:space-y-12 sm:px-6 sm:py-10 lg:px-10">
+      <div className="space-y-8 px-4 py-4 sm:space-y-12 sm:px-6 sm:py-10 lg:px-10">
         <PageIntro
           eyebrow={t("eyebrow")}
           title={t("title")}
           description={t("description")}
         />
-        <ContactSection />
+        <ContactSection
+          showStepLabel={false}
+          title={t("sectionTitle")}
+          lead={t("sectionLead")}
+        />
 
         <section className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-2xl border border-clinic-border bg-clinic-white p-7">

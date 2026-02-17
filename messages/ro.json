@@ -41,6 +41,15 @@
     "cases": "Cazuri",
     "testimonials": "Testimoniale",
     "contact": "Contact",
+    "contactUs": "Contacteaza-ne",
+    "callUs": "Sună-ne",
+    "headerCta": "Solicită colaborare",
+    "topBarNote": "Laborator de tehnică dentară în Cluj-Napoca | Luni-Vineri: 8:00 - 18:00",
+    "topBarCta": "Contactează-ne",
+    "emailUs": "Trimite email",
+    "whatsapp": "WhatsApp",
+    "openMenu": "Deschide meniul",
+    "closeMenu": "Închide meniul",
     "switchThemeDark": "Comută în modul întunecat",
     "switchThemeLight": "Comută în modul luminos",
     "switchTo": {
@@ -50,11 +59,34 @@
     }
   },
   "Home": {
-    "heroEyebrow": "Laborator de Tehnică Dentară",
-    "heroTitle": "Restaurări dentare precise, cu aspect natural și flux digital complet.",
-    "heroDescription": "Algorithm colaborează cu medici și clinici stomatologice pentru lucrări protetice premium, realizate rapid, sigur și standardizat.",
-    "primaryCta": "Programează o consultație",
-    "secondaryCta": "Vezi serviciile"
+    "heroEyebrow": "Bine ai venit la Algorithm",
+    "heroTitle": "Tehnică dentară de precizie, cu grijă reală pentru fiecare detaliu.",
+    "heroDescription": "Suntem o echipă multidisciplinară din Cluj-Napoca care transformă planuri clinice în restaurări predictibile, estetice și funcționale, prin flux digital complet și standarde profesionale clare.",
+    "primaryCta": "Solicită colaborare",
+    "secondaryCta": "Vezi serviciile noastre"
+  },
+  "HomeStats": {
+    "timelineLabel": "Pasul 3 - Rezultate",
+    "title": "Experiență dovedită în peste 5 ani de colaborare",
+    "lead": "Cifrele confirmă impactul muncii noastre: parteneriate stabile, cazuri numeroase și livrări constante pentru clinici și medici stomatologi.",
+    "dentists": {
+      "value": "150+",
+      "label": "Medici stomatologi"
+    },
+    "clinics": {
+      "value": "100+",
+      "label": "Clinici"
+    },
+    "cases": {
+      "value": "1000+",
+      "label": "Cazuri"
+    },
+    "years": {
+      "value": "5+",
+      "label": "Ani de experiență"
+    },
+    "bridgeToFeedback": "Aceste rezultate sunt confirmate mai jos de partenerii noștri medicali, prin experiențe reale de colaborare.",
+    "cta": "Solicită colaborare"
   },
   "HomeClosing": {
     "eyebrow": "Încheiere",
@@ -82,8 +114,9 @@
     "standardsTitle": "Standarde de lucru",
     "standardsText": "Folosim protocoale digitale, verificare multi-etapă și trasabilitate completă pentru fiecare lucrare protetică.",
     "standardsTextExtra": "Fiecare caz urmează un flux documentat: analiză inițială, design CAD, validare funcțională, selecție controlată a materialelor și verificare finală înainte de livrare. Acest model de lucru asigură consistență, calitate repetabilă și transparență pentru partenerii noștri medicali.",
-    "teamTitle": "Echipă multidisciplinară",
-    "teamLead": "Specialiști dedicați care combină expertiza clinică, precizia digitală și atenția pentru fiecare detaliu protetic.",
+    "teamTimelineLabel": "Pasul 2 - Echipa",
+    "teamTitle": "Echipa multidisciplinară din spatele fiecărei lucrări",
+    "teamLead": "Tehnicieni și specialiști dedicați, uniți de aceeași misiune: calitate constantă, comunicare clară și rezultate care inspiră încredere.",
     "teamCta": "Discută cu echipa noastră",
     "teamImageAlt": "Echipa laboratorului de tehnică dentară Algorithm",
     "mediaLabel": "Placeholder foto echipă",
@@ -104,8 +137,9 @@
     "member3Detail2": "Focus: adaptare pasivă și estetică naturală pe termen lung."
   },
   "Services": {
-    "title": "Servicii principale",
-    "lead": "Soluții moderne pentru protetică fixă și pe implant, optimizate pentru estetică, rezistență și confort funcțional.",
+    "timelineLabel": "Pasul 1 - Servicii",
+    "title": "Cum lucrăm zi de zi pentru rezultate predictibile",
+    "lead": "Serviciile noastre combină precizia tehnică, atenția la detalii și responsabilitatea medicală, pentru restaurări pe care te poți baza.",
     "serviceLabel": "Serviciu",
     "pills": {
       "one": "Flux digital CAD/CAM",
@@ -149,6 +183,8 @@
     "eyebrow": "Servicii",
     "title": "Laborator tehnică dentară Cluj pentru cazuri simple și complexe",
     "description": "Executăm lucrări protetice cu accent pe funcționalitate pe termen lung, estetică naturală și comunicare clinică eficientă.",
+    "sectionTitle": "Serviciile de bază pe care le livrăm zilnic",
+    "sectionLead": "Acestea sunt serviciile principale pe care clinicile și medicii se bazează pentru rezultate predictibile.",
     "workflowTitle": "Flux digital standardizat",
     "workflowText": "Fiecare caz este documentat, validat și optimizat înainte de livrare pentru a reduce ajustarea la scaun.",
     "workflowImageAlt": "Flux de lucru în laboratorul de tehnică dentară",
@@ -185,8 +221,9 @@
     "finalCta": "Solicită ofertă personalizată"
   },
   "Testimonials": {
-    "title": "Feedback de la parteneri medicali",
-    "lead": "Clinici stomatologice și medici dentiști individuali care lucrează cu Algorithm pentru rezultate consecvente.",
+    "timelineLabel": "Pasul 4 - Încredere confirmată",
+    "title": "Partenerii noștri confirmă valoarea colaborării",
+    "lead": "După rezultate vin confirmările reale: feedback direct de la clinici și medici stomatologi care lucrează constant cu Algorithm.",
     "one": {
       "type": "Laborator",
       "quote": "Lucrările au o adaptare excelentă, iar timpii de livrare sunt constanți chiar și în cazuri complexe.",
@@ -235,8 +272,9 @@
     "showMore": "Vezi mai multe recenzii"
   },
   "Gallery": {
-    "title": "Galerie laborator",
-    "lead": "Exemple de lucrări și procese interne. Imaginile pot fi înlocuite rapid din aceeași structură.",
+    "timelineLabel": "Pasul 5 - Dovada muncii noastre",
+    "title": "În culisele laboratorului: muncă reală, atenție reală",
+    "lead": "Aici vezi cum arată dedicarea noastră în practică: etape de lucru, procese tehnice și standarde de calitate aplicate zi de zi.",
     "placeholder": "Media Placeholder",
     "itemAlt": "Imagine galerie {index}",
     "viewMore": "Vezi mai multe imagini"
@@ -302,8 +340,9 @@
     "finalCta": "Solicită evaluare pentru cazul tău"
   },
   "Contact": {
-    "title": "Contact și programări",
-    "lead": "Trimite un mesaj pentru colaborare, ofertă personalizată sau detalii despre un caz clinic.",
+    "timelineLabel": "Pasul 6 - Contact",
+    "title": "Pasul final: hai să construim împreună următorul tău caz",
+    "lead": "Dacă îți dorești un partener tehnic de încredere, scrie-ne. Îți răspundem rapid și clar, cu focus pe soluția potrivită pentru tine.",
     "addressLabel": "Adresă",
     "addressValue": "Str. Memorandumului 10, Cluj-Napoca, România",
     "phoneLabel": "Telefon",
@@ -375,6 +414,8 @@
     "eyebrow": "Contact",
     "title": "Contact direct cu echipa laboratorului Algorithm",
     "description": "Ne poți contacta pentru discuția unui caz clinic, estimare de timp sau suport tehnic pentru planificare.",
+    "sectionTitle": "Spune-ne pe scurt cazul tău",
+    "sectionLead": "Trimite detaliile, iar noi revenim rapid cu o direcție tehnică clară și pașii următori.",
     "visitTitle": "Program de vizită",
     "visitText": "Pentru ședințe de consultare tehnică, recomandăm programare prealabilă prin telefon sau email.",
     "emergencyTitle": "Cazuri urgente",
@@ -490,3 +531,7 @@
     "copyright": "(c) 2026 Algorithm. Toate drepturile rezervate."
   }
 }
+
+
+
+

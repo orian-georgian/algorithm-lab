@@ -77,14 +77,14 @@ export function Navbar() {
           <span className="sr-only">{t("brand")}</span>
         </Link>
 
-        <div className="hidden items-center gap-8 text-sm font-medium md:flex">
+        <div className="hidden items-center gap-5 text-sm font-medium md:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               className={[
-                "rounded-full px-3 py-1.5 transition",
+                "rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-[0.08em] transition",
                 pathname === link.href
-                  ? "bg-clinic-teal-700 text-white shadow-soft"
+                  ? "bg-clinic-teal-700 dark:bg-clinic-teal-300 text-white dark:text-slate-950 shadow-soft"
                   : "text-clinic-slate-700 hover:text-clinic-teal-700"
               ].join(" ")}
               href={link.href}
@@ -109,10 +109,10 @@ export function Navbar() {
                 aria-label={t(`switchTo.${item.code}`)}
                 aria-current={locale === item.code ? "true" : undefined}
                 className={[
-                  "hidden h-9 w-9 items-center justify-center rounded-xl border text-xs font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 md:inline-flex",
+                  "hidden h-9 w-9 items-center justify-center rounded-xl border text-xs font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 md:inline-flex",
                   locale === item.code
-                    ? "border-clinic-teal-700 bg-clinic-teal-700 text-white shadow-soft hover:bg-clinic-teal-800"
-                    : "border-clinic-border bg-clinic-white text-clinic-slate-700 hover:bg-clinic-blue-50",
+                    ? "border-clinic-border bg-clinic-blue-50 text-clinic-teal-700 shadow-soft hover:bg-clinic-blue-100 dark:border-slate-600 dark:bg-slate-800 dark:text-clinic-teal-300 dark:hover:bg-slate-700"
+                    : "border-clinic-border bg-clinic-white text-clinic-slate-700 hover:bg-clinic-blue-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800",
                 ].join(" ")}
               >
                 <span aria-hidden="true">{item.label}</span>
@@ -129,13 +129,13 @@ export function Navbar() {
           <button
             type="button"
             onClick={toggleMobileMenu}
-            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-label={isMobileMenuOpen ? t("closeMenu") : t("openMenu")}
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-menu"
             className={[
               "inline-flex h-9 w-9 items-center justify-center rounded-xl border transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 md:hidden",
               isMobileMenuOpen
-                ? "border-clinic-teal-700 bg-clinic-teal-700 text-white shadow-soft hover:bg-clinic-teal-800"
+                ? "border-clinic-teal-700 bg-clinic-teal-700 dark:bg-clinic-teal-300 text-white dark:text-slate-950 shadow-soft hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200"
                 : "border-clinic-border bg-clinic-white text-clinic-slate-700 hover:bg-clinic-blue-50",
             ].join(" ")}
           >
@@ -169,9 +169,9 @@ export function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
               aria-current={pathname === link.href ? "page" : undefined}
               className={[
-                "rounded-lg px-3 py-2 text-sm font-medium transition",
+                "rounded-lg px-3 py-2 text-xs font-bold uppercase tracking-[0.08em] transition",
                 pathname === link.href
-                  ? "bg-clinic-teal-700 text-white shadow-soft"
+                  ? "bg-clinic-teal-700 dark:bg-clinic-teal-300 text-white dark:text-slate-950 shadow-soft"
                   : "text-clinic-slate-700 hover:bg-clinic-blue-50 hover:text-clinic-teal-700"
               ].join(" ")}
             >
@@ -189,10 +189,10 @@ export function Navbar() {
                 aria-current={locale === item.code ? "true" : undefined}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={[
-                  "inline-flex h-9 w-9 items-center justify-center rounded-xl border text-xs font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600",
+                  "inline-flex h-9 w-9 items-center justify-center rounded-xl border text-xs font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600",
                   locale === item.code
-                    ? "border-clinic-teal-700 bg-clinic-teal-700 text-white shadow-soft hover:bg-clinic-teal-800"
-                    : "border-clinic-border bg-clinic-white text-clinic-slate-700 hover:bg-clinic-blue-50",
+                    ? "border-clinic-border bg-clinic-blue-50 text-clinic-teal-700 shadow-soft hover:bg-clinic-blue-100 dark:border-slate-600 dark:bg-slate-800 dark:text-clinic-teal-300 dark:hover:bg-slate-700"
+                    : "border-clinic-border bg-clinic-white text-clinic-slate-700 hover:bg-clinic-blue-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800",
                 ].join(" ")}
               >
                 <span aria-hidden="true">{item.label}</span>
@@ -205,3 +205,5 @@ export function Navbar() {
     </header>
   );
 }
+
+

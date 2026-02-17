@@ -12,10 +12,11 @@ export default function LocalizedNotFound() {
       <p className="mt-3 text-sm text-clinic-slate-700">{t("description")}</p>
       <Link
         href="/"
-        className="mt-6 inline-flex rounded-full bg-clinic-teal-700 px-5 py-2.5 text-sm font-semibold text-white"
+        className="mt-6 inline-flex rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-5 py-2.5 text-sm font-semibold text-white dark:text-slate-950"
       >
         {t("cta")}
       </Link>
     </section>
   );
 }
+

@@ -15,7 +15,10 @@ export function TeamSection() {
   return (
     <section id="team" className="relative isolate">
       <div className="py-6 sm:py-8 lg:py-10">
-        <h2 className="text-center text-display-sm">{t("teamTitle")}</h2>
+        <p className="text-center text-[10px] font-semibold uppercase tracking-[0.12em] text-clinic-teal-700 sm:text-xs">
+          {t("teamTimelineLabel")}
+        </p>
+        <h2 className="mt-3 text-center text-display-sm">{t("teamTitle")}</h2>
         <p className="mt-4 mx-auto max-w-3xl text-center section-lead">
           {t("teamLead")}
         </p>
@@ -75,7 +78,7 @@ export function TeamSection() {
         <div className="mt-8 lg:mt-12 flex justify-center">
           <Link
             href="/contact"
-            className="rounded-full bg-clinic-teal-700 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-clinic-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+            className="rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-6 py-3 text-sm font-semibold text-white dark:text-slate-950 shadow-soft transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
           >
             {t("teamCta")}
           </Link>
@@ -84,3 +87,4 @@ export function TeamSection() {
     </section>
   );
 }
+

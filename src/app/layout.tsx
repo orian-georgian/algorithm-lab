@@ -1,12 +1,16 @@
 import type { Metadata, Viewport } from "next";
 import { Sora } from "next/font/google";
-import { defaultSeoConfig, siteUrl, targetKeywords } from "@/seo/next-seo.config";
+import {
+  defaultSeoConfig,
+  siteUrl,
+  targetKeywords,
+} from "@/seo/next-seo.config";
 import "./globals.css";
 
 const sora = Sora({
   subsets: ["latin", "latin-ext"],
   variable: "--font-sora",
-  display: "swap"
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -14,8 +18,9 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   applicationName: "Algorithm Laboratory",
   title: {
-    default: defaultSeoConfig.defaultTitle ?? "Algorithm Dental Technical Laboratory",
-    template: defaultSeoConfig.titleTemplate ?? "%s | Algorithm"
+    default:
+      defaultSeoConfig.defaultTitle ?? "Algorithm Dental Technical Laboratory",
+    template: defaultSeoConfig.titleTemplate ?? "%s | Algorithm",
   },
   description: defaultSeoConfig.description,
   keywords: targetKeywords,
@@ -27,19 +32,16 @@ export const metadata: Metadata = {
         url: `${siteUrl}/images/og/clinic-og.svg`,
         width: 1200,
         height: 630,
-        alt: "Algorithm dental technical laboratory in Cluj-Napoca"
-      }
-    ]
+        alt: "Algorithm dental technical laboratory in Cluj-Napoca",
+      },
+    ],
   },
   alternates: {
-    canonical: "/"
+    canonical: "/",
   },
   icons: {
-    icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/favicon.svg", type: "image/svg+xml" }
-    ],
-    apple: [{ url: "/apple-icon.svg", type: "image/svg+xml" }]
+    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
+    shortcut: [{ url: "/favicon.ico" }],
   },
   robots: {
     index: true,
@@ -49,9 +51,9 @@ export const metadata: Metadata = {
       follow: true,
       "max-image-preview": "large",
       "max-snippet": -1,
-      "max-video-preview": -1
-    }
-  }
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export const viewport: Viewport = {
@@ -59,12 +61,12 @@ export const viewport: Viewport = {
   initialScale: 1,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#0e5a54" },
-    { media: "(prefers-color-scheme: dark)", color: "#0e5a54" }
-  ]
+    { media: "(prefers-color-scheme: dark)", color: "#0e5a54" },
+  ],
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{ children: React.ReactNode }>) {
   const themeInitScript = `
     (function() {

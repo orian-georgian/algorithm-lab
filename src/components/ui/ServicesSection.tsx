@@ -11,6 +11,9 @@ type Props = {
   className?: string;
   showQualityBlock?: boolean;
   showAllServicesCta?: boolean;
+  showStepLabel?: boolean;
+  title?: string;
+  lead?: string;
 };
 
 export function ServicesSection({
@@ -18,18 +21,26 @@ export function ServicesSection({
   className,
   showQualityBlock = true,
   showAllServicesCta = false,
+  showStepLabel = true,
+  title,
+  lead,
 }: Props) {
   const t = useTranslations("Services");
 
   return (
     <section
       id="services"
-      className={["relative isolate", className ?? ""].join(" ")}
+      className={["relative isolate scroll-mt-28 sm:scroll-mt-32", className ?? ""].join(" ")}
     >
       <div className={withSectionPadding ? "py-6 sm:py-8 lg:py-10" : ""}>
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-display-sm">{t("title")}</h2>
-          <p className="section-lead mt-4">{t("lead")}</p>
+          {showStepLabel ? (
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-clinic-teal-700 sm:text-xs">
+              {t("timelineLabel")}
+            </p>
+          ) : null}
+          <h2 className="mt-3 text-display-sm">{title ?? t("title")}</h2>
+          <p className="section-lead mt-4">{lead ?? t("lead")}</p>
         </div>
 
         <div className="mt-6 flex flex-wrap justify-center gap-2">
@@ -51,7 +62,7 @@ export function ServicesSection({
             >
               <div className="mb-5">
                 <div className="flex items-start gap-3">
-                  <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-clinic-teal-700 text-xs font-semibold leading-none text-white tabular-nums">
+                  <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 text-xs font-semibold leading-none text-white dark:text-slate-950 tabular-nums">
                     {index + 1}
                   </span>
                   <h3 className="pt-0.5 text-xl font-semibold text-clinic-slate-900">
@@ -91,7 +102,7 @@ export function ServicesSection({
               <div className="mt-auto flex justify-center pt-6">
                 <Link
                   href="/contact"
-                  className="inline-flex rounded-full bg-clinic-teal-700 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-clinic-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+                  className="inline-flex rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-5 py-2.5 text-sm font-semibold text-white dark:text-slate-950 shadow-soft transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
                 >
                   {t("requestOfferCta")}
                 </Link>
@@ -131,7 +142,9 @@ export function ServicesSection({
             </Link>
           </div>
         ) : null}
+
       </div>
     </section>
   );
 }
+

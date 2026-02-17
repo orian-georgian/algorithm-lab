@@ -41,6 +41,15 @@
     "cases": "Cases",
     "testimonials": "Testimonials",
     "contact": "Contact",
+    "contactUs": "Contact us",
+    "callUs": "Call us",
+    "headerCta": "Request collaboration",
+    "topBarNote": "Dental technical laboratory in Cluj-Napoca | Monday-Friday: 8:00 AM - 6:00 PM",
+    "topBarCta": "Contact us",
+    "emailUs": "Send email",
+    "whatsapp": "WhatsApp",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
     "switchThemeDark": "Switch to dark mode",
     "switchThemeLight": "Switch to light mode",
     "switchTo": {
@@ -50,11 +59,34 @@
     }
   },
   "Home": {
-    "heroEyebrow": "Private Dental Technical Laboratory",
-    "heroTitle": "Precise dental restorations with natural esthetics and full digital workflow.",
-    "heroDescription": "Algorithm partners with dentists and clinics to deliver premium prosthetic work with speed, safety, and consistency.",
+    "heroEyebrow": "Welcome to Algorithm",
+    "heroTitle": "Precision dental technology, with genuine care in every detail.",
+    "heroDescription": "We are a multidisciplinary team from Cluj-Napoca turning clinical plans into predictable, esthetic, and functional restorations through a full digital workflow and clear professional standards.",
     "primaryCta": "Book a consultation",
     "secondaryCta": "Explore services"
+  },
+  "HomeStats": {
+    "timelineLabel": "Step 3 - Results",
+    "title": "Proven experience built over 5+ years",
+    "lead": "The numbers confirm our impact: stable partnerships, a high case volume, and consistent delivery for clinics and dentists.",
+    "dentists": {
+      "value": "150+",
+      "label": "Dentists"
+    },
+    "clinics": {
+      "value": "100+",
+      "label": "Clinics"
+    },
+    "cases": {
+      "value": "1000+",
+      "label": "Cases"
+    },
+    "years": {
+      "value": "5+",
+      "label": "Years"
+    },
+    "bridgeToFeedback": "These results are validated below by our medical partners through real collaboration feedback.",
+    "cta": "Request collaboration"
   },
   "HomeClosing": {
     "eyebrow": "Final check",
@@ -82,8 +114,9 @@
     "standardsTitle": "Quality standards",
     "standardsText": "We use digital protocols, multi-step validation, and full case traceability.",
     "standardsTextExtra": "Each case follows a documented workflow: initial analysis, CAD design, functional validation, controlled material selection, and final quality check before delivery. This model ensures consistency, repeatable quality, and transparency for our medical partners.",
-    "teamTitle": "Multidisciplinary team",
-    "teamLead": "Dedicated specialists combining clinical expertise, digital precision, and close attention to every prosthetic detail.",
+    "teamTimelineLabel": "Step 2 - Team",
+    "teamTitle": "The multidisciplinary team behind every restoration",
+    "teamLead": "Dedicated technicians and specialists united by one mission: consistent quality, clear communication, and outcomes that build trust.",
     "teamCta": "Talk to our team",
     "teamImageAlt": "Algorithm dental laboratory team",
     "mediaLabel": "Team photo placeholder",
@@ -104,8 +137,9 @@
     "member3Detail2": "Focus: passive fit and long-term natural esthetics."
   },
   "Services": {
-    "title": "Core services",
-    "lead": "Modern solutions for fixed and implant prosthetics, optimized for esthetics, durability, and functional comfort.",
+    "timelineLabel": "Step 1 - Services",
+    "title": "How we work every day for predictable outcomes",
+    "lead": "Our services combine technical precision, attention to detail, and medical responsibility to deliver restorations you can rely on.",
     "serviceLabel": "Service",
     "pills": {
       "one": "CAD/CAM digital workflow",
@@ -149,6 +183,8 @@
     "eyebrow": "Services",
     "title": "Dental laboratory services for simple and complex cases",
     "description": "We provide restorative workflows focused on long-term function, natural esthetics, and clinical efficiency.",
+    "sectionTitle": "Core services we deliver every day",
+    "sectionLead": "These are the primary laboratory services clinics and dentists rely on for predictable outcomes.",
     "workflowTitle": "Standardized digital workflow",
     "workflowText": "Each case is documented and validated before delivery to reduce chairside adjustment time.",
     "workflowImageAlt": "Dental laboratory digital workflow",
@@ -185,8 +221,9 @@
     "finalCta": "Request a personalized offer"
   },
   "Testimonials": {
-    "title": "Feedback from medical partners",
-    "lead": "Dental clinics and individual dentists working with Algorithm for consistent outcomes.",
+    "timelineLabel": "Step 4 - Trust confirmed",
+    "title": "Our partners confirm the value of collaboration",
+    "lead": "After results comes real validation: direct feedback from clinics and individual dentists who work with Algorithm consistently.",
     "one": {
       "type": "Laboratory",
       "quote": "The fit is consistently excellent, and turnaround times stay reliable even for complex cases.",
@@ -235,8 +272,9 @@
     "showMore": "See more reviews"
   },
   "Gallery": {
-    "title": "Laboratory gallery",
-    "lead": "Examples of completed work and internal workflow. Media can be replaced later with the same layout.",
+    "timelineLabel": "Step 5 - Gallery",
+    "title": "Inside the laboratory: real work, real dedication",
+    "lead": "See how our daily commitment looks in practice through technical stages, working moments, and quality-focused execution.",
     "placeholder": "Media Placeholder",
     "itemAlt": "Gallery image {index}",
     "viewMore": "See more images"
@@ -302,8 +340,9 @@
     "finalCta": "Request an evaluation for your case"
   },
   "Contact": {
-    "title": "Contact and appointments",
-    "lead": "Send a message for collaboration, personalized offers, or details about a clinical case.",
+    "timelineLabel": "Step 6 - Contact",
+    "title": "Final step: let's build your next case together",
+    "lead": "If you need a reliable technical partner, send us a message. We reply quickly and clearly, focused on the right solution for your needs.",
     "addressLabel": "Address",
     "addressValue": "10 Memorandumului Street, Cluj-Napoca, Romania",
     "phoneLabel": "Phone",
@@ -375,6 +414,8 @@
     "eyebrow": "Contact",
     "title": "Contact the Algorithm dental laboratory team",
     "description": "Reach out for case planning, timeline estimates, and direct technical communication.",
+    "sectionTitle": "Tell us about your case",
+    "sectionLead": "Send us the details and we will reply with a clear technical direction and next steps.",
     "visitTitle": "Visit planning",
     "visitText": "For technical review meetings, please schedule in advance by phone or email.",
     "emergencyTitle": "Urgent cases",
@@ -490,3 +531,5 @@
     "copyright": "(c) 2026 Algorithm. All rights reserved."
   }
 }
+
+

@@ -10,7 +10,7 @@ export default function OfflinePage() {
         </p>
         <Link
           href="/ro"
-          className="mt-6 inline-flex rounded-full bg-clinic-teal-700 px-5 py-2.5 text-sm font-semibold text-white"
+          className="mt-6 inline-flex rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-5 py-2.5 text-sm font-semibold text-white dark:text-slate-950"
         >
           Go to Homepage
         </Link>
@@ -18,3 +18,4 @@ export default function OfflinePage() {
     </main>
   );
 }
+

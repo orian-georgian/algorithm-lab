@@ -6,11 +6,13 @@ import { Link } from "@/i18n/routing";
 type HomeClosingStripProps = {
   ctaLabel?: string;
   ctaHref?: "/services" | "/contact";
+  showStepLabel?: boolean;
 };
 
 export function HomeClosingStrip({
   ctaLabel,
   ctaHref = "/services",
+  showStepLabel = true,
 }: HomeClosingStripProps) {
   const t = useTranslations("HomeClosing");
   const highlights = [
@@ -24,16 +26,18 @@ export function HomeClosingStrip({
       <div className="relative">
         <div className="relative z-10">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-clinic-teal-700 dark:text-clinic-teal-300 sm:text-xs">
-              {t("eyebrow")}
-            </p>
+            {showStepLabel ? (
+              <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-clinic-teal-700 dark:text-clinic-teal-300 sm:text-xs">
+                {t("eyebrow")}
+              </p>
+            ) : null}
             <h2 className="mt-3 text-display-sm text-clinic-slate-900 dark:text-slate-100">
               {t("title")}
             </h2>
             <p className="section-lead mt-4">{t("description")}</p>
           </div>
 
-          <div className="mx-auto mt-8 max-w-5xl">
+          <div className="mt-8 w-full">
             <ul className="grid gap-3 sm:grid-cols-3">
               {highlights.map((item) => (
                 <li
@@ -69,7 +73,7 @@ export function HomeClosingStrip({
           <div className="mt-8 lg:mt-12 flex justify-center">
             <Link
               href={ctaHref}
-              className="inline-flex rounded-full bg-clinic-teal-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-clinic-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+              className="inline-flex rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-6 py-3 text-sm font-semibold text-white dark:text-slate-950 transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
             >
               {ctaLabel ?? t("cta")}
             </Link>
@@ -79,3 +83,4 @@ export function HomeClosingStrip({
     </section>
   );
 }
+

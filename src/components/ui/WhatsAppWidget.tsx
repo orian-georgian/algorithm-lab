@@ -28,7 +28,7 @@ export function WhatsAppWidget() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={ariaLabel}
-      className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] z-[70] inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#25D366] to-[#1FA855] text-white shadow-[0_10px_26px_rgba(15,23,42,0.28)] transition-transform duration-200 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 focus-visible:ring-offset-2 focus-visible:ring-offset-clinic-white print:hidden sm:h-15 sm:w-15"
+      className="fixed bottom-[max(1.25rem,env(safe-area-inset-bottom))] left-[max(1.25rem,env(safe-area-inset-left))] z-[50] inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#25D366] to-[#1FA855] text-white shadow-[0_10px_26px_rgba(15,23,42,0.28)] transition-transform duration-200 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 focus-visible:ring-offset-2 focus-visible:ring-offset-clinic-white print:hidden sm:bottom-[max(1.5rem,env(safe-area-inset-bottom))] sm:left-[max(1.5rem,env(safe-area-inset-left))] sm:z-[70] sm:h-15 sm:w-15"
     >
       <svg viewBox="0 0 32 32" className="h-7 w-7" aria-hidden="true">
         <path

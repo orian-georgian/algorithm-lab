@@ -89,10 +89,10 @@ export function BeforeAfterSlider({
             style={{ left: `${position}%` }}
           >
             <div className="h-full w-0.5 -translate-x-1/2 bg-white/95 shadow-[0_0_16px_rgba(0,0,0,0.25)]" />
-            <div className="absolute left-1/2 top-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-clinic-teal-700 shadow-soft">
+            <div className="absolute left-1/2 top-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-clinic-teal-700 dark:bg-clinic-teal-300 shadow-soft">
               <svg
                 viewBox="0 0 20 20"
-                className="h-4 w-4 text-white"
+                className="h-4 w-4 text-white dark:text-slate-950"
                 fill="none"
                 aria-hidden="true"
               >
@@ -118,3 +118,4 @@ export function BeforeAfterSlider({
     </div>
   );
 }
+
