@@ -416,12 +416,20 @@
     "description": "Ne poți contacta pentru discuția unui caz clinic, estimare de timp sau suport tehnic pentru planificare.",
     "sectionTitle": "Spune-ne pe scurt cazul tău",
     "sectionLead": "Trimite detaliile, iar noi revenim rapid cu o direcție tehnică clară și pașii următori.",
+    "prioritySectionTitle": "Sprijin tehnic pentru colaborări solide",
+    "prioritySectionLead": "Un rezumat clar al modului în care gestionăm solicitările clinice pentru rezultate rapide și predictibile.",
+    "priorityTitle": "Colaborarea clinică este prioritatea noastră",
+    "priorityLead": "Acest canal este dedicat clinicilor și medicilor care au nevoie de suport tehnic rapid, clar și predictibil pentru cazuri protetice.",
+    "priorityPointOne": "Răspundem în maximum o zi lucrătoare pentru solicitările complete.",
+    "priorityPointTwo": "Analizăm indicația clinică și datele cazului pentru a evita pași inutili.",
+    "priorityPointThree": "Propunem o direcție tehnică aplicabilă, cu pași clari pentru continuarea colaborării.",
     "visitTitle": "Program de vizită",
     "visitText": "Pentru ședințe de consultare tehnică, recomandăm programare prealabilă prin telefon sau email.",
     "emergencyTitle": "Cazuri urgente",
     "emergencyText": "Pentru situații urgente, menționează în mesaj tipul cazului și termenul medical necesar.",
     "mapAlt": "Hartă locație laborator tehnică dentară Cluj",
-    "mapLabel": "Placeholder hartă/video locație"
+    "mapLabel": "Placeholder hartă/video locație",
+    "finalCta": "Vezi serviciile noastre"
   },
   "NotFound": {
     "title": "Pagina nu a fost găsită",
@@ -531,6 +539,8 @@
     "copyright": "(c) 2026 Algorithm. Toate drepturile rezervate."
   }
 }
+
+
 
 
 

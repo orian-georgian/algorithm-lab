@@ -416,12 +416,20 @@
     "description": "Kontaktieren Sie uns fuer Fallplanung, Zeitrahmen und technischen Austausch.",
     "sectionTitle": "Erzaehlen Sie uns kurz von Ihrem Fall",
     "sectionLead": "Senden Sie uns die Details, und wir antworten mit einer klaren technischen Richtung und den naechsten Schritten.",
+    "prioritySectionTitle": "Technische Unterstuetzung fuer verlaessliche Partnerschaften",
+    "prioritySectionLead": "Ein kompakter Ueberblick darueber, wie wir klinische Anfragen fuer schnelle und planbare Ergebnisse bearbeiten.",
+    "priorityTitle": "Die klinische Zusammenarbeit hat bei uns Prioritaet",
+    "priorityLead": "Dieser Kanal ist fuer Kliniken und Zahnaerzte gedacht, die schnelle, klare und planbare technische Unterstuetzung fuer prothetische Faelle benoetigen.",
+    "priorityPointOne": "Bei vollstaendigen Anfragen antworten wir innerhalb eines Werktages.",
+    "priorityPointTwo": "Wir pruefen klinische Indikation und Falldaten, um unnoetige Schritte zu vermeiden.",
+    "priorityPointThree": "Wir geben eine umsetzbare technische Richtung mit klaren naechsten Schritten fuer die Zusammenarbeit.",
     "visitTitle": "Besuchsplanung",
     "visitText": "Fuer technische Besprechungen empfehlen wir eine Terminvereinbarung per Telefon oder E-Mail.",
     "emergencyTitle": "Dringende Faelle",
     "emergencyText": "Bei dringenden Faellen nennen Sie bitte Falltyp und klinische Frist.",
     "mapAlt": "Kartenplatzhalter Dentallabor Cluj",
-    "mapLabel": "Karten/Video Platzhalter Standort"
+    "mapLabel": "Karten/Video Platzhalter Standort",
+    "finalCta": "Unsere Leistungen ansehen"
   },
   "NotFound": {
     "title": "Seite nicht gefunden",
@@ -531,5 +539,10 @@
     "copyright": "(c) 2026 Algorithm. Alle Rechte vorbehalten."
   }
 }
+
+
+
+
+
 
 

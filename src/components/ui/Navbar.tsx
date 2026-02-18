@@ -45,7 +45,7 @@ export function Navbar() {
   return (
     <header
       className={[
-        "sticky top-0 z-50 border-b border-clinic-border bg-clinic-white/95 backdrop-blur transition-shadow dark:border-slate-700 dark:bg-slate-950/95",
+        "sticky top-0 z-50 border-b border-clinic-border bg-clinic-white/95 backdrop-blur transition-shadow dark:border-slate-700",
         isScrolled ? "shadow-[0_8px_24px_rgba(15,23,42,0.08)] dark:shadow-[0_8px_24px_rgba(2,6,23,0.45)]" : "",
       ].join(" ")}
     >
@@ -111,7 +111,7 @@ export function Navbar() {
                 className={[
                   "hidden h-9 w-9 items-center justify-center rounded-xl border text-xs font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 md:inline-flex",
                   locale === item.code
-                    ? "border-clinic-border bg-clinic-blue-50 text-clinic-teal-700 shadow-soft hover:bg-clinic-blue-100 dark:border-slate-600 dark:bg-slate-800 dark:text-clinic-teal-300 dark:hover:bg-slate-700"
+                    ? "border-clinic-border bg-clinic-white text-clinic-teal-700 shadow-soft hover:bg-clinic-blue-50 dark:border-slate-600 dark:bg-slate-900 dark:text-clinic-teal-300 dark:hover:bg-slate-800"
                     : "border-clinic-border bg-clinic-white text-clinic-slate-700 hover:bg-clinic-blue-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800",
                 ].join(" ")}
               >
@@ -191,7 +191,7 @@ export function Navbar() {
                 className={[
                   "inline-flex h-9 w-9 items-center justify-center rounded-xl border text-xs font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600",
                   locale === item.code
-                    ? "border-clinic-border bg-clinic-blue-50 text-clinic-teal-700 shadow-soft hover:bg-clinic-blue-100 dark:border-slate-600 dark:bg-slate-800 dark:text-clinic-teal-300 dark:hover:bg-slate-700"
+                    ? "border-clinic-border bg-clinic-white text-clinic-teal-700 shadow-soft hover:bg-clinic-blue-50 dark:border-slate-600 dark:bg-slate-900 dark:text-clinic-teal-300 dark:hover:bg-slate-800"
                     : "border-clinic-border bg-clinic-white text-clinic-slate-700 hover:bg-clinic-blue-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800",
                 ].join(" ")}
               >

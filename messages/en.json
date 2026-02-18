@@ -416,12 +416,20 @@
     "description": "Reach out for case planning, timeline estimates, and direct technical communication.",
     "sectionTitle": "Tell us about your case",
     "sectionLead": "Send us the details and we will reply with a clear technical direction and next steps.",
+    "prioritySectionTitle": "Technical support for reliable partnerships",
+    "prioritySectionLead": "A concise overview of how we handle clinical requests for fast and predictable outcomes.",
+    "priorityTitle": "Clinical collaboration is our priority",
+    "priorityLead": "This channel is dedicated to clinics and dentists who need fast, clear, and predictable technical support for prosthetic cases.",
+    "priorityPointOne": "We reply within one business day for complete requests.",
+    "priorityPointTwo": "We review the clinical indication and case data to avoid unnecessary steps.",
+    "priorityPointThree": "We provide a practical technical direction with clear next steps for collaboration.",
     "visitTitle": "Visit planning",
     "visitText": "For technical review meetings, please schedule in advance by phone or email.",
     "emergencyTitle": "Urgent cases",
     "emergencyText": "For urgent requests, include the case type and required clinical deadline.",
     "mapAlt": "Map placeholder for dental laboratory in Cluj",
-    "mapLabel": "Map/video location placeholder"
+    "mapLabel": "Map/video location placeholder",
+    "finalCta": "Explore our services"
   },
   "NotFound": {
     "title": "Page not found",
@@ -531,5 +539,9 @@
     "copyright": "(c) 2026 Algorithm. All rights reserved."
   }
 }
+
+
+
+
 
 

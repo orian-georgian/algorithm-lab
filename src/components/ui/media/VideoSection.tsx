@@ -49,11 +49,11 @@ export function VideoSection({ items, title, lead, className }: Props) {
 
       <div className="mt-10 grid gap-6 lg:grid-cols-2">
         {items.map((item) => (
-          <article key={item.id} className="relative overflow-hidden rounded-2xl">
+          <article key={item.id} className="relative overflow-hidden">
             <span className="absolute left-2 top-2 z-10 rounded-full bg-clinic-white/95 px-2.5 py-1 text-[10px] font-medium text-clinic-slate-700 sm:px-3 sm:text-xs">
               {item.title}
             </span>
-            <div className="overflow-hidden rounded-2xl">
+            <div className="overflow-hidden">
               {item.type === "youtube" && item.youtubeId ? (
                 <iframe
                   className="aspect-video w-full"

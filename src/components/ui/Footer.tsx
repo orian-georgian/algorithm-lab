@@ -22,7 +22,7 @@ export function Footer() {
   ] as const;
 
   return (
-    <footer className="border-t border-clinic-border bg-clinic-white dark:bg-slate-950">
+    <footer className="border-t border-clinic-border bg-clinic-white">
       <div className="container-page grid gap-10 py-4 lg:py-12 md:grid-cols-3 md:items-start lg:grid-cols-[1.2fr_0.85fr_0.95fr_1.1fr]">
         <div className="space-y-4">
           <div className="space-y-3">
