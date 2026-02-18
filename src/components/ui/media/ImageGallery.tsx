@@ -101,6 +101,7 @@ export function ImageGallery({
   }, [activeIndex, items]);
 
   const activeItem = activeIndex !== null ? items[activeIndex] : null;
+  const activeDisplayIndex = activeIndex === null ? 1 : activeIndex + 1;
 
   const handleTouchStart = (event: React.TouchEvent<HTMLElement>) => {
     setTouchStartX(event.changedTouches[0]?.clientX ?? null);
@@ -250,7 +251,7 @@ export function ImageGallery({
                 ) : null}
               </figure>
               <div className="pointer-events-none absolute bottom-[max(0.85rem,env(safe-area-inset-bottom))] right-[max(0.85rem,env(safe-area-inset-right))] rounded-md bg-clinic-slate-900/70 px-2.5 py-1 text-[11px] font-medium tabular-nums text-white backdrop-blur-sm dark:bg-slate-100/80 dark:text-slate-900">
-                {activeIndex + 1}/{items.length}
+                {activeDisplayIndex}/{items.length}
               </div>
 
               <button
@@ -277,5 +278,6 @@ export function ImageGallery({
     </section>
   );
 }
+
 
 

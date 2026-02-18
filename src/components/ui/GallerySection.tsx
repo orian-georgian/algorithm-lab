@@ -80,6 +80,7 @@ export function GallerySection({ showStepLabel = true }: GallerySectionProps) {
   }, [activeIndex]);
 
   const activeItem = activeIndex !== null ? galleryPageMedia[activeIndex] : null;
+  const activeDisplayIndex = activeIndex === null ? 1 : activeIndex + 1;
 
   const handleTouchStart = (event: React.TouchEvent<HTMLElement>) => {
     setTouchStartX(event.changedTouches[0]?.clientX ?? null);
@@ -214,7 +215,7 @@ export function GallerySection({ showStepLabel = true }: GallerySectionProps) {
                 <figure className="relative h-[calc(100vh-1rem)] w-[calc(100vw-1rem)] max-w-[1400px] sm:h-[calc(100vh-2rem)] sm:w-[calc(100vw-2rem)]">
                   <Image
                     src={activeItem.src}
-                    alt={t("itemAlt", { index: activeIndex + 1 })}
+                    alt={t("itemAlt", { index: activeDisplayIndex })}
                     fill
                     sizes="100vw"
                     className={[
@@ -239,7 +240,7 @@ export function GallerySection({ showStepLabel = true }: GallerySectionProps) {
                 </figure>
 
                 <div className="pointer-events-none absolute bottom-[max(0.85rem,env(safe-area-inset-bottom))] right-[max(0.85rem,env(safe-area-inset-right))] rounded-md bg-clinic-slate-900/70 px-2.5 py-1 text-[11px] font-medium tabular-nums text-white backdrop-blur-sm dark:bg-slate-100/80 dark:text-slate-900">
-                  {activeIndex + 1}/{galleryPageMedia.length}
+                  {activeDisplayIndex}/{galleryPageMedia.length}
                 </div>
 
                 <button
@@ -268,5 +269,6 @@ export function GallerySection({ showStepLabel = true }: GallerySectionProps) {
     </section>
   );
 }
+
 
 
