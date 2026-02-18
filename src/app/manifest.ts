@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Dental technical laboratory in Cluj-Napoca with digital workflows and high-precision prosthetics.",
     start_url: "/ro",
     display: "standalone",
-    background_color: "#f4f9fc",
-    theme_color: "#0e5a54",
+    background_color: "#f5fbff",
+    theme_color: "#f5fbff",
     orientation: "portrait",
     lang: "ro",
     icons: [
