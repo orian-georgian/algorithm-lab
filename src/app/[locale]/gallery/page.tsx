@@ -78,7 +78,7 @@ export default async function GalleryPage({ params }: Props) {
             aria-hidden
             className="pointer-events-none absolute -left-16 -top-16 z-0 h-72 w-72 rounded-full bg-clinic-blue-100 blur-3xl"
           />
-          <div className="relative z-10 grid items-center gap-8 lg:grid-cols-[1.5fr_0.5fr]">
+          <div className="relative z-10 grid items-center gap-8 lg:grid-cols-[1.5fr_0.5fr] lg:items-end">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-clinic-teal-700">
                 {t("eyebrow")}
@@ -90,14 +90,16 @@ export default async function GalleryPage({ params }: Props) {
                 {t("description")}
               </p>
             </div>
-            <div className="flex justify-end">
-              <Image
-                src="/media/images/camera-guy.png"
-                alt=""
-                width={220}
-                height={220}
-                className="h-auto w-auto max-h-[250px] object-contain"
-              />
+            <div className="relative mt-[-12px] -mb-8 sm:mt-[-8px] sm:-mb-12 lg:-mb-16 lg:mt-0 lg:self-end lg:pl-6">
+              <div className="relative h-[200px] w-full sm:h-[220px] lg:h-[290px] xl:h-[330px]">
+                <Image
+                  src="/media/images/camera-guy.png"
+                  alt=""
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 34vw"
+                  className="object-contain object-bottom"
+                />
+              </div>
             </div>
           </div>
         </section>

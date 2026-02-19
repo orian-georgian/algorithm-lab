@@ -70,13 +70,13 @@ export function WhatsAppWidget() {
       aria-label={ariaLabel}
       style={cookieBannerVisible ? { bottom: `${cookieLiftBottomPx}px` } : undefined}
       className={[
-        "fixed left-[max(1.25rem,env(safe-area-inset-left))] inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#25D366] to-[#1FA855] text-white shadow-[0_10px_26px_rgba(15,23,42,0.28)] transition-transform duration-200 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 focus-visible:ring-offset-2 focus-visible:ring-offset-clinic-white print:hidden sm:left-[max(1.5rem,env(safe-area-inset-left))] sm:h-15 sm:w-15",
+        "fixed left-[max(1.25rem,env(safe-area-inset-left))] inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#25D366] to-[#1FA855] text-white shadow-[0_10px_26px_rgba(15,23,42,0.28)] transition-transform duration-200 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 focus-visible:ring-offset-2 focus-visible:ring-offset-clinic-white print:hidden sm:left-[max(1.5rem,env(safe-area-inset-left))]",
         cookieBannerVisible
           ? "z-[75]"
           : "bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-[50] sm:bottom-[max(1.5rem,env(safe-area-inset-bottom))] sm:z-[70]",
       ].join(" ")}
     >
-      <svg viewBox="0 0 32 32" className="h-7 w-7" aria-hidden="true">
+      <svg viewBox="0 0 32 32" className="h-5 w-5" aria-hidden="true">
         <path
           fill="currentColor"
           d="M19.11 17.24c-.27-.14-1.58-.78-1.82-.87-.24-.09-.42-.14-.6.14-.18.27-.69.87-.84 1.05-.16.18-.31.2-.58.07-.27-.14-1.12-.41-2.14-1.3-.79-.71-1.33-1.58-1.49-1.85-.16-.27-.02-.42.12-.56.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.14-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.47h-.51c-.18 0-.47.07-.71.34-.24.27-.92.9-.92 2.19 0 1.29.95 2.53 1.08 2.71.13.18 1.86 2.84 4.51 3.98.63.27 1.12.43 1.5.55.63.2 1.21.17 1.66.1.51-.08 1.58-.64 1.8-1.26.22-.62.22-1.15.16-1.26-.07-.11-.25-.18-.52-.31z"

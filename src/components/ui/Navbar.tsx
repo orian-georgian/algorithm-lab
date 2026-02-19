@@ -105,7 +105,6 @@ export function Navbar() {
                 key={item.code}
                 href={pathname}
                 locale={item.code}
-                prefetch
                 aria-label={t(`switchTo.${item.code}`)}
                 aria-current={locale === item.code ? "true" : undefined}
                 className={[
@@ -184,7 +183,6 @@ export function Navbar() {
                 key={`mobile-locale-${item.code}`}
                 href={pathname}
                 locale={item.code}
-                prefetch
                 aria-label={t(`switchTo.${item.code}`)}
                 aria-current={locale === item.code ? "true" : undefined}
                 onClick={() => setIsMobileMenuOpen(false)}

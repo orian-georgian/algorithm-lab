@@ -56,7 +56,6 @@ export function TeamImageWithLoader({
         ].join(" ")}
         draggable={false}
         onLoad={() => setIsLoading(false)}
-        onLoadingComplete={() => setIsLoading(false)}
       />
     </>
   );
