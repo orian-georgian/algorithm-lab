@@ -111,7 +111,7 @@ export default async function AboutPage({ params }: Props) {
           </div>
         </section>
 
-        <TeamSection />
+        <TeamSection showStepLabel={false} />
       </div>
     </section>
   );

@@ -5,7 +5,11 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { TeamImageWithLoader } from "@/components/ui/TeamImageWithLoader";
 
-export function TeamSection() {
+type TeamSectionProps = {
+  showStepLabel?: boolean;
+};
+
+export function TeamSection({ showStepLabel = true }: TeamSectionProps) {
   const t = useTranslations("AboutPage");
   const [activeMemberId, setActiveMemberId] = useState<number | null>(null);
   type CertificationIcon = "smile" | "chip" | "implant" | "wave" | "spark";
@@ -116,9 +120,11 @@ export function TeamSection() {
   return (
     <section id="team" className="relative isolate">
       <div className="py-6 sm:py-8 lg:py-10">
-        <p className="text-center text-[10px] font-semibold uppercase tracking-[0.12em] text-clinic-teal-700 sm:text-xs">
-          {t("teamTimelineLabel")}
-        </p>
+        {showStepLabel ? (
+          <p className="text-center text-[10px] font-semibold uppercase tracking-[0.12em] text-clinic-teal-700 sm:text-xs">
+            {t("teamTimelineLabel")}
+          </p>
+        ) : null}
         <h2 className="mt-3 text-center text-display-sm">{t("teamTitle")}</h2>
         <p className="mt-4 mx-auto max-w-3xl text-center section-lead">
           {t("teamLead")}
