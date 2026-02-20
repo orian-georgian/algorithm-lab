@@ -60,13 +60,47 @@
   },
   "Home": {
     "heroEyebrow": "Bine ai venit la Algorithm",
-    "heroTitle": "Tehnică dentară de precizie, cu grijă reală pentru fiecare detaliu.",
-    "heroDescription": "Suntem o echipă multidisciplinară din Cluj-Napoca care transformă planuri clinice în restaurări predictibile, estetice și funcționale, prin flux digital complet și standarde profesionale clare.",
-    "primaryCta": "Solicită colaborare",
+    "heroTitle": "Construcții protetice de la zero și restaurări predictibile pentru medici.",
+    "heroDescription": "Susținem medicii și clinicile cu flux CAD/CAM documentat, tehnician responsabil pe fiecare caz și comunicare clară, pentru lucrări noi și restaurări care se integrează eficient, cu rezultate stabile pentru pacienți.",
+    "primaryCta": "Discută un caz clinic",
     "secondaryCta": "Vezi serviciile noastre"
   },
+  "HomeProof": {
+    "timelineLabel": "De ce ne aleg partenerii noștri",
+    "whySubtitle": "Lucrăm cu procese clare, responsabilitate tehnică pe caz și comunicare directă, pentru rezultate clinice previzibile.",
+    "cta": "Cum asigurăm calitatea",
+    "one": {
+      "value": "1",
+      "label": "Tehnician responsabil / caz",
+      "text": "Un singur tehnician își asumă deciziile tehnice și follow-up-ul pentru fiecare caz."
+    },
+    "two": {
+      "value": "4",
+      "label": "Verificări obligatorii la intake",
+      "text": "Acceptarea începe după controlul STL, ocluziei, marginilor și indicației clinice."
+    },
+    "three": {
+      "value": "12",
+      "label": "Puncte în checklist-ul QC final",
+      "text": "Contactele, ocluzia, adaptarea marginală și finisarea sunt validate înainte de expediere."
+    },
+    "four": {
+      "value": "1:1",
+      "label": "Comunicare medic-tehnician",
+      "text": "Feedback tehnic direct când datele de caz indică risc de inserție sau ajustări suplimentare."
+    },
+    "whyTitle": "Parteneriat tehnic cu responsabilitate clară",
+    "reasons": {
+      "one": "Model de laborator mic: cazurile tale sunt gestionate de o echipă tehnică stabilă, nu de un flux anonim de producție.",
+      "two": "Criterii clare de acceptare înainte de producție, cu mai puține refaceri evitabile.",
+      "three": "Flux CAD/CAM documentat, cu decizii tehnice trasabile pentru fiecare caz.",
+      "four": "Comunicare practică privind limitele indicației, geometria preparației și riscurile de inserție.",
+      "five": "Controlul execuției orientat pe predictibilitate clinică, nu pe volum.",
+      "six": "Trasabilitate digitală pentru fiecare restaurare livrată."
+    }
+  },
   "HomeStats": {
-    "timelineLabel": "Pasul 3 - Rezultate",
+    "timelineLabel": "Rezultate concrete",
     "title": "Experiență dovedită în peste 5 ani de colaborare",
     "lead": "Cifrele confirmă impactul muncii noastre: parteneriate stabile, cazuri numeroase și livrări constante pentru clinici și medici stomatologi.",
     "dentists": {
@@ -114,7 +148,7 @@
     "standardsTitle": "Standarde de lucru",
     "standardsText": "Folosim protocoale digitale, verificare multi-etapă și trasabilitate completă pentru fiecare lucrare protetică.",
     "standardsTextExtra": "Fiecare caz urmează un flux documentat: analiză inițială, design CAD, validare funcțională, selecție controlată a materialelor și verificare finală înainte de livrare. Acest model de lucru asigură consistență, calitate repetabilă și transparență pentru partenerii noștri medicali.",
-    "teamTimelineLabel": "Pasul 2 - Echipa",
+    "teamTimelineLabel": "Echipa noastră",
     "teamTitle": "Echipa multidisciplinară din spatele fiecărei lucrări",
     "teamLead": "Tehnicieni și specialiști dedicați, uniți de aceeași misiune: calitate constantă, comunicare clară și rezultate care inspiră încredere.",
     "certificationsEyebrow": "Acreditări profesionale",
@@ -149,7 +183,7 @@
     "member3Detail2": "Focus: adaptare pasivă și estetică naturală pe termen lung."
   },
   "Services": {
-    "timelineLabel": "Pasul 1 - Servicii",
+    "timelineLabel": "Serviciile noastre",
     "title": "Cum lucrăm zi de zi pentru rezultate predictibile",
     "lead": "Serviciile noastre combină precizia tehnică, atenția la detalii și responsabilitatea medicală, pentru restaurări pe care te poți baza.",
     "serviceLabel": "Serviciu",
@@ -233,7 +267,7 @@
     "finalCta": "Solicită ofertă personalizată"
   },
   "Testimonials": {
-    "timelineLabel": "Pasul 4 - Încredere confirmată",
+    "timelineLabel": "Încredere confirmată",
     "title": "Partenerii noștri confirmă valoarea colaborării",
     "lead": "După rezultate vin confirmările reale: feedback direct de la clinici și medici stomatologi care lucrează constant cu Algorithm.",
     "one": {
@@ -284,7 +318,7 @@
     "showMore": "Vezi mai multe recenzii"
   },
   "Gallery": {
-    "timelineLabel": "Pasul 5 - Dovada muncii noastre",
+    "timelineLabel": "Dovada muncii noastre",
     "title": "În culisele laboratorului: muncă reală, atenție reală",
     "lead": "Aici vezi cum arată dedicarea noastră în practică: etape de lucru, procese tehnice și standarde de calitate aplicate zi de zi.",
     "placeholder": "Media Placeholder",
@@ -352,7 +386,7 @@
     "finalCta": "Solicită evaluare pentru cazul tău"
   },
   "Contact": {
-    "timelineLabel": "Pasul 6 - Contact",
+    "timelineLabel": "Contact",
     "title": "Pasul final: hai să construim împreună următorul tău caz",
     "lead": "Dacă îți dorești un partener tehnic de încredere, scrie-ne. Îți răspundem rapid și clar, cu focus pe soluția potrivită pentru tine.",
     "addressLabel": "Adresă",
@@ -425,7 +459,7 @@
   "ContactPage": {
     "eyebrow": "Contact",
     "title": "Contact direct cu echipa laboratorului Algorithm",
-    "description": "Ne poți contacta pentru discuția unui caz clinic, estimare de timp sau suport tehnic pentru planificare.",
+    "description": "Ne poți contacta pentru discuția unui caz clinic, estimare de timp sau suport tehnic pentru planificare. Lucrăm cu parteneri din România și din afara țării, asigurând o colaborare fără probleme.",
     "sectionTitle": "Spune-ne pe scurt cazul tău",
     "sectionLead": "Trimite detaliile, iar noi revenim rapid cu o direcție tehnică clară și pașii următori.",
     "prioritySectionTitle": "Sprijin tehnic pentru colaborări solide",
@@ -494,6 +528,54 @@
       "section4Title": "4. Drepturile tale",
       "section4Text": "Poți solicita acces, rectificare, ștergere sau restricționarea prelucrării datelor prin email-ul afișat în footer."
     }
+  },
+  "QualityControlProtocol": {
+    "metaTitle": "Protocol de Control al Calității | Laborator digital dentar",
+    "metaDescription": "Protocol structurat de control al calității pentru fluxuri protetice digitale: validare fișiere, control margini, verificare contacte, validare ocluzală, verificări de pasivitate pe implant și inspecție finală.",
+    "eyebrow": "Protocol tehnic",
+    "title": "Protocol de Control al Calității",
+    "intro": "Acest protocol definește criteriile de eliberare pentru cazurile protetice proiectate digital. Fiecare etapă de validare este concepută pentru a reduce ajustările la scaun, a îmbunătăți predictibilitatea inserției și a menține rezultate repetabile între clinicieni și tipuri de caz.",
+    "chairsideImpactLabel": "Impact clinic la scaun:",
+    "step1": {
+      "title": "1. Validarea fișierelor",
+      "text": "Fișierele de intrare sunt verificate pentru integritatea mesh-ului, zone lipsă de date, încrederea în înregistrare și zgomot de scanare în zone critice (perimetrul marginii, interfețe proximale, anatomie ocluzală posterioară).",
+      "impact": "Previne erorile de inferență geometrică care duc frecvent la rezistență la inserție și corecții ocluzale înalte."
+    },
+    "step2": {
+      "title": "2. Inspecția marginilor",
+      "text": "Liniile de finisare sunt inspectate pentru continuitate, lizibilitate și stabilitatea tranziției geometrice. Zonele ambigue sunt marcate pentru clarificare înainte de finalizarea designului.",
+      "impact": "Reduce blocajul intern și neconcordanțele marginale care obligă la șlefuire intraorală sau refaceri."
+    },
+    "step3": {
+      "title": "3. Verificarea contactelor",
+      "text": "Contactele proximale sunt controlate după ținte specifice cazului, în funcție de poziția dintelui, întinderea restaurării și constrângerile traseului de inserție. Profilurile supracontactate sunt corectate în etapa de design.",
+      "impact": "Reduce fricțiunea la inserție din cauza contactelor și scade timpul de ajustare proximală la scaun."
+    },
+    "step4": {
+      "title": "4. Validarea ocluziei",
+      "text": "Verificările ocluzale statice și dinamice sunt realizate cu praguri calibrate de contact, evaluarea morfologiei antagonistului și validarea traseelor funcționale înainte de eliberarea CAM.",
+      "impact": "Reduce contactele premature și limitează corecțiile ocluzale post-inserție."
+    },
+    "step5": {
+      "title": "5. Verificări de pasivitate pe implant",
+      "text": "Designurile pe implant sunt evaluate pentru pasivitate prin controlul cadrului, alinierea conexiunilor și consistența interfețelor înainte de finalizare.",
+      "impact": "Diminuează tiparele de neadaptare cu tensiune și reduce complicațiile mecanice asociate inserției forțate."
+    },
+    "step6": {
+      "title": "6. Inspecția finală",
+      "text": "Inspecția finală confirmă eliberarea pe checklist-ul de protocol: controlul adaptării, consistența morfologică, conformitatea planului de contacte, calitatea suprafeței și documentarea trasabilității cazului.",
+      "impact": "Standardizează calitatea la livrare și reduce variabilitatea comportamentului la inserție între cazuri."
+    },
+    "whyTitle": "De ce contează pentru clinica ta",
+    "whyPoints": {
+      "one": "Reducerea ajustărilor la scaun îmbunătățește stabilitatea programărilor.",
+      "two": "Inserția mai predictibilă reduce stresul procedural în programările complexe.",
+      "three": "Validarea standardizată susține rezultate repetabile între clinicieni.",
+      "four": "Criteriile clare de eliberare îmbunătățesc comunicarea tehnică și scurtează ciclurile de decizie."
+    },
+    "ctaTitle": "Trimite cazuri pentru validare pre-producție",
+    "ctaText": "Dacă vrei aplicarea acestui protocol înainte de producție, trimite fișierele cazului pentru validare structurată a marginilor, contactelor, ocluziei și riscurilor de pasivitate.",
+    "ctaButton": "Trimite cazuri pentru validare"
   },
   "Footer": {
     "brand": "Algorithm",

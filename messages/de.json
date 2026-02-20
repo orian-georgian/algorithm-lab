@@ -60,13 +60,47 @@
   },
   "Home": {
     "heroEyebrow": "Willkommen bei Algorithm",
-    "heroTitle": "Praezise Dentaltechnik mit echter Sorgfalt in jedem Detail.",
-    "heroDescription": "Wir sind ein interdisziplinaeres Team aus Cluj-Napoca und setzen klinische Plaene in vorhersagbare, aesthetische und funktionelle Restaurationen um - mit digitalem Workflow und klaren professionellen Standards.",
-    "primaryCta": "Beratung buchen",
-    "secondaryCta": "Leistungen ansehen"
+    "heroTitle": "Prothetische Konstruktionen ab null und vorhersagbare Restaurationen fuer Behandler.",
+    "heroDescription": "Wir unterstuetzen Zahnaerzte und Kliniken mit dokumentiertem CAD/CAM-Workflow, einem verantwortlichen Techniker pro Fall und klarer Kommunikation, sowohl fuer neue prothetische Konstruktionen als auch fuer restaurative Faelle mit stabilen Patientenergebnissen.",
+    "primaryCta": "Einen klinischen Fall besprechen",
+    "secondaryCta": "Unsere Leistungen ansehen"
+  },
+  "HomeProof": {
+    "timelineLabel": "Warum unsere Partner uns waehlen",
+    "whySubtitle": "Wir arbeiten mit klaren Protokollen, technischer Fallverantwortung und direkter Kommunikation fuer vorhersagbare klinische Ergebnisse.",
+    "cta": "Wie wir Qualitaet sichern",
+    "one": {
+      "value": "1",
+      "label": "Benannter Techniker je Fall",
+      "text": "Ein verantwortlicher Techniker steuert technische Entscheidungen und Rueckfragen pro Fall."
+    },
+    "two": {
+      "value": "4",
+      "label": "Pflichtchecks bei Annahme",
+      "text": "Die Fallannahme beginnt nach Pruefung von STL, Biss, Praeparationsgrenze und klinischer Indikation."
+    },
+    "three": {
+      "value": "12",
+      "label": "Punkte der finalen QC-Checkliste",
+      "text": "Kontakte, Okklusion, Randpassung und Oberflaeche werden vor dem Versand validiert."
+    },
+    "four": {
+      "value": "1:1",
+      "label": "Zahnarzt-Techniker-Kommunikation",
+      "text": "Direktes technisches Feedback, wenn Falldaten ein Eingliederungsrisiko oder zusaetzliche Anpassungen erwarten lassen."
+    },
+    "whyTitle": "Technische Zusammenarbeit mit klarer Verantwortung",
+    "reasons": {
+      "one": "Kleines Labormodell: Ihre Faelle werden von einem konstanten Team betreut, nicht in einer anonymen Produktionskette.",
+      "two": "Klare Annahmekriterien vor Produktionsstart reduzieren vermeidbare Remakes.",
+      "three": "Dokumentierter CAD/CAM-Ablauf mit nachvollziehbaren technischen Entscheidungen je Fall.",
+      "four": "Praxisnahe Kommunikation zu Indikationsgrenzen, Praeparationsgeometrie und Eingliederungsrisiken.",
+      "five": "Kontrollierte Fertigung mit Fokus auf klinische Vorhersagbarkeit statt Massenvolumen.",
+      "six": "Digitale Rueckverfolgbarkeit fuer jede ausgelieferte Restauration."
+    }
   },
   "HomeStats": {
-    "timelineLabel": "Schritt 3 - Ergebnisse",
+    "timelineLabel": "Konkrete Ergebnisse",
     "title": "Nachgewiesene Erfahrung aus ueber 5 Jahren",
     "lead": "Die Kennzahlen bestaetigen unsere Wirkung: stabile Partnerschaften, viele Faelle und konstant verlaessliche Lieferungen.",
     "dentists": {
@@ -114,7 +148,7 @@
     "standardsTitle": "Qualitaetsstandards",
     "standardsText": "Wir arbeiten mit digitalen Protokollen, Mehrstufenkontrolle und vollstaendiger Rueckverfolgbarkeit.",
     "standardsTextExtra": "Jeder Fall folgt einem dokumentierten Ablauf: Erstanalyse, CAD-Planung, funktionelle Validierung, kontrollierte Materialauswahl und finale Qualitaetspruefung vor Auslieferung. Dieses Modell sichert Konsistenz, reproduzierbare Qualitaet und Transparenz fuer unsere medizinischen Partner.",
-    "teamTimelineLabel": "Schritt 2 - Team",
+    "teamTimelineLabel": "Unser Team",
     "teamTitle": "Das interdisziplinaere Team hinter jeder Arbeit",
     "teamLead": "Engagierte Techniker und Spezialisten mit einer gemeinsamen Mission: konstante Qualitaet, klare Kommunikation und Ergebnisse, die Vertrauen schaffen.",
     "certificationsEyebrow": "Professionelle Qualifikationen",
@@ -149,7 +183,7 @@
     "member3Detail2": "Fokus: passive Passung und natuerliche Langzeitaesthetik."
   },
   "Services": {
-    "timelineLabel": "Schritt 1 - Leistungen",
+    "timelineLabel": "Unsere Leistungen",
     "title": "So arbeiten wir taeglich fuer planbare Ergebnisse",
     "lead": "Unsere Leistungen verbinden technische Praezision, Liebe zum Detail und medizinische Verantwortung fuer Restaurationen, auf die Sie sich verlassen koennen.",
     "serviceLabel": "Leistung",
@@ -233,7 +267,7 @@
     "finalCta": "Personalisierte Anfrage senden"
   },
   "Testimonials": {
-    "timelineLabel": "Schritt 4 - Bestaetigtes Vertrauen",
+    "timelineLabel": "Bestaetigtes Vertrauen",
     "title": "Unsere Partner bestaetigen den Wert der Zusammenarbeit",
     "lead": "Auf Ergebnisse folgt echte Bestaetigung: direktes Feedback von Kliniken und einzelnen Zahnaerzten, die regelmaessig mit Algorithm arbeiten.",
     "one": {
@@ -284,7 +318,7 @@
     "showMore": "Mehr Bewertungen anzeigen"
   },
   "Gallery": {
-    "timelineLabel": "Schritt 5 - Galerie",
+    "timelineLabel": "Nachweis unserer Arbeit",
     "title": "Einblick ins Labor: echte Arbeit, echte Sorgfalt",
     "lead": "Hier sehen Sie unsere taegliche Arbeit in der Praxis: technische Schritte, Arbeitsablaeufe und qualitaetsorientierte Ausfuehrung.",
     "placeholder": "Medien Platzhalter",
@@ -352,7 +386,7 @@
     "finalCta": "Bewertung fuer Ihren Fall anfragen"
   },
   "Contact": {
-    "timelineLabel": "Schritt 6 - Kontakt",
+    "timelineLabel": "Kontakt",
     "title": "Letzter Schritt: lassen Sie uns Ihren naechsten Fall gemeinsam aufbauen",
     "lead": "Wenn Sie einen verlaesslichen technischen Partner suchen, schreiben Sie uns. Wir antworten schnell, klar und loesungsorientiert.",
     "addressLabel": "Adresse",
@@ -425,7 +459,7 @@
   "ContactPage": {
     "eyebrow": "Kontakt",
     "title": "Direkter Kontakt mit dem Algorithm Labor-Team",
-    "description": "Kontaktieren Sie uns fuer Fallplanung, Zeitrahmen und technischen Austausch.",
+    "description": "Kontaktieren Sie uns fuer Fallplanung, Zeitrahmen und technischen Austausch. Wir arbeiten mit Partnern in Rumaenien und international und sichern eine reibungslose Zusammenarbeit.",
     "sectionTitle": "Erzaehlen Sie uns kurz von Ihrem Fall",
     "sectionLead": "Senden Sie uns die Details, und wir antworten mit einer klaren technischen Richtung und den naechsten Schritten.",
     "prioritySectionTitle": "Technische Unterstuetzung fuer verlaessliche Partnerschaften",
@@ -494,6 +528,54 @@
       "section4Title": "4. Ihre Rechte",
       "section4Text": "Sie koennen Auskunft, Berichtigung, Loeschung oder Einschraenkung der Verarbeitung anfordern, indem Sie uns ueber die im Footer angegebene E-Mail kontaktieren."
     }
+  },
+  "QualityControlProtocol": {
+    "metaTitle": "Qualitaetskontrollprotokoll | Digitales Dentallabor",
+    "metaDescription": "Strukturiertes Qualitaetskontrollprotokoll fuer digitale prothetische Workflows: Dateivalidierung, Praeparationsgrenzenkontrolle, Kontaktpruefung, Okklusionsvalidierung, Implantat-Passivitaetschecks und Endkontrolle.",
+    "eyebrow": "Technisches Protokoll",
+    "title": "Qualitaetskontrollprotokoll",
+    "intro": "Dieses Protokoll definiert die Freigabekriterien fuer digital geplante prothetische Faelle. Jeder Validierungsschritt reduziert den chairside Anpassungsaufwand, verbessert die Eingliederungsvorhersagbarkeit und sichert reproduzierbare Ergebnisse ueber verschiedene Behandler und Falltypen hinweg.",
+    "chairsideImpactLabel": "Chairside-Effekt:",
+    "step1": {
+      "title": "1. Dateivalidierung",
+      "text": "Eingabedateien werden auf Mesh-Integritaet, fehlende Datenbereiche, Registrierungszuverlaessigkeit und Scanrauschen in kritischen Zonen geprueft (Praeparationsgrenzenverlauf, proximale Schnittstellen, posteriore Okklusalgeometrie).",
+      "impact": "Verhindert Geometrie-Interpretationsfehler, die haeufig zu Setzhemmung und Hochpunktkorrekturen bei der Eingliederung fuehren."
+    },
+    "step2": {
+      "title": "2. Praeparationsgrenzen-Inspektion",
+      "text": "Praeparationsgrenzen werden auf Kontinuitaet, Lesbarkeit und stabile Uebergangsgeometrie kontrolliert. Uneindeutige Bereiche werden vor Abschluss des Designs zur Klaerung markiert.",
+      "impact": "Reduziert innere Verspannung und Randungenauigkeiten, die intraorales Einschleifen oder Remakes erzwingen."
+    },
+    "step3": {
+      "title": "3. Kontaktverifikation",
+      "text": "Approximalpunkte werden anhand fallspezifischer Zielwerte je Zahnposition, Restaurationsspanne und Einschubrichtung kontrolliert. Zu straffe Kontaktprofile werden bereits im Design korrigiert.",
+      "impact": "Verringert kontaktbedingte Einschubfriktion und reduziert den chairside Zeitaufwand fuer proximale Anpassungen."
+    },
+    "step4": {
+      "title": "4. Okklusionsvalidierung",
+      "text": "Statische und dynamische Okklusionspruefungen erfolgen mit kalibrierten Kontaktgrenzwerten, Antagonistenanalyse und funktioneller Bewegungsbahnkontrolle vor CAM-Freigabe.",
+      "impact": "Reduziert Fruehkontakte und begrenzt postinsertionale okklusale Korrekturen."
+    },
+    "step5": {
+      "title": "5. Implantat-Passivitaetschecks",
+      "text": "Implantatgetragene Designs durchlaufen passivitaetsorientierte Geruestpruefung, Verbindungsachsenkontrolle und Schnittstellenkonsistenz-Checks vor der Finalisierung.",
+      "impact": "Minimiert spannungsinduzierende Fehlpassungsmuster und reduziert mechanische Komplikationen durch erzwungene Eingliederung."
+    },
+    "step6": {
+      "title": "6. Endkontrolle",
+      "text": "Die Endkontrolle bestaetigt die Freigabe anhand der Protokoll-Checkliste: Passung, Morphologiekonsistenz, Kontaktplan-Konformitaet, Oberflaechenqualitaet und Falldokumentation.",
+      "impact": "Standardisiert die Auslieferungsqualitaet und reduziert die Variabilitaet des Eingliederungsverhaltens zwischen Faellen."
+    },
+    "whyTitle": "Warum das fuer Ihre Klinik wichtig ist",
+    "whyPoints": {
+      "one": "Weniger chairside Korrekturen stabilisieren den Terminplan.",
+      "two": "Vorhersagbarere Eingliederung senkt den prozeduralen Stress bei komplexen Sitzungen.",
+      "three": "Standardisierte Validierung unterstuetzt reproduzierbare Ergebnisse ueber mehrere Behandler hinweg.",
+      "four": "Klare Freigabekriterien verbessern die technische Kommunikation und verkuerzen Entscheidungswege."
+    },
+    "ctaTitle": "Faelle zur Vorproduktionsvalidierung einreichen",
+    "ctaText": "Wenn Sie dieses Protokoll vor Produktionsstart anwenden moechten, senden Sie Ihre Falldaten zur strukturierten Validierung von Praeparationsgrenze, Kontakten, Okklusion und Passivitaetsrisiken.",
+    "ctaButton": "Faelle zur Validierung senden"
   },
   "Footer": {
     "brand": "Algorithm",

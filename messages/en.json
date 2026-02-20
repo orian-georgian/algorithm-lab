@@ -60,13 +60,47 @@
   },
   "Home": {
     "heroEyebrow": "Welcome to Algorithm",
-    "heroTitle": "Precision dental technology, with genuine care in every detail.",
-    "heroDescription": "We are a multidisciplinary team from Cluj-Napoca turning clinical plans into predictable, esthetic, and functional restorations through a full digital workflow and clear professional standards.",
-    "primaryCta": "Book a consultation",
-    "secondaryCta": "Explore services"
+    "heroTitle": "From-scratch prosthetic builds and predictable restorations for dentists.",
+    "heroDescription": "We support dentists and clinics with a documented CAD/CAM workflow, a named technician for every case, and clear communication, for both new prosthetic constructions and restorative cases with stable patient outcomes.",
+    "primaryCta": "Discuss a Clinical Case",
+    "secondaryCta": "See Our Services"
+  },
+  "HomeProof": {
+    "timelineLabel": "Why Our Partners Choose Us",
+    "whySubtitle": "We work with clear protocols, direct technical accountability, and practical communication for predictable clinical outcomes.",
+    "cta": "How We Ensure Quality",
+    "one": {
+      "value": "1",
+      "label": "Named technician per case",
+      "text": "One accountable technician manages technical decisions and follow-up for each case."
+    },
+    "two": {
+      "value": "4",
+      "label": "Mandatory intake checks",
+      "text": "Case acceptance starts after STL, bite, margin visibility, and indication checks are complete."
+    },
+    "three": {
+      "value": "12",
+      "label": "Final QC checklist points",
+      "text": "Contacts, occlusion, marginal fit, and surface quality are validated before dispatch."
+    },
+    "four": {
+      "value": "1:1",
+      "label": "Dentist-technician communication",
+      "text": "Direct technical feedback when case data indicates insertion risk or potential extra adjustments."
+    },
+    "whyTitle": "Structured collaboration you can rely on",
+    "reasons": {
+      "one": "Small-lab model: your cases are handled by a consistent technical team, not an anonymous production queue.",
+      "two": "Clear acceptance criteria before production, reducing avoidable remakes.",
+      "three": "Documented CAD/CAM workflow with traceable technical decisions per case.",
+      "four": "Practical clinician communication on indication limits, prep geometry, and insertion risk points.",
+      "five": "Controlled output focused on clinical predictability, not high-volume turnover.",
+      "six": "Digital traceability for each delivered restoration."
+    }
   },
   "HomeStats": {
-    "timelineLabel": "Step 3 - Results",
+    "timelineLabel": "Concrete Results",
     "title": "Proven experience built over 5+ years",
     "lead": "The numbers confirm our impact: stable partnerships, a high case volume, and consistent delivery for clinics and dentists.",
     "dentists": {
@@ -114,7 +148,7 @@
     "standardsTitle": "Quality standards",
     "standardsText": "We use digital protocols, multi-step validation, and full case traceability.",
     "standardsTextExtra": "Each case follows a documented workflow: initial analysis, CAD design, functional validation, controlled material selection, and final quality check before delivery. This model ensures consistency, repeatable quality, and transparency for our medical partners.",
-    "teamTimelineLabel": "Step 2 - Team",
+    "teamTimelineLabel": "Our team",
     "teamTitle": "The multidisciplinary team behind every restoration",
     "teamLead": "Dedicated technicians and specialists united by one mission: consistent quality, clear communication, and outcomes that build trust.",
     "certificationsEyebrow": "Professional credentials",
@@ -149,7 +183,7 @@
     "member3Detail2": "Focus: passive fit and long-term natural esthetics."
   },
   "Services": {
-    "timelineLabel": "Step 1 - Services",
+    "timelineLabel": "Our Services",
     "title": "How we work every day for predictable outcomes",
     "lead": "Our services combine technical precision, attention to detail, and medical responsibility to deliver restorations you can rely on.",
     "serviceLabel": "Service",
@@ -233,7 +267,7 @@
     "finalCta": "Request a personalized offer"
   },
   "Testimonials": {
-    "timelineLabel": "Step 4 - Trust confirmed",
+    "timelineLabel": "Trust Confirmed",
     "title": "Our partners confirm the value of collaboration",
     "lead": "After results comes real validation: direct feedback from clinics and individual dentists who work with Algorithm consistently.",
     "one": {
@@ -284,7 +318,7 @@
     "showMore": "See more reviews"
   },
   "Gallery": {
-    "timelineLabel": "Step 5 - Gallery",
+    "timelineLabel": "Proof of Our Work",
     "title": "Inside the laboratory: real work, real dedication",
     "lead": "See how our daily commitment looks in practice through technical stages, working moments, and quality-focused execution.",
     "placeholder": "Media Placeholder",
@@ -352,7 +386,7 @@
     "finalCta": "Request an evaluation for your case"
   },
   "Contact": {
-    "timelineLabel": "Step 6 - Contact",
+    "timelineLabel": "Contact",
     "title": "Final step: let's build your next case together",
     "lead": "If you need a reliable technical partner, send us a message. We reply quickly and clearly, focused on the right solution for your needs.",
     "addressLabel": "Address",
@@ -425,7 +459,7 @@
   "ContactPage": {
     "eyebrow": "Contact",
     "title": "Contact the Algorithm dental laboratory team",
-    "description": "Reach out for case planning, timeline estimates, and direct technical communication.",
+    "description": "Reach out for case planning, timeline estimates, and direct technical communication. We work with partners across Romania and internationally, ensuring a smooth collaboration process.",
     "sectionTitle": "Tell us about your case",
     "sectionLead": "Send us the details and we will reply with a clear technical direction and next steps.",
     "prioritySectionTitle": "Technical support for reliable partnerships",
@@ -494,6 +528,54 @@
       "section4Title": "4. Your rights",
       "section4Text": "You may request access, correction, deletion, or restriction of your data processing by contacting us at the email address listed in the footer."
     }
+  },
+  "QualityControlProtocol": {
+    "metaTitle": "Quality Control Protocol | Digital Dental Lab",
+    "metaDescription": "Structured quality control protocol for digital prosthetic workflows: file validation, margin control, contact verification, occlusion validation, implant passivity checks, and final inspection.",
+    "eyebrow": "Technical Protocol",
+    "title": "Quality Control Protocol",
+    "intro": "This protocol defines the release criteria for digitally designed prosthetic cases. Each validation step is designed to reduce chairside adjustment load, improve insertion predictability, and maintain repeatable outcomes across clinicians and case types.",
+    "chairsideImpactLabel": "Chairside impact:",
+    "step1": {
+      "title": "1. File Validation",
+      "text": "Input files are reviewed for mesh integrity, missing data zones, registration confidence, and scan noise in critical areas (margin perimeter, proximal interfaces, posterior occlusal anatomy).",
+      "impact": "Prevents geometry inference errors that commonly cause seating resistance and high-point corrections during insertion."
+    },
+    "step2": {
+      "title": "2. Margin Inspection",
+      "text": "Finish lines are inspected for continuity, readability, and stable transition geometry. Ambiguous regions are flagged for clarification before design finalization.",
+      "impact": "Reduces internal binding and marginal mismatch that force intraoral grinding or remakes."
+    },
+    "step3": {
+      "title": "3. Contact Verification",
+      "text": "Proximal contacts are controlled against case-specific targets by tooth position, restorative span, and insertion path constraints. Over-tight contact profiles are corrected at design stage.",
+      "impact": "Lowers contact-related insertion friction and decreases chairside proximal adjustment time."
+    },
+    "step4": {
+      "title": "4. Occlusion Validation",
+      "text": "Static and dynamic occlusal checks are performed using calibrated contact thresholds, antagonist morphology assessment, and functional path verification before CAM release.",
+      "impact": "Reduces premature contacts and limits post-insertion occlusal corrections."
+    },
+    "step5": {
+      "title": "5. Implant Passivity Checks",
+      "text": "Implant-supported designs undergo passivity-oriented framework verification, connection alignment control, and interface consistency checks before finalization.",
+      "impact": "Minimizes strain-inducing misfit patterns and reduces mechanical complications related to forced seating."
+    },
+    "step6": {
+      "title": "6. Final Inspection",
+      "text": "Final inspection confirms release against protocol checklist: fit control, morphology consistency, contact plan compliance, surface quality, and case traceability documentation.",
+      "impact": "Standardizes delivery quality and decreases variability in insertion behavior between cases."
+    },
+    "whyTitle": "Why This Matters for Your Clinic",
+    "whyPoints": {
+      "one": "Reduced chairside correction load improves schedule stability.",
+      "two": "More predictable insertion lowers procedural stress in complex appointments.",
+      "three": "Standardized validation supports repeatable outcomes across clinicians.",
+      "four": "Clear release criteria improve technical communication and shorten decision loops."
+    },
+    "ctaTitle": "Submit Cases for Pre-Production Validation",
+    "ctaText": "If you want this protocol applied before production, submit your case files for structured validation of margin definition, contacts, occlusion, and passivity risk points.",
+    "ctaButton": "Submit Cases for Validation"
   },
   "Footer": {
     "brand": "Algorithm",

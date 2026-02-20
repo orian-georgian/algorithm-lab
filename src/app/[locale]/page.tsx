@@ -9,6 +9,9 @@ import { MotionReveal } from "@/components/system/MotionReveal";
 const HeroSection = dynamicImport(() =>
   import("@/components/ui/HeroSection").then((m) => m.HeroSection),
 );
+const HomeProofSection = dynamicImport(() =>
+  import("@/components/ui/HomeProofSection").then((m) => m.HomeProofSection),
+);
 const ServicesSection = dynamicImport(() =>
   import("@/components/ui/ServicesSection").then((m) => m.ServicesSection),
 );
@@ -64,7 +67,10 @@ export default async function HomePage({ params }: Props) {
       />
       <ClinicJsonLd locale={locale} />
       <HeroSection />
-      <ServicesSection showQualityBlock={false} showAllServicesCta />
+      <HomeProofSection />
+      <MotionReveal delay={0.04}>
+        <ServicesSection showQualityBlock={false} showAllServicesCta />
+      </MotionReveal>
       <MotionReveal delay={0.06}>
         <TeamSection />
       </MotionReveal>

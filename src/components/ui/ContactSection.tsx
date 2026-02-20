@@ -72,7 +72,7 @@ export function ContactSection({
   }
 
   return (
-    <section id="contact" className="relative isolate">
+    <section id="contact" className="relative isolate scroll-mt-24">
       <div className="py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-3xl text-center">
           {showStepLabel ? (

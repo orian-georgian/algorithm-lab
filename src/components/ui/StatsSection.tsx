@@ -25,7 +25,7 @@ export function StatsSection({ showStepLabel = true }: StatsSectionProps) {
           <p className="section-lead mt-4">{t("lead")}</p>
         </div>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-4 py-4 sm:grid-cols-2 sm:py-6 lg:grid-cols-4 lg:py-8">
           {statKeys.map((key) => (
             <article key={key} className="px-2 py-3 text-center">
               <p className="text-4xl font-extrabold leading-none text-clinic-teal-700 sm:text-5xl lg:text-6xl">
