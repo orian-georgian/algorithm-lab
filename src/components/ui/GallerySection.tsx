@@ -173,6 +173,7 @@ export function GallerySection({ showStepLabel = true }: GallerySectionProps) {
                 iconVariant="chevronLeft"
                 className="absolute -left-2 top-1/2 z-20 -translate-y-1/2 sm:-left-3"
                 aria-label={g("previousImage")}
+                disableLiftAnimation
               />
 
               <div className="relative aspect-[16/10] overflow-hidden rounded-3xl border border-clinic-border bg-clinic-white shadow-soft">
@@ -285,10 +286,10 @@ export function GallerySection({ showStepLabel = true }: GallerySectionProps) {
                 iconVariant="chevronRight"
                 className="absolute -right-2 top-1/2 z-20 -translate-y-1/2 sm:-right-3"
                 aria-label={g("nextImage")}
+                disableLiftAnimation
               />
             </div>
           </div>
-
         </div>
 
         <div className="mt-8 lg:mt-12 flex justify-center">
@@ -324,6 +325,7 @@ export function GallerySection({ showStepLabel = true }: GallerySectionProps) {
                   iconVariant="chevronLeft"
                   aria-label={g("previousImage")}
                   className="absolute left-[max(0.75rem,env(safe-area-inset-left))] top-1/2 z-20 -translate-y-1/2 shadow-lg sm:left-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                  disableLiftAnimation
                 />
 
                 <figure className="relative h-[calc(100vh-1rem)] w-[calc(100vw-1rem)] max-w-[1400px] sm:h-[calc(100vh-2rem)] sm:w-[calc(100vw-2rem)]">
@@ -364,6 +366,7 @@ export function GallerySection({ showStepLabel = true }: GallerySectionProps) {
                   iconVariant="chevronRight"
                   aria-label={g("nextImage")}
                   className="absolute right-[max(0.75rem,env(safe-area-inset-right))] top-1/2 z-20 -translate-y-1/2 shadow-lg sm:right-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                  disableLiftAnimation
                 />
               </div>,
               document.body,

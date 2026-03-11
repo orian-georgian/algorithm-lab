@@ -48,18 +48,16 @@ export function Navbar() {
     <header
       className={[
         "sticky top-0 z-50 border-b border-clinic-border bg-clinic-white/95 backdrop-blur transition-shadow dark:border-slate-700",
-        isScrolled ? "shadow-[0_8px_24px_rgba(15,23,42,0.08)] dark:shadow-[0_8px_24px_rgba(2,6,23,0.45)]" : "",
+        isScrolled
+          ? "shadow-[0_8px_24px_rgba(15,23,42,0.08)] dark:shadow-[0_8px_24px_rgba(2,6,23,0.45)]"
+          : "",
       ].join(" ")}
     >
       <nav
         className="container-page flex h-20 items-center justify-between gap-4"
         aria-label={t("ariaMain")}
       >
-        <Link
-          href="/"
-          prefetch
-          className="inline-flex shrink-0 items-center"
-        >
+        <Link href="/" prefetch className="inline-flex shrink-0 items-center">
           <Image
             src="/logos/logo.png"
             alt={t("brand")}
@@ -92,7 +90,7 @@ export function Navbar() {
                   "rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-[0.08em] transition",
                   pathname === link.href
                     ? "bg-clinic-teal-700 dark:bg-clinic-teal-300 text-white dark:text-slate-950 shadow-soft"
-                    : "text-clinic-slate-700 hover:text-clinic-teal-700"
+                    : "text-clinic-slate-700 hover:text-clinic-teal-700",
                 ].join(" ")}
                 href={link.href}
                 prefetch
@@ -113,7 +111,10 @@ export function Navbar() {
             >
               <ThemeToggle />
             </motion.div>
-            <span aria-hidden="true" className="mx-1 hidden h-5 w-px bg-clinic-border/90 md:block" />
+            <span
+              aria-hidden="true"
+              className="mx-1 hidden h-5 w-px bg-clinic-border/90 md:block"
+            />
             {locales.map((item) => (
               <motion.div
                 key={item.code}
@@ -193,7 +194,7 @@ export function Navbar() {
                 "rounded-lg px-3 py-2 text-xs font-bold uppercase tracking-[0.08em] transition",
                 pathname === link.href
                   ? "bg-clinic-teal-700 dark:bg-clinic-teal-300 text-white dark:text-slate-950 shadow-soft"
-                  : "text-clinic-slate-700 hover:bg-clinic-blue-50 hover:text-clinic-teal-700"
+                  : "text-clinic-slate-700 hover:bg-clinic-blue-50 hover:text-clinic-teal-700",
               ].join(" ")}
             >
               {link.label}
@@ -225,5 +226,3 @@ export function Navbar() {
     </header>
   );
 }
-
-

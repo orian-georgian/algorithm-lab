@@ -31,12 +31,14 @@ export function ImageGallery({
   showMoreLabel,
   initialVisibleCount,
   loadStep = 6,
-  className
+  className,
 }: Props) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [loaded, setLoaded] = useState<Record<string, boolean>>({});
   const [lightboxLoaded, setLightboxLoaded] = useState(false);
-  const [visibleCount, setVisibleCount] = useState(initialVisibleCount ?? items.length);
+  const [visibleCount, setVisibleCount] = useState(
+    initialVisibleCount ?? items.length,
+  );
   const [mounted, setMounted] = useState(false);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const visibleItems = items.slice(0, visibleCount);
@@ -135,8 +137,9 @@ export function ImageGallery({
             key={item.id}
             onClick={() => setActiveIndex(index)}
             variant="neutral"
-            className="group relative block aspect-[4/3] overflow-hidden rounded-none border-0 p-0 focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+            className="group relative block aspect-[4/3] overflow-hidden rounded-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
             aria-label={`${openLabel}: ${item.alt}`}
+            disableLiftAnimation
           >
             <Image
               src={item.src}
@@ -145,7 +148,9 @@ export function ImageGallery({
               sizes="(max-width: 768px) 50vw, 33vw"
               className={[
                 "object-cover transition duration-500 group-hover:scale-[1.03]",
-                loaded[item.id] ? "blur-0 scale-100" : "scale-[1.02] blur-sm"
+                loaded[item.id] ? "blur-0 scale-100" : "scale-[1.02] blur-sm",
+                // Remove border radius for square corners
+                "rounded-none",
               ].join(" ")}
               onLoad={() => setLoaded((prev) => ({ ...prev, [item.id]: true }))}
               loading="lazy"
@@ -199,6 +204,7 @@ export function ImageGallery({
                 iconVariant="close"
                 aria-label={closeLabel}
                 className="absolute right-[max(0.75rem,env(safe-area-inset-right))] top-[max(0.75rem,env(safe-area-inset-top))] z-20 shadow-lg sm:right-4 sm:top-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                disableLiftAnimation
               />
               <Button
                 onClick={showPrevious}
@@ -207,6 +213,7 @@ export function ImageGallery({
                 iconVariant="chevronLeft"
                 aria-label={previousLabel}
                 className="absolute left-[max(0.75rem,env(safe-area-inset-left))] top-1/2 z-20 -translate-y-1/2 shadow-lg sm:left-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                disableLiftAnimation
               />
 
               <figure className="relative h-[calc(100vh-1rem)] w-[calc(100vw-1rem)] max-w-[1400px] sm:h-[calc(100vh-2rem)] sm:w-[calc(100vw-2rem)]">
@@ -246,6 +253,7 @@ export function ImageGallery({
                 iconVariant="chevronRight"
                 aria-label={nextLabel}
                 className="absolute right-[max(0.75rem,env(safe-area-inset-right))] top-1/2 z-20 -translate-y-1/2 shadow-lg sm:right-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                disableLiftAnimation
               />
             </div>,
             document.body,
@@ -254,6 +262,3 @@ export function ImageGallery({
     </section>
   );
 }
-
-
-

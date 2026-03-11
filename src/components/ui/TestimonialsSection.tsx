@@ -223,6 +223,7 @@ export function TestimonialsSection({
                 size="iconMd"
                 iconVariant="chevronLeft"
                 aria-label="Previous testimonial"
+                disableLiftAnimation
               />
 
               <Button
@@ -231,6 +232,7 @@ export function TestimonialsSection({
                 size="iconMd"
                 iconVariant="chevronRight"
                 aria-label="Next testimonial"
+                disableLiftAnimation
               />
             </div>
           </div>
@@ -246,6 +248,7 @@ export function TestimonialsSection({
               iconVariant="chevronLeft"
               className="absolute left-2 top-1/2 z-[70] -translate-y-1/2 lg:left-3"
               aria-label="Previous testimonial"
+              disableLiftAnimation
             />
 
             <Button
@@ -255,6 +258,7 @@ export function TestimonialsSection({
               iconVariant="chevronRight"
               className="absolute right-2 top-1/2 z-[70] -translate-y-1/2 lg:right-3"
               aria-label="Next testimonial"
+              disableLiftAnimation
             />
 
             {[previousIndex, currentIndex, nextIndex].map((index) => {

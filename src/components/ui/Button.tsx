@@ -20,6 +20,7 @@ type CommonButtonProps = {
   className?: string;
   fullWidth?: boolean;
   children?: ReactNode;
+  disableLiftAnimation?: boolean;
 };
 
 type LinkButtonProps = CommonButtonProps &
@@ -67,12 +68,12 @@ export function Button(props: ButtonProps) {
     className,
     fullWidth = false,
     children,
+    disableLiftAnimation = false,
     ...rest
   } = props;
 
   const iconElement =
-    icon ??
-    (iconVariant ? <AnimatedButtonIcon variant={iconVariant} /> : null);
+    icon ?? (iconVariant ? <AnimatedButtonIcon variant={iconVariant} /> : null);
 
   const content = (
     <>
@@ -91,39 +92,46 @@ export function Button(props: ButtonProps) {
   );
 
   if ("href" in props) {
+    const linkEl = (
+      <Link
+        className={classes}
+        {...(rest as Omit<LinkButtonProps, keyof CommonButtonProps>)}
+        href={props.href as string}
+        as={undefined}
+      >
+        {content}
+      </Link>
+    );
+    if (disableLiftAnimation) return linkEl;
     return (
       <motion.div
         whileHover={{ y: -4, scale: 1.04 }}
         transition={{ type: "spring", stiffness: 400, damping: 22 }}
         style={{ display: "inline-block" }}
       >
-        <Link
-          className={classes}
-          {...(rest as Omit<LinkButtonProps, keyof CommonButtonProps>)}
-          href={props.href as string}
-          as={undefined}
-        >
-          {content}
-        </Link>
+        {linkEl}
       </motion.div>
     );
   }
 
   const nativeProps = rest as Omit<NativeButtonProps, keyof CommonButtonProps>;
-
+  const buttonEl = (
+    <button
+      type={nativeProps.type ?? "button"}
+      className={classes}
+      {...nativeProps}
+    >
+      {content}
+    </button>
+  );
+  if (disableLiftAnimation) return buttonEl;
   return (
     <motion.div
       whileHover={{ y: -4, scale: 1.04 }}
       transition={{ type: "spring", stiffness: 400, damping: 22 }}
       style={{ display: "inline-block" }}
     >
-      <button
-        type={nativeProps.type ?? "button"}
-        className={classes}
-        {...nativeProps}
-      >
-        {content}
-      </button>
+      {buttonEl}
     </motion.div>
   );
 }

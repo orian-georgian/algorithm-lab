@@ -36,7 +36,9 @@ export function BackToTopButton() {
       const computed = window.getComputedStyle(banner);
       const bannerBottom = Number.parseFloat(computed.bottom) || 0;
       const gap = 14;
-      setCookieLiftBottomPx(Math.ceil(bannerBottom + banner.offsetHeight + gap));
+      setCookieLiftBottomPx(
+        Math.ceil(bannerBottom + banner.offsetHeight + gap),
+      );
     };
 
     const syncCookieBannerState = () => {
@@ -59,7 +61,10 @@ export function BackToTopButton() {
     window.addEventListener("resize", updateLiftFromBanner);
 
     return () => {
-      window.removeEventListener("cookie-consent-changed", syncCookieBannerState);
+      window.removeEventListener(
+        "cookie-consent-changed",
+        syncCookieBannerState,
+      );
       window.removeEventListener("storage", syncCookieBannerState);
       window.removeEventListener("resize", updateLiftFromBanner);
     };
@@ -85,8 +90,11 @@ export function BackToTopButton() {
           />
         </svg>
       }
-      style={cookieBannerVisible ? { bottom: `${cookieLiftBottomPx}px` } : undefined}
+      style={
+        cookieBannerVisible ? { bottom: `${cookieLiftBottomPx}px` } : undefined
+      }
       className="fixed bottom-[max(1.25rem,env(safe-area-inset-bottom))] right-[max(1.25rem,env(safe-area-inset-right))] z-[60] h-12 w-12 focus-visible:ring-offset-2 focus-visible:ring-offset-clinic-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800 sm:bottom-[max(1.5rem,env(safe-area-inset-bottom))] sm:right-[max(1.5rem,env(safe-area-inset-right))]"
+      disableLiftAnimation
     />
   );
 }
