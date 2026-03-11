@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
 import { PageIntro } from "@/components/ui/PageIntro";
 
 type Props = {
@@ -34,7 +34,7 @@ export default async function QualityControlProtocolPage({ params }: Props) {
         aria-hidden="true"
         className="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 bg-gradient-to-b from-clinic-white via-clinic-blue-100/70 to-clinic-white"
       />
-      <div className="space-y-8 px-4 pt-4 pb-10 sm:space-y-12 sm:px-6 sm:py-10 lg:px-10">
+      <div className="space-y-6 px-4 pt-4 pb-10 sm:space-y-8 sm:px-6 sm:py-10 lg:space-y-10 lg:px-10">
         <PageIntro
           eyebrow={t("eyebrow")}
           title={t("title")}
@@ -64,7 +64,6 @@ export default async function QualityControlProtocolPage({ params }: Props) {
             ))}
           </div>
         </section>
-
         <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-clinic-white via-clinic-blue-50/70 to-clinic-teal-100/45 p-6 sm:p-8">
           <div
             aria-hidden="true"
@@ -75,7 +74,12 @@ export default async function QualityControlProtocolPage({ params }: Props) {
               <h2 className="text-display-sm">{t("whyTitle")}</h2>
             </div>
             <ul className="mx-auto mt-6 grid max-w-4xl gap-3 text-sm leading-relaxed text-clinic-slate-700 sm:grid-cols-2 sm:text-base">
-              {[t("whyPoints.one"), t("whyPoints.two"), t("whyPoints.three"), t("whyPoints.four")].map((point) => (
+              {[
+                t("whyPoints.one"),
+                t("whyPoints.two"),
+                t("whyPoints.three"),
+                t("whyPoints.four"),
+              ].map((point) => (
                 <li key={point} className="flex items-start gap-2">
                   <span
                     className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center text-clinic-teal-700"
@@ -99,12 +103,14 @@ export default async function QualityControlProtocolPage({ params }: Props) {
               {t("ctaText")}
             </p>
             <div className="mt-5">
-              <Link
+              <Button
                 href="/contact"
-                className="inline-flex rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-7 py-3 text-sm font-semibold text-white dark:text-slate-950 shadow-soft transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+                variant="primary"
+                size="lg"
+                iconVariant="arrowRight"
               >
                 {t("ctaButton")}
-              </Link>
+              </Button>
             </div>
           </footer>
         </section>

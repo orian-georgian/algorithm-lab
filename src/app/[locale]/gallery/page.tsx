@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import dynamicImport from "next/dynamic";
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
 import { getPageMetadata } from "@/seo/metadata";
 import { galleryPageMedia, videoMedia } from "@/lib/media-assets";
 
@@ -68,7 +68,7 @@ export default async function GalleryPage({ params }: Props) {
         aria-hidden="true"
         className="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 bg-gradient-to-b from-clinic-white via-clinic-blue-100/70 to-clinic-white"
       />
-      <div className="space-y-8 px-4 pt-4 pb-10 sm:space-y-12 sm:px-6 sm:py-10 lg:px-10">
+      <div className="space-y-6 px-4 pt-4 pb-10 sm:space-y-8 sm:px-6 sm:py-10 lg:space-y-10 lg:px-10">
         <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-clinic-white via-clinic-blue-50/70 to-clinic-teal-100/45 p-8 sm:p-12">
           <div
             aria-hidden
@@ -104,7 +104,7 @@ export default async function GalleryPage({ params }: Props) {
           </div>
         </section>
         <ImageGallery
-          className="pt-6 sm:pt-8 lg:pt-10"
+          className="pt-2 sm:pt-3 lg:pt-4"
           items={galleryPageMedia}
           title={t("gridTitle")}
           lead={t("gridLead")}
@@ -117,18 +117,20 @@ export default async function GalleryPage({ params }: Props) {
           loadStep={6}
         />
         <VideoSection
-          className="pt-6 sm:pt-8 lg:pt-10"
+          className="pt-2 sm:pt-3 lg:pt-4"
           items={videoMedia}
           title={t("videoTitle")}
           lead={t("videoLead")}
         />
         <div className="flex justify-center">
-          <Link
+          <Button
             href="/contact"
-            className="inline-flex rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-6 py-3 text-sm font-semibold text-white dark:text-slate-950 shadow-soft transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+            variant="primary"
+            size="lg"
+            iconVariant="arrowRight"
           >
             {t("videoCta")}
-          </Link>
+          </Button>
         </div>
       </div>
     </section>

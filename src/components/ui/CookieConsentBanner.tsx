@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
 
 const STORAGE_KEY = "algorithm_cookie_consent";
 
@@ -98,20 +99,21 @@ export function CookieConsentBanner() {
           </div>
 
           <div className="flex items-center justify-center gap-2 sm:justify-end">
-            <button
-              type="button"
+            <Button
               onClick={() => handleConsent("rejected")}
-              className="inline-flex h-8 items-center justify-center rounded-full border border-clinic-border bg-clinic-white px-3 text-xs font-semibold text-clinic-slate-800 transition hover:bg-clinic-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-200 dark:hover:bg-slate-900"
+              variant="secondary"
+              size="xs"
+              className="dark:border-slate-700 dark:bg-slate-950 dark:text-slate-200 dark:hover:bg-slate-900"
             >
               {copy.reject}
-            </button>
-            <button
-              type="button"
+            </Button>
+            <Button
               onClick={() => handleConsent("accepted")}
-              className="inline-flex h-8 items-center justify-center rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-3 text-xs font-semibold text-white dark:text-slate-950 transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+              variant="primary"
+              size="xs"
             >
               {copy.accept}
-            </button>
+            </Button>
           </div>
         </div>
       </div>

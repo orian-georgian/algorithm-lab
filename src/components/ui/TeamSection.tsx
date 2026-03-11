@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
 import { TeamImageWithLoader } from "@/components/ui/TeamImageWithLoader";
 
 type TeamSectionProps = {
@@ -251,12 +251,14 @@ export function TeamSection({ showStepLabel = true }: TeamSectionProps) {
         </div>
 
         <div className="mt-8 lg:mt-12 flex justify-center">
-          <Link
+          <Button
             href="/contact"
-            className="rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-6 py-3 text-sm font-semibold text-white dark:text-slate-950 shadow-soft transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+            variant="primary"
+            size="lg"
+            iconVariant="arrowRight"
           >
             {t("teamCta")}
-          </Link>
+          </Button>
         </div>
       </div>
     </section>

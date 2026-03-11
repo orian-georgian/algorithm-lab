@@ -8,6 +8,7 @@ import {
   contactFormSchema,
   type ContactFormInput,
 } from "@/lib/validation/contact";
+import { Button } from "@/components/ui/Button";
 
 type ContactSectionProps = {
   showStepLabel?: boolean;
@@ -226,13 +227,16 @@ export function ContactSection({
               ) : null}
 
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <button
+                <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-5 py-3 text-sm font-semibold text-white dark:text-slate-950 transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 disabled:cursor-not-allowed disabled:opacity-70 sm:ml-auto sm:w-auto sm:min-w-44"
+                  variant="primary"
+                  size="lg"
+                  iconVariant="send"
+                  className="w-full sm:ml-auto sm:w-auto sm:min-w-44"
                 >
                   {isSubmitting ? t("submitting") : t("submit")}
-                </button>
+                </Button>
 
                 {submitState === "success" ? (
                   <p className="text-sm text-emerald-700 dark:text-emerald-400">

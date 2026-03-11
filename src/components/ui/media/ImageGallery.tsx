@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import type { MediaImage } from "@/lib/media-assets";
+import { Button } from "@/components/ui/Button";
 
 type Props = {
   items: MediaImage[];
@@ -130,11 +131,11 @@ export function ImageGallery({
 
       <div className="mt-10 grid grid-cols-1 gap-0 sm:grid-cols-2 md:grid-cols-3">
         {visibleItems.map((item, index) => (
-          <button
+          <Button
             key={item.id}
-            type="button"
             onClick={() => setActiveIndex(index)}
-            className="group relative aspect-[4/3] overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+            variant="neutral"
+            className="group relative block aspect-[4/3] overflow-hidden rounded-none border-0 p-0 focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
             aria-label={`${openLabel}: ${item.alt}`}
           >
             <Image
@@ -166,20 +167,21 @@ export function ImageGallery({
             <span className="absolute bottom-2 left-2 rounded-full bg-clinic-white px-2.5 py-1 text-[10px] font-medium text-clinic-slate-700 sm:px-3 sm:text-xs">
               {item.caption}
             </span>
-          </button>
+          </Button>
         ))}
       </div>
       {canShowMore ? (
         <div className="mt-8 flex justify-center">
-          <button
-            type="button"
+          <Button
             onClick={() =>
               setVisibleCount((prev) => Math.min(prev + loadStep, items.length))
             }
-            className="inline-flex items-center justify-center rounded-full border border-clinic-border bg-clinic-white px-6 py-3 text-sm font-semibold text-clinic-slate-800 shadow-sm transition hover:bg-clinic-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+            variant="secondary"
+            size="lg"
+            iconVariant="arrowRight"
           >
             {showMoreLabel}
-          </button>
+          </Button>
         </div>
       ) : null}
 
@@ -190,39 +192,22 @@ export function ImageGallery({
               role="dialog"
               aria-modal="true"
             >
-              <button
-                type="button"
+              <Button
                 onClick={closeLightbox}
+                variant="secondary"
+                size="iconLg"
+                iconVariant="close"
                 aria-label={closeLabel}
-                className="absolute right-[max(0.75rem,env(safe-area-inset-right))] top-[max(0.75rem,env(safe-area-inset-top))] z-20 inline-flex h-11 w-11 items-center justify-center rounded-full border border-clinic-border bg-clinic-white text-clinic-slate-800 shadow-lg transition hover:bg-clinic-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 sm:right-4 sm:top-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
-              >
-                <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
-                  <path
-                    d="M6 6 18 18M18 6 6 18"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </button>
-              <button
-                type="button"
+                className="absolute right-[max(0.75rem,env(safe-area-inset-right))] top-[max(0.75rem,env(safe-area-inset-top))] z-20 shadow-lg sm:right-4 sm:top-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+              />
+              <Button
                 onClick={showPrevious}
+                variant="secondary"
+                size="iconLg"
+                iconVariant="chevronLeft"
                 aria-label={previousLabel}
-                className="absolute left-[max(0.75rem,env(safe-area-inset-left))] top-1/2 z-20 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-clinic-border bg-clinic-white text-clinic-slate-800 shadow-lg transition hover:bg-clinic-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 sm:left-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
-              >
-                <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
-                  <path
-                    d="M15 6 9 12l6 6"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
+                className="absolute left-[max(0.75rem,env(safe-area-inset-left))] top-1/2 z-20 -translate-y-1/2 shadow-lg sm:left-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+              />
 
               <figure className="relative h-[calc(100vh-1rem)] w-[calc(100vw-1rem)] max-w-[1400px] sm:h-[calc(100vh-2rem)] sm:w-[calc(100vw-2rem)]">
                 <Image
@@ -254,23 +239,14 @@ export function ImageGallery({
                 {activeDisplayIndex}/{items.length}
               </div>
 
-              <button
-                type="button"
+              <Button
                 onClick={showNext}
+                variant="secondary"
+                size="iconLg"
+                iconVariant="chevronRight"
                 aria-label={nextLabel}
-                className="absolute right-[max(0.75rem,env(safe-area-inset-right))] top-1/2 z-20 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-clinic-border bg-clinic-white text-clinic-slate-800 shadow-lg transition hover:bg-clinic-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 sm:right-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
-              >
-                <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
-                  <path
-                    d="m9 6 6 6-6 6"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
+                className="absolute right-[max(0.75rem,env(safe-area-inset-right))] top-1/2 z-20 -translate-y-1/2 shadow-lg sm:right-4 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+              />
             </div>,
             document.body,
           )

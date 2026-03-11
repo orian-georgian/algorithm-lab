@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
 import { ThemeToggle } from "./ThemeToggle";
 
 const locales = [
@@ -125,30 +126,32 @@ export function Navbar() {
             className="h-5 w-px bg-clinic-border/90 md:hidden"
           />
 
-          <button
-            type="button"
+          <Button
             onClick={toggleMobileMenu}
             aria-label={isMobileMenuOpen ? t("closeMenu") : t("openMenu")}
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-menu"
+            variant={isMobileMenuOpen ? "primary" : "secondary"}
+            size="iconSm"
+            icon={
+              <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d={
+                    isMobileMenuOpen
+                      ? "M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6 10.6 12 5 6.4 6.4 5Z"
+                      : "M4 7h16v2H4V7Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z"
+                  }
+                />
+              </svg>
+            }
             className={[
-              "inline-flex h-9 w-9 items-center justify-center rounded-xl border transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 md:hidden",
+              "rounded-xl md:hidden",
               isMobileMenuOpen
                 ? "border-clinic-teal-700 bg-clinic-teal-700 dark:bg-clinic-teal-300 text-white dark:text-slate-950 shadow-soft hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200"
                 : "border-clinic-border bg-clinic-white text-clinic-slate-700 hover:bg-clinic-blue-50",
             ].join(" ")}
-          >
-            <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d={
-                  isMobileMenuOpen
-                    ? "M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6 10.6 12 5 6.4 6.4 5Z"
-                    : "M4 7h16v2H4V7Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z"
-                }
-              />
-            </svg>
-          </button>
+          />
         </div>
       </nav>
 

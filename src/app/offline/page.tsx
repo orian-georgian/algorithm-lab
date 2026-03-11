@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Button } from "@/components/ui/Button";
 
 export default function OfflinePage() {
   return (
@@ -8,12 +8,15 @@ export default function OfflinePage() {
         <p className="mt-3 text-sm text-clinic-slate-700">
           The requested page is not available right now. Reconnect to the internet and try again.
         </p>
-        <Link
+        <Button
           href="/ro"
-          className="mt-6 inline-flex rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-5 py-2.5 text-sm font-semibold text-white dark:text-slate-950"
+          variant="primary"
+          size="md"
+          iconVariant="arrowRight"
+          className="mt-6"
         >
           Go to Homepage
-        </Link>
+        </Button>
       </section>
     </main>
   );

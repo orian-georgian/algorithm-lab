@@ -32,7 +32,7 @@ export default async function TermsAndConditionsPage({ params }: Props) {
         aria-hidden="true"
         className="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 bg-gradient-to-b from-clinic-white via-clinic-blue-100/70 to-clinic-white"
       />
-      <div className="space-y-8 px-4 py-8 sm:space-y-12 sm:px-6 sm:py-10 lg:px-10">
+      <div className="space-y-6 px-4 py-8 sm:space-y-8 sm:px-6 sm:py-10 lg:space-y-10 lg:px-10">
         <section className="rounded-3xl bg-clinic-white p-8 sm:p-10">
           <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-clinic-teal-700 sm:text-xs sm:tracking-[0.16em]">
             {t("eyebrow")}
@@ -52,7 +52,10 @@ export default async function TermsAndConditionsPage({ params }: Props) {
         <section className="rounded-3xl bg-clinic-white p-8 sm:p-10">
           <div className="space-y-6">
             {sections.map((index) => (
-              <article key={index} className="space-y-2 border-b border-clinic-border/70 pb-5 last:border-b-0 last:pb-0">
+              <article
+                key={index}
+                className="space-y-2 border-b border-clinic-border/70 pb-5 last:border-b-0 last:pb-0"
+              >
                 <h2 className="text-xl font-semibold text-clinic-slate-900">
                   {t(`section${index}Title`)}
                 </h2>

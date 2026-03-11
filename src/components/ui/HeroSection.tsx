@@ -3,10 +3,12 @@
 import Image from "next/image";
 import type { MouseEvent } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
+import { HeroBiteMarks } from "@/components/ui/HeroBiteMarks";
 
 export function HeroSection() {
   const t = useTranslations("Home");
+
   const handlePrimaryCtaClick = (event: MouseEvent<HTMLAnchorElement>) => {
     const contactSection = document.getElementById("contact");
     if (!contactSection) return;
@@ -24,6 +26,9 @@ export function HeroSection() {
     <section id="home" className="relative isolate">
       <div className="py-4 sm:py-8 lg:py-10">
         <div className="relative overflow-hidden rounded-3xl bg-clinic-white px-8 py-8 sm:px-12 sm:pb-12 sm:pt-6 lg:px-16 lg:py-16">
+          <HeroBiteMarks position="topRight" />
+          <HeroBiteMarks position="leftCenter" />
+          <HeroBiteMarks position="rightCenter" />
           <div
             aria-hidden
             className="pointer-events-none absolute -right-20 -top-16 h-72 w-72 rounded-full bg-clinic-teal-200/50 blur-3xl"
@@ -46,27 +51,33 @@ export function HeroSection() {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link
+                <Button
                   href="/#contact"
                   onClick={handlePrimaryCtaClick}
-                  className="w-full rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-6 py-3 text-center text-sm font-semibold text-white dark:text-slate-950 shadow-soft transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 sm:w-auto"
+                  variant="primary"
+                  size="lg"
+                  iconVariant="arrowRight"
+                  className="w-full sm:w-auto"
                 >
                   {t("primaryCta")}
-                </Link>
-                <Link
+                </Button>
+                <Button
                   href="/#services"
                   onClick={handleSecondaryCtaClick}
-                  className="w-full rounded-full border border-clinic-border bg-clinic-white px-6 py-3 text-center text-sm font-semibold text-clinic-slate-800 transition hover:bg-clinic-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 sm:w-auto"
+                  variant="secondary"
+                  size="lg"
+                  iconVariant="spark"
+                  className="w-full sm:w-auto"
                 >
                   {t("secondaryCta")}
-                </Link>
+                </Button>
               </div>
             </div>
 
             <div className="order-2 relative mt-6 -mb-8 sm:-mb-12 lg:-mb-16 lg:mt-0 lg:self-end lg:pl-6">
               <div className="relative h-[240px] w-full sm:h-[300px] lg:h-[440px] xl:h-[500px]">
                 <Image
-                  src="/media/images/person-1.png"
+                  src="/media/images/flaviu.png"
                   alt=""
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 42vw"

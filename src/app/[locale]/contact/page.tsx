@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
 import { PageIntro } from "@/components/ui/PageIntro";
 import { ContactSection } from "@/components/ui/ContactSection";
 import { TeamImageWithLoader } from "@/components/ui/TeamImageWithLoader";
@@ -27,8 +27,9 @@ export default async function ContactPage({ params }: Props) {
         aria-hidden="true"
         className="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 bg-gradient-to-b from-clinic-white via-clinic-blue-100/70 to-clinic-white"
       />
-      <div className="space-y-8 px-4 pt-4 pb-10 sm:space-y-12 sm:px-6 sm:py-10 lg:px-10">
+      <div className="space-y-6 px-4 pt-4 pb-10 sm:space-y-8 sm:px-6 sm:py-10 lg:space-y-10 lg:px-10">
         <PageIntro
+          className="mb-20"
           eyebrow={t("eyebrow")}
           title={t("title")}
           description={t("description")}
@@ -54,7 +55,7 @@ export default async function ContactPage({ params }: Props) {
               className="pointer-events-none absolute -left-16 -top-16 z-0 h-72 w-72 rounded-full bg-clinic-blue-100 blur-3xl"
             />
             <div className="relative z-10 grid items-start gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-              <div className="px-1 py-1 sm:px-2">
+              <div className="flex flex-col px-1 py-1 sm:px-2 h-full">
                 <h2 className="text-2xl font-semibold text-clinic-slate-900">
                   {t("priorityTitle")}
                 </h2>
@@ -90,6 +91,16 @@ export default async function ContactPage({ params }: Props) {
                     <span>{t("priorityPointThree")}</span>
                   </li>
                 </ul>
+                <div className="flex mt-auto">
+                  <Button
+                    href="/services"
+                    variant="primary"
+                    size="lg"
+                    iconVariant="arrowRight"
+                  >
+                    {t("finalCta")}
+                  </Button>
+                </div>
               </div>
 
               <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-clinic-blue-50">
@@ -104,15 +115,6 @@ export default async function ContactPage({ params }: Props) {
             </div>
           </div>
         </section>
-
-        <div className="flex justify-center">
-          <Link
-            href="/services"
-            className="rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-7 py-3 text-sm font-semibold text-white dark:text-slate-950 shadow-soft transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
-          >
-            {t("finalCta")}
-          </Link>
-        </div>
       </div>
     </section>
   );

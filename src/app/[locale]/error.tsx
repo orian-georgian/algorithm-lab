@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { Button } from "@/components/ui/Button";
 
 type Props = {
   error: Error & { digest?: string };
@@ -18,13 +19,15 @@ export default function LocaleError({ error, reset }: Props) {
       <p className="mt-3 text-sm text-red-700">
         An unexpected error occurred while loading this page.
       </p>
-      <button
-        type="button"
+      <Button
         onClick={reset}
-        className="mt-6 rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-5 py-2.5 text-sm font-semibold text-white dark:text-slate-950"
+        variant="primary"
+        size="md"
+        iconVariant="arrowRight"
+        className="mt-6"
       >
         Try again
-      </button>
+      </Button>
     </section>
   );
 }

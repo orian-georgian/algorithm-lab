@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
 
 const serviceKeys = ["one", "two", "three"] as const;
 const pillKeys = ["one", "two", "three"] as const;
@@ -58,7 +58,7 @@ export function ServicesSection({
           {serviceKeys.map((key, index) => (
             <article
               key={key}
-              className="flex h-full flex-col rounded-2xl border border-clinic-border bg-clinic-white p-7 shadow-none transition-shadow duration-200 hover:shadow-soft"
+              className="flex h-full flex-col rounded-2xl border border-clinic-border bg-gradient-to-br from-clinic-white via-clinic-blue-50/60 to-clinic-teal-50/40 p-7 shadow-none transition-shadow duration-200 hover:shadow-soft"
             >
               <div className="mb-5">
                 <div className="flex items-start gap-3">
@@ -100,12 +100,14 @@ export function ServicesSection({
               </p>
 
               <div className="mt-auto flex justify-center pt-6">
-                <Link
+                <Button
                   href="/contact"
-                  className="inline-flex rounded-full bg-clinic-teal-700 dark:bg-clinic-teal-300 px-5 py-2.5 text-sm font-semibold text-white dark:text-slate-950 shadow-soft transition hover:bg-clinic-teal-800 dark:hover:bg-clinic-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+                  variant="primary"
+                  size="md"
+                  iconVariant="arrowRight"
                 >
                   {t("requestOfferCta")}
-                </Link>
+                </Button>
               </div>
             </article>
           ))}
@@ -134,12 +136,14 @@ export function ServicesSection({
 
         {showAllServicesCta ? (
           <div className="mt-8 lg:mt-12 flex justify-center">
-            <Link
+            <Button
               href="/services"
-              className="inline-flex rounded-full border border-clinic-border bg-clinic-white px-6 py-3 text-sm font-semibold text-clinic-slate-800 shadow-sm transition hover:bg-clinic-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600"
+              variant="secondary"
+              size="lg"
+              iconVariant="spark"
             >
               {t("seeMoreServicesCta")}
-            </Link>
+            </Button>
           </div>
         ) : null}
 

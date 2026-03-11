@@ -33,7 +33,7 @@ export default async function CasesPage({ params }: Props) {
         aria-hidden="true"
         className="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 bg-gradient-to-b from-clinic-white via-clinic-blue-100/70 to-clinic-white"
       />
-      <div className="space-y-8 px-4 py-4 sm:space-y-12 sm:px-6 sm:py-10 lg:px-10">
+      <div className="space-y-6 px-4 py-4 sm:space-y-8 sm:px-6 sm:py-10 lg:space-y-10 lg:px-10">
         <PageIntro
           eyebrow={t("eyebrow")}
           title={t("title")}
@@ -87,7 +87,6 @@ export default async function CasesPage({ params }: Props) {
             </article>
           ))}
         </section>
-
         <HomeClosingStrip
           ctaLabel={t("finalCta")}
           ctaHref="/contact"
