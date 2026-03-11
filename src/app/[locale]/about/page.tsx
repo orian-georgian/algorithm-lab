@@ -3,6 +3,7 @@ import Image from "next/image";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { TeamSection } from "@/components/ui/TeamSection";
 import { getPageMetadata } from "@/seo/metadata";
+import { HeroBiteMarks } from "@/components/ui/HeroBiteMarks";
 
 type Props = {
   params: { locale: string };
@@ -28,6 +29,9 @@ export default async function AboutPage({ params }: Props) {
       />
       <div className="space-y-6 px-4 pt-4 pb-10 sm:space-y-8 sm:px-6 sm:py-10 lg:space-y-10 lg:px-10">
         <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-clinic-white via-clinic-blue-50/70 to-clinic-teal-100/45 p-8 sm:p-12">
+          <HeroBiteMarks position="topRight" />
+          <HeroBiteMarks position="leftCenter" />
+          <HeroBiteMarks position="rightCenter" />
           <div
             aria-hidden
             className="pointer-events-none absolute -right-20 -top-16 z-0 h-72 w-72 rounded-full bg-clinic-teal-200/50 blur-3xl"

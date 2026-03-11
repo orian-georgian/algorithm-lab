@@ -2,6 +2,7 @@
 
 import type { ButtonHTMLAttributes, ComponentProps, ReactNode } from "react";
 import { Link } from "@/i18n/routing";
+import { motion } from "framer-motion";
 import {
   AnimatedButtonIcon,
   type AnimatedButtonIconVariant,
@@ -91,17 +92,38 @@ export function Button(props: ButtonProps) {
 
   if ("href" in props) {
     return (
-      <Link className={classes} {...(rest as Omit<LinkButtonProps, keyof CommonButtonProps>)}>
-        {content}
-      </Link>
+      <motion.div
+        whileHover={{ y: -4, scale: 1.04 }}
+        transition={{ type: "spring", stiffness: 400, damping: 22 }}
+        style={{ display: "inline-block" }}
+      >
+        <Link
+          className={classes}
+          {...(rest as Omit<LinkButtonProps, keyof CommonButtonProps>)}
+          href={props.href as string}
+          as={undefined}
+        >
+          {content}
+        </Link>
+      </motion.div>
     );
   }
 
   const nativeProps = rest as Omit<NativeButtonProps, keyof CommonButtonProps>;
 
   return (
-    <button type={nativeProps.type ?? "button"} className={classes} {...nativeProps}>
-      {content}
-    </button>
+    <motion.div
+      whileHover={{ y: -4, scale: 1.04 }}
+      transition={{ type: "spring", stiffness: 400, damping: 22 }}
+      style={{ display: "inline-block" }}
+    >
+      <button
+        type={nativeProps.type ?? "button"}
+        className={classes}
+        {...nativeProps}
+      >
+        {content}
+      </button>
+    </motion.div>
   );
 }

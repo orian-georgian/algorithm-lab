@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
 import { Button } from "@/components/ui/Button";
 import { ThemeToggle } from "./ThemeToggle";
+import { motion } from "framer-motion";
 
 const locales = [
   { code: "ro", label: "RO" },
@@ -80,44 +81,62 @@ export function Navbar() {
 
         <div className="hidden items-center gap-5 text-sm font-medium md:flex">
           {navLinks.map((link) => (
-            <Link
+            <motion.div
               key={link.href}
-              className={[
-                "rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-[0.08em] transition",
-                pathname === link.href
-                  ? "bg-clinic-teal-700 dark:bg-clinic-teal-300 text-white dark:text-slate-950 shadow-soft"
-                  : "text-clinic-slate-700 hover:text-clinic-teal-700"
-              ].join(" ")}
-              href={link.href}
-              prefetch
-              aria-current={pathname === link.href ? "page" : undefined}
+              whileHover={{ y: -4, scale: 1.04 }}
+              transition={{ type: "spring", stiffness: 400, damping: 22 }}
+              style={{ display: "inline-block" }}
             >
-              {link.label}
-            </Link>
+              <Link
+                className={[
+                  "rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-[0.08em] transition",
+                  pathname === link.href
+                    ? "bg-clinic-teal-700 dark:bg-clinic-teal-300 text-white dark:text-slate-950 shadow-soft"
+                    : "text-clinic-slate-700 hover:text-clinic-teal-700"
+                ].join(" ")}
+                href={link.href}
+                prefetch
+                aria-current={pathname === link.href ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            </motion.div>
           ))}
         </div>
 
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1">
-            <ThemeToggle />
+            <motion.div
+              whileHover={{ y: -4, scale: 1.04 }}
+              transition={{ type: "spring", stiffness: 400, damping: 22 }}
+              style={{ display: "inline-block" }}
+            >
+              <ThemeToggle />
+            </motion.div>
             <span aria-hidden="true" className="mx-1 hidden h-5 w-px bg-clinic-border/90 md:block" />
             {locales.map((item) => (
-              <Link
+              <motion.div
                 key={item.code}
-                href={pathname}
-                locale={item.code}
-                aria-label={t(`switchTo.${item.code}`)}
-                aria-current={locale === item.code ? "true" : undefined}
-                className={[
-                  "hidden h-9 w-9 items-center justify-center rounded-xl border text-xs font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 md:inline-flex",
-                  locale === item.code
-                    ? "border-clinic-border bg-clinic-white text-clinic-teal-700 shadow-soft hover:bg-clinic-blue-50 dark:border-slate-600 dark:bg-slate-900 dark:text-clinic-teal-300 dark:hover:bg-slate-800"
-                    : "border-clinic-border bg-clinic-white text-clinic-slate-700 hover:bg-clinic-blue-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800",
-                ].join(" ")}
+                whileHover={{ y: -4, scale: 1.04 }}
+                transition={{ type: "spring", stiffness: 400, damping: 22 }}
+                style={{ display: "inline-block" }}
               >
-                <span aria-hidden="true">{item.label}</span>
-                <span className="sr-only">{t(`switchTo.${item.code}`)}</span>
-              </Link>
+                <Link
+                  href={pathname}
+                  locale={item.code}
+                  aria-label={t(`switchTo.${item.code}`)}
+                  aria-current={locale === item.code ? "true" : undefined}
+                  className={[
+                    "hidden h-9 w-9 items-center justify-center rounded-xl border text-xs font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clinic-teal-600 md:inline-flex",
+                    locale === item.code
+                      ? "border-clinic-border bg-clinic-white text-clinic-teal-700 shadow-soft hover:bg-clinic-blue-50 dark:border-slate-600 dark:bg-slate-900 dark:text-clinic-teal-300 dark:hover:bg-slate-800"
+                      : "border-clinic-border bg-clinic-white text-clinic-slate-700 hover:bg-clinic-blue-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800",
+                  ].join(" ")}
+                >
+                  <span aria-hidden="true">{item.label}</span>
+                  <span className="sr-only">{t(`switchTo.${item.code}`)}</span>
+                </Link>
+              </motion.div>
             ))}
           </div>
 
