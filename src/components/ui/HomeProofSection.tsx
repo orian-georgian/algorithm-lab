@@ -12,25 +12,9 @@ type AnimatedProofValueProps = {
   isActive: boolean;
 };
 
-function AnimatedProofValue({ value, isActive }: AnimatedProofValueProps) {
-  const prefersReducedMotion = useReducedMotion();
-  const inactiveColor = "rgb(var(--clinic-teal-700) / 0.72)";
-  const activeColor = "rgb(var(--clinic-slate-900))";
-  const colorAnimation = { color: isActive ? activeColor : inactiveColor };
-  const colorTransition = {
-    duration: prefersReducedMotion ? 0 : 0.6,
-    ease: [0.42, 0, 0.58, 1] as [number, number, number, number],
-  };
-
-  return (
-    <motion.span
-      animate={colorAnimation}
-      transition={colorTransition}
-      style={{ display: "inline-block" }}
-    >
-      {value}
-    </motion.span>
-  );
+function AnimatedProofValue({ value }: AnimatedProofValueProps) {
+  // Remove animation, just render the value
+  return <span style={{ display: "inline-block" }}>{value}</span>;
 }
 
 export function HomeProofSection() {
